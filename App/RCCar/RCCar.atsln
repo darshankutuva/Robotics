@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "RCCar", "RCCar\RCCar.cproj", "{62165758-183B-4F34-8497-711AC038DDE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62165758-183B-4F34-8497-711AC038DDE4}.Debug|AVR.ActiveCfg = Debug|AVR
+		{62165758-183B-4F34-8497-711AC038DDE4}.Debug|AVR.Build.0 = Debug|AVR
+		{62165758-183B-4F34-8497-711AC038DDE4}.Release|AVR.ActiveCfg = Release|AVR
+		{62165758-183B-4F34-8497-711AC038DDE4}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

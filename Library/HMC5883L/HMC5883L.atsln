@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "HMC5883L", "HMC5883L\HMC5883L.cproj", "{897D0D2A-8499-4AA6-A15B-5C4748EAAE0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{897D0D2A-8499-4AA6-A15B-5C4748EAAE0C}.Debug|AVR.ActiveCfg = Debug|AVR
+		{897D0D2A-8499-4AA6-A15B-5C4748EAAE0C}.Debug|AVR.Build.0 = Debug|AVR
+		{897D0D2A-8499-4AA6-A15B-5C4748EAAE0C}.Release|AVR.ActiveCfg = Release|AVR
+		{897D0D2A-8499-4AA6-A15B-5C4748EAAE0C}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

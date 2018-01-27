@@ -1,0 +1,1922 @@
+
+OD-Robot.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000676  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .bss          00000001  00800060  00800060  000006ea  2**0
+                  ALLOC
+  2 .debug_aranges 00000100  00000000  00000000  000006ea  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_pubnames 0000028d  00000000  00000000  000007ea  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   00000d4d  00000000  00000000  00000a77  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 0000073d  00000000  00000000  000017c4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   00000cb3  00000000  00000000  00001f01  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000230  00000000  00000000  00002bb4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    00000525  00000000  00000000  00002de4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    0000042a  00000000  00000000  00003309  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000060  00000000  00000000  00003733  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	1a c0       	rjmp	.+52     	; 0x36 <__ctors_end>
+   2:	34 c0       	rjmp	.+104    	; 0x6c <__bad_interrupt>
+   4:	33 c0       	rjmp	.+102    	; 0x6c <__bad_interrupt>
+   6:	32 c0       	rjmp	.+100    	; 0x6c <__bad_interrupt>
+   8:	31 c0       	rjmp	.+98     	; 0x6c <__bad_interrupt>
+   a:	30 c0       	rjmp	.+96     	; 0x6c <__bad_interrupt>
+   c:	a9 c1       	rjmp	.+850    	; 0x360 <__vector_6>
+   e:	6c c0       	rjmp	.+216    	; 0xe8 <__vector_7>
+  10:	2d c0       	rjmp	.+90     	; 0x6c <__bad_interrupt>
+  12:	2c c0       	rjmp	.+88     	; 0x6c <__bad_interrupt>
+  14:	2b c0       	rjmp	.+86     	; 0x6c <__bad_interrupt>
+  16:	2a c0       	rjmp	.+84     	; 0x6c <__bad_interrupt>
+  18:	29 c0       	rjmp	.+82     	; 0x6c <__bad_interrupt>
+  1a:	28 c0       	rjmp	.+80     	; 0x6c <__bad_interrupt>
+  1c:	27 c0       	rjmp	.+78     	; 0x6c <__bad_interrupt>
+  1e:	26 c0       	rjmp	.+76     	; 0x6c <__bad_interrupt>
+  20:	25 c0       	rjmp	.+74     	; 0x6c <__bad_interrupt>
+  22:	04 c2       	rjmp	.+1032   	; 0x42c <DisplayValue+0x56>
+  24:	05 c2       	rjmp	.+1034   	; 0x430 <DisplayValue+0x5a>
+  26:	06 c2       	rjmp	.+1036   	; 0x434 <DisplayValue+0x5e>
+  28:	07 c2       	rjmp	.+1038   	; 0x438 <DisplayValue+0x62>
+  2a:	08 c2       	rjmp	.+1040   	; 0x43c <DisplayValue+0x66>
+  2c:	09 c2       	rjmp	.+1042   	; 0x440 <DisplayValue+0x6a>
+  2e:	0a c2       	rjmp	.+1044   	; 0x444 <DisplayValue+0x6e>
+  30:	0b c2       	rjmp	.+1046   	; 0x448 <DisplayValue+0x72>
+  32:	0c c2       	rjmp	.+1048   	; 0x44c <DisplayValue+0x76>
+  34:	0d c2       	rjmp	.+1050   	; 0x450 <DisplayValue+0x7a>
+
+00000036 <__ctors_end>:
+  36:	11 24       	eor	r1, r1
+  38:	1f be       	out	0x3f, r1	; 63
+  3a:	cf e5       	ldi	r28, 0x5F	; 95
+  3c:	d2 e0       	ldi	r29, 0x02	; 2
+  3e:	de bf       	out	0x3e, r29	; 62
+  40:	cd bf       	out	0x3d, r28	; 61
+
+00000042 <__do_copy_data>:
+  42:	10 e0       	ldi	r17, 0x00	; 0
+  44:	a0 e6       	ldi	r26, 0x60	; 96
+  46:	b0 e0       	ldi	r27, 0x00	; 0
+  48:	e6 e7       	ldi	r30, 0x76	; 118
+  4a:	f6 e0       	ldi	r31, 0x06	; 6
+  4c:	02 c0       	rjmp	.+4      	; 0x52 <.do_copy_data_start>
+
+0000004e <.do_copy_data_loop>:
+  4e:	05 90       	lpm	r0, Z+
+  50:	0d 92       	st	X+, r0
+
+00000052 <.do_copy_data_start>:
+  52:	a0 36       	cpi	r26, 0x60	; 96
+  54:	b1 07       	cpc	r27, r17
+  56:	d9 f7       	brne	.-10     	; 0x4e <.do_copy_data_loop>
+
+00000058 <__do_clear_bss>:
+  58:	10 e0       	ldi	r17, 0x00	; 0
+  5a:	a0 e6       	ldi	r26, 0x60	; 96
+  5c:	b0 e0       	ldi	r27, 0x00	; 0
+  5e:	01 c0       	rjmp	.+2      	; 0x62 <.do_clear_bss_start>
+
+00000060 <.do_clear_bss_loop>:
+  60:	1d 92       	st	X+, r1
+
+00000062 <.do_clear_bss_start>:
+  62:	a1 36       	cpi	r26, 0x61	; 97
+  64:	b1 07       	cpc	r27, r17
+  66:	e1 f7       	brne	.-8      	; 0x60 <.do_clear_bss_loop>
+  68:	2c d0       	rcall	.+88     	; 0xc2 <main>
+  6a:	03 c3       	rjmp	.+1542   	; 0x672 <_exit>
+
+0000006c <__bad_interrupt>:
+  6c:	c9 cf       	rjmp	.-110    	; 0x0 <__vectors>
+
+0000006e <StartODRobot>:
+	TURN_ANGLE TurnAngle;
+
+	while(1)
+	{
+
+		if (CheckForEnoughSpace(OD_SENSOR_FRONT) == 0)
+  6e:	80 e0       	ldi	r24, 0x00	; 0
+  70:	90 e0       	ldi	r25, 0x00	; 0
+  72:	be d2       	rcall	.+1404   	; 0x5f0 <CheckForEnoughSpace>
+  74:	88 23       	and	r24, r24
+  76:	e9 f4       	brne	.+58     	; 0xb2 <StartODRobot+0x44>
+		{
+
+			StopRobot();
+  78:	f6 d0       	rcall	.+492    	; 0x266 <StopRobot>
+
+			if ((TurnAngle = FindEnoughSpace(OD_SENSOR_FRONT)) != TURN_ANGLE_MAX)
+  7a:	80 e0       	ldi	r24, 0x00	; 0
+  7c:	90 e0       	ldi	r25, 0x00	; 0
+  7e:	5a d2       	rcall	.+1204   	; 0x534 <FindEnoughSpace>
+  80:	85 30       	cpi	r24, 0x05	; 5
+  82:	91 05       	cpc	r25, r1
+  84:	19 f0       	breq	.+6      	; 0x8c <StartODRobot+0x1e>
+			{
+
+				TurnRobot(TurnAngle, FORWARD);				
+  86:	60 e0       	ldi	r22, 0x00	; 0
+  88:	70 e0       	ldi	r23, 0x00	; 0
+  8a:	08 c0       	rjmp	.+16     	; 0x9c <StartODRobot+0x2e>
+
+			}
+			else if((TurnAngle = FindEnoughSpace(OD_SENSOR_BACK)) != TURN_ANGLE_MAX)
+  8c:	81 e0       	ldi	r24, 0x01	; 1
+  8e:	90 e0       	ldi	r25, 0x00	; 0
+  90:	51 d2       	rcall	.+1186   	; 0x534 <FindEnoughSpace>
+  92:	85 30       	cpi	r24, 0x05	; 5
+  94:	91 05       	cpc	r25, r1
+  96:	21 f0       	breq	.+8      	; 0xa0 <StartODRobot+0x32>
+			{
+			
+				TurnRobot(TurnAngle, BACKWARD);
+  98:	61 e0       	ldi	r22, 0x01	; 1
+  9a:	70 e0       	ldi	r23, 0x00	; 0
+  9c:	f9 d0       	rcall	.+498    	; 0x290 <TurnRobot>
+  9e:	e7 cf       	rjmp	.-50     	; 0x6e <StartODRobot>
+
+			}
+			else
+			{
+
+				if (CheckForEnoughSpace(OD_SENSOR_BACK))
+  a0:	81 e0       	ldi	r24, 0x01	; 1
+  a2:	90 e0       	ldi	r25, 0x00	; 0
+  a4:	a5 d2       	rcall	.+1354   	; 0x5f0 <CheckForEnoughSpace>
+  a6:	88 23       	and	r24, r24
+  a8:	11 f0       	breq	.+4      	; 0xae <StartODRobot+0x40>
+				{		
+
+					DriveRobotBackward();
+  aa:	42 d1       	rcall	.+644    	; 0x330 <DriveRobotBackward>
+  ac:	e0 cf       	rjmp	.-64     	; 0x6e <StartODRobot>
+
+				}
+				else
+				{
+
+					StopRobot();
+  ae:	db d0       	rcall	.+438    	; 0x266 <StopRobot>
+  b0:	de cf       	rjmp	.-68     	; 0x6e <StartODRobot>
+		}
+		else
+		{
+
+				
+			DriveRobotForward();
+  b2:	4a d1       	rcall	.+660    	; 0x348 <DriveRobotForward>
+  b4:	dc cf       	rjmp	.-72     	; 0x6e <StartODRobot>
+
+000000b6 <InitODRobot>:
+
+void 
+InitODRobot()
+{
+
+	InitPowerGatingLogic();
+  b6:	ad d0       	rcall	.+346    	; 0x212 <InitPowerGatingLogic>
+
+	InitUART();
+  b8:	e7 d1       	rcall	.+974    	; 0x488 <InitUART>
+
+	InitSPI();
+  ba:	5c d1       	rcall	.+696    	; 0x374 <InitSPI>
+
+	InitODServos();
+  bc:	60 d0       	rcall	.+192    	; 0x17e <InitODServos>
+
+	InitDriveServos();
+  be:	c1 d0       	rcall	.+386    	; 0x242 <InitDriveServos>
+
+}
+  c0:	08 95       	ret
+
+000000c2 <main>:
+
+int 
+main(void)
+{
+
+	InitODRobot();
+  c2:	f9 df       	rcall	.-14     	; 0xb6 <InitODRobot>
+
+	StartODRobot();
+  c4:	d4 df       	rcall	.-88     	; 0x6e <StartODRobot>
+
+}
+  c6:	80 e0       	ldi	r24, 0x00	; 0
+  c8:	90 e0       	ldi	r25, 0x00	; 0
+  ca:	08 95       	ret
+
+000000cc <WaitForODServoTurnPulse>:
+WaitForODServoTurnPulse(unsigned int PulseCount)
+{
+
+	unsigned int ODServoPWMPulseCount = 0;
+
+	sei();
+  cc:	78 94       	sei
+  ce:	20 e0       	ldi	r18, 0x00	; 0
+  d0:	30 e0       	ldi	r19, 0x00	; 0
+  d2:	05 c0       	rjmp	.+10     	; 0xde <WaitForODServoTurnPulse+0x12>
+
+	while (ODServoPWMPulseCount < PulseCount)
+	{
+		while (1)
+		{
+			if (TIFR & (1 << TOV0))
+  d4:	08 b6       	in	r0, 0x38	; 56
+  d6:	01 fe       	sbrs	r0, 1
+  d8:	fd cf       	rjmp	.-6      	; 0xd4 <WaitForODServoTurnPulse+0x8>
+			{
+
+				ODServoPWMPulseCount++;
+  da:	2f 5f       	subi	r18, 0xFF	; 255
+  dc:	3f 4f       	sbci	r19, 0xFF	; 255
+
+	unsigned int ODServoPWMPulseCount = 0;
+
+	sei();
+
+	while (ODServoPWMPulseCount < PulseCount)
+  de:	28 17       	cp	r18, r24
+  e0:	39 07       	cpc	r19, r25
+  e2:	c0 f3       	brcs	.-16     	; 0xd4 <WaitForODServoTurnPulse+0x8>
+				break;
+			}
+		}
+	}
+
+	cli();
+  e4:	f8 94       	cli
+
+}
+  e6:	08 95       	ret
+
+000000e8 <__vector_7>:
+
+ISR(TIMER0_OVF_vect)
+{
+  e8:	1f 92       	push	r1
+  ea:	0f 92       	push	r0
+  ec:	0f b6       	in	r0, 0x3f	; 63
+  ee:	0f 92       	push	r0
+  f0:	11 24       	eor	r1, r1
+  f2:	8f 93       	push	r24
+
+	Dummy++;
+  f4:	80 91 60 00 	lds	r24, 0x0060
+  f8:	8f 5f       	subi	r24, 0xFF	; 255
+  fa:	80 93 60 00 	sts	0x0060, r24
+	
+}
+  fe:	8f 91       	pop	r24
+ 100:	0f 90       	pop	r0
+ 102:	0f be       	out	0x3f, r0	; 63
+ 104:	0f 90       	pop	r0
+ 106:	1f 90       	pop	r1
+ 108:	18 95       	reti
+
+0000010a <TurnODServo>:
+}
+
+void
+TurnODServo(OD_SERVO ODServo,
+			TURN_ANGLE TurnAngle)
+{
+ 10a:	0f 93       	push	r16
+ 10c:	1f 93       	push	r17
+ 10e:	cf 93       	push	r28
+ 110:	df 93       	push	r29
+ 112:	8c 01       	movw	r16, r24
+ 114:	eb 01       	movw	r28, r22
+
+	WaitForODServoTurnPulse(PWM_PULSES_1);
+ 116:	81 e0       	ldi	r24, 0x01	; 1
+ 118:	90 e0       	ldi	r25, 0x00	; 0
+ 11a:	d8 df       	rcall	.-80     	; 0xcc <WaitForODServoTurnPulse>
+
+	TurnOnOffODServo(ODServo, POWER_ON);
+ 11c:	c8 01       	movw	r24, r16
+ 11e:	61 e0       	ldi	r22, 0x01	; 1
+ 120:	70 e0       	ldi	r23, 0x00	; 0
+ 122:	5c d0       	rcall	.+184    	; 0x1dc <TurnOnOffODServo>
+
+	switch (TurnAngle)
+ 124:	c2 30       	cpi	r28, 0x02	; 2
+ 126:	d1 05       	cpc	r29, r1
+ 128:	81 f0       	breq	.+32     	; 0x14a <TurnODServo+0x40>
+ 12a:	c3 30       	cpi	r28, 0x03	; 3
+ 12c:	d1 05       	cpc	r29, r1
+ 12e:	28 f4       	brcc	.+10     	; 0x13a <TurnODServo+0x30>
+ 130:	20 97       	sbiw	r28, 0x00	; 0
+ 132:	69 f0       	breq	.+26     	; 0x14e <TurnODServo+0x44>
+ 134:	21 97       	sbiw	r28, 0x01	; 1
+ 136:	d1 f4       	brne	.+52     	; 0x16c <TurnODServo+0x62>
+ 138:	06 c0       	rjmp	.+12     	; 0x146 <TurnODServo+0x3c>
+ 13a:	c3 30       	cpi	r28, 0x03	; 3
+ 13c:	d1 05       	cpc	r29, r1
+ 13e:	49 f0       	breq	.+18     	; 0x152 <TurnODServo+0x48>
+ 140:	24 97       	sbiw	r28, 0x04	; 4
+ 142:	a1 f4       	brne	.+40     	; 0x16c <TurnODServo+0x62>
+ 144:	08 c0       	rjmp	.+16     	; 0x156 <TurnODServo+0x4c>
+	{
+		
+		case LEFT_90:
+		{
+			
+			OCR0 = OD_ANTICLOCKWISE_90;
+ 146:	81 ef       	ldi	r24, 0xF1	; 241
+ 148:	07 c0       	rjmp	.+14     	; 0x158 <TurnODServo+0x4e>
+		}
+		
+		case LEFT_45:
+		{		
+
+			OCR0 = OD_ANTICLOCKWISE_45;
+ 14a:	8c ee       	ldi	r24, 0xEC	; 236
+ 14c:	05 c0       	rjmp	.+10     	; 0x158 <TurnODServo+0x4e>
+		}
+
+		case NEUTRAL:
+		{
+
+			OCR0 = OD_NEUTRAL;
+ 14e:	88 ee       	ldi	r24, 0xE8	; 232
+ 150:	03 c0       	rjmp	.+6      	; 0x158 <TurnODServo+0x4e>
+		}		
+
+		case RIGHT_45:
+		{
+		
+			OCR0 = OD_CLOCKWISE_45;
+ 152:	83 ee       	ldi	r24, 0xE3	; 227
+ 154:	01 c0       	rjmp	.+2      	; 0x158 <TurnODServo+0x4e>
+		}
+		
+		case RIGHT_90:
+		{		
+
+			OCR0 = OD_CLOCKWISE_90;
+ 156:	8e ed       	ldi	r24, 0xDE	; 222
+ 158:	81 bf       	out	0x31, r24	; 49
+ 15a:	8f ef       	ldi	r24, 0xFF	; 255
+ 15c:	9f ef       	ldi	r25, 0xFF	; 255
+    milliseconds can be achieved.
+ */
+void
+_delay_loop_2(uint16_t __count)
+{
+	__asm__ volatile (
+ 15e:	29 e1       	ldi	r18, 0x19	; 25
+ 160:	30 e0       	ldi	r19, 0x00	; 0
+ 162:	f9 01       	movw	r30, r18
+ 164:	31 97       	sbiw	r30, 0x01	; 1
+ 166:	f1 f7       	brne	.-4      	; 0x164 <TurnODServo+0x5a>
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 168:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 16a:	d9 f7       	brne	.-10     	; 0x162 <TurnODServo+0x58>
+
+	_delay_ms(10000);
+
+Exit:
+
+	TurnOnOffODServo(ODServo, POWER_OFF);
+ 16c:	c8 01       	movw	r24, r16
+ 16e:	60 e0       	ldi	r22, 0x00	; 0
+ 170:	70 e0       	ldi	r23, 0x00	; 0
+ 172:	34 d0       	rcall	.+104    	; 0x1dc <TurnOnOffODServo>
+
+}
+ 174:	df 91       	pop	r29
+ 176:	cf 91       	pop	r28
+ 178:	1f 91       	pop	r17
+ 17a:	0f 91       	pop	r16
+ 17c:	08 95       	ret
+
+0000017e <InitODServos>:
+{
+	//
+	// Set PB0, PB1 to output mode.
+	//	
+
+	DDRB |=	(1 << PB0);
+ 17e:	b8 9a       	sbi	0x17, 0	; 23
+	// Prescalar = 256, Top = 0xFF,
+	// Set OC0 on compare match when up counting,
+	// Clear OC0 on compare match when down counting
+	//
+	
+	TCCR0 = ((1 << WGM00) | (1 << COM00) | (1 << COM01) | (1 << CS02));
+ 180:	84 e7       	ldi	r24, 0x74	; 116
+ 182:	83 bf       	out	0x33, r24	; 51
+
+	//
+	// Enable Timer/Counter0 overflow interrupt
+	//
+
+	TIMSK |= (1 << TOIE0);
+ 184:	89 b7       	in	r24, 0x39	; 57
+ 186:	82 60       	ori	r24, 0x02	; 2
+ 188:	89 bf       	out	0x39, r24	; 57
+
+	//
+	// Set Timer/Counter register to zero
+	//
+
+	TCNT0 = 0;
+ 18a:	12 be       	out	0x32, r1	; 50
+	//
+	// Set Output Compare Match Register to zero 
+	//(this register does not get used in normal mode)
+	//
+
+	OCR0 = 0xFF;
+ 18c:	8f ef       	ldi	r24, 0xFF	; 255
+ 18e:	81 bf       	out	0x31, r24	; 49
+
+	//
+	// Place both front and back servos in NEUTRAL position
+	//
+
+	TurnODServo(OD_SERVO_FRONT, NEUTRAL);
+ 190:	80 e0       	ldi	r24, 0x00	; 0
+ 192:	90 e0       	ldi	r25, 0x00	; 0
+ 194:	60 e0       	ldi	r22, 0x00	; 0
+ 196:	70 e0       	ldi	r23, 0x00	; 0
+ 198:	b8 df       	rcall	.-144    	; 0x10a <TurnODServo>
+
+	TurnODServo(OD_SERVO_BACK, NEUTRAL);
+ 19a:	81 e0       	ldi	r24, 0x01	; 1
+ 19c:	90 e0       	ldi	r25, 0x00	; 0
+ 19e:	60 e0       	ldi	r22, 0x00	; 0
+ 1a0:	70 e0       	ldi	r23, 0x00	; 0
+ 1a2:	b3 df       	rcall	.-154    	; 0x10a <TurnODServo>
+
+}
+ 1a4:	08 95       	ret
+
+000001a6 <TurnOnOffODSensor>:
+void 
+TurnOnOffODSensor(OD_SENSOR ODSensor, 
+				  POWER_STATUS PowerStatus)
+{
+
+	switch (ODSensor)
+ 1a6:	00 97       	sbiw	r24, 0x00	; 0
+ 1a8:	19 f0       	breq	.+6      	; 0x1b0 <TurnOnOffODSensor+0xa>
+ 1aa:	01 97       	sbiw	r24, 0x01	; 1
+ 1ac:	b1 f4       	brne	.+44     	; 0x1da <TurnOnOffODSensor+0x34>
+ 1ae:	0b c0       	rjmp	.+22     	; 0x1c6 <TurnOnOffODSensor+0x20>
+	{
+
+		case OD_SENSOR_FRONT:
+		{
+
+			switch (PowerStatus)
+ 1b0:	61 15       	cp	r22, r1
+ 1b2:	71 05       	cpc	r23, r1
+ 1b4:	21 f0       	breq	.+8      	; 0x1be <TurnOnOffODSensor+0x18>
+ 1b6:	61 30       	cpi	r22, 0x01	; 1
+ 1b8:	71 05       	cpc	r23, r1
+ 1ba:	79 f4       	brne	.+30     	; 0x1da <TurnOnOffODSensor+0x34>
+ 1bc:	02 c0       	rjmp	.+4      	; 0x1c2 <TurnOnOffODSensor+0x1c>
+			{
+
+				case POWER_OFF:
+				{
+
+					PORTC = PORTC & ~(1 << PC0);
+ 1be:	a8 98       	cbi	0x15, 0	; 21
+ 1c0:	08 95       	ret
+				}
+
+				case POWER_ON:
+				{
+			
+					PORTC = PORTC | (1 << PC0);
+ 1c2:	a8 9a       	sbi	0x15, 0	; 21
+ 1c4:	08 95       	ret
+		}
+
+		case OD_SENSOR_BACK:
+		{
+
+			switch (PowerStatus)
+ 1c6:	61 15       	cp	r22, r1
+ 1c8:	71 05       	cpc	r23, r1
+ 1ca:	21 f0       	breq	.+8      	; 0x1d4 <TurnOnOffODSensor+0x2e>
+ 1cc:	61 30       	cpi	r22, 0x01	; 1
+ 1ce:	71 05       	cpc	r23, r1
+ 1d0:	21 f4       	brne	.+8      	; 0x1da <TurnOnOffODSensor+0x34>
+ 1d2:	02 c0       	rjmp	.+4      	; 0x1d8 <TurnOnOffODSensor+0x32>
+			{
+
+				case POWER_OFF:
+				{
+
+					PORTC = PORTC & ~(1 << PC2);
+ 1d4:	aa 98       	cbi	0x15, 2	; 21
+ 1d6:	08 95       	ret
+				}
+
+				case POWER_ON:
+				{
+			
+					PORTC = PORTC | (1 << PC2);
+ 1d8:	aa 9a       	sbi	0x15, 2	; 21
+ 1da:	08 95       	ret
+
+000001dc <TurnOnOffODServo>:
+void 
+TurnOnOffODServo(OD_SERVO ODServo, 
+				 POWER_STATUS PowerStatus)
+{
+
+	switch (ODServo)
+ 1dc:	00 97       	sbiw	r24, 0x00	; 0
+ 1de:	19 f0       	breq	.+6      	; 0x1e6 <TurnOnOffODServo+0xa>
+ 1e0:	01 97       	sbiw	r24, 0x01	; 1
+ 1e2:	b1 f4       	brne	.+44     	; 0x210 <TurnOnOffODServo+0x34>
+ 1e4:	0b c0       	rjmp	.+22     	; 0x1fc <TurnOnOffODServo+0x20>
+	{
+
+		case OD_SERVO_FRONT:
+		{
+
+			switch (PowerStatus)
+ 1e6:	61 15       	cp	r22, r1
+ 1e8:	71 05       	cpc	r23, r1
+ 1ea:	21 f0       	breq	.+8      	; 0x1f4 <TurnOnOffODServo+0x18>
+ 1ec:	61 30       	cpi	r22, 0x01	; 1
+ 1ee:	71 05       	cpc	r23, r1
+ 1f0:	79 f4       	brne	.+30     	; 0x210 <TurnOnOffODServo+0x34>
+ 1f2:	02 c0       	rjmp	.+4      	; 0x1f8 <TurnOnOffODServo+0x1c>
+				case POWER_OFF:
+				{
+
+					//SendTrace(7);
+
+					PORTC = PORTC & ~(1 << PC1);
+ 1f4:	a9 98       	cbi	0x15, 1	; 21
+ 1f6:	08 95       	ret
+				case POWER_ON:
+				{
+
+					//SendTrace(8);			
+
+					PORTC = PORTC | (1 << PC1);
+ 1f8:	a9 9a       	sbi	0x15, 1	; 21
+ 1fa:	08 95       	ret
+		}
+
+		case OD_SERVO_BACK:
+		{
+
+			switch (PowerStatus)
+ 1fc:	61 15       	cp	r22, r1
+ 1fe:	71 05       	cpc	r23, r1
+ 200:	21 f0       	breq	.+8      	; 0x20a <TurnOnOffODServo+0x2e>
+ 202:	61 30       	cpi	r22, 0x01	; 1
+ 204:	71 05       	cpc	r23, r1
+ 206:	21 f4       	brne	.+8      	; 0x210 <TurnOnOffODServo+0x34>
+ 208:	02 c0       	rjmp	.+4      	; 0x20e <TurnOnOffODServo+0x32>
+			{
+
+				case POWER_OFF:
+				{
+
+					PORTC = PORTC & ~(1 << PC3);
+ 20a:	ab 98       	cbi	0x15, 3	; 21
+ 20c:	08 95       	ret
+				}
+
+				case POWER_ON:
+				{
+			
+					PORTC = PORTC | (1 << PC3);
+ 20e:	ab 9a       	sbi	0x15, 3	; 21
+ 210:	08 95       	ret
+
+00000212 <InitPowerGatingLogic>:
+	// PC1 - Controls power to Forward Object Detection Servo.
+	// PC2 - Controls power to Backward Object Detection Sensor.
+	// PC3 - Controls power to Backward Object Detection Servo.
+	//	
+
+	DDRC |= ((1 << PC0) | (1 << PC1) | (1 << PC2) | (1 << PC3));
+ 212:	84 b3       	in	r24, 0x14	; 20
+ 214:	8f 60       	ori	r24, 0x0F	; 15
+ 216:	84 bb       	out	0x14, r24	; 20
+
+	//
+	// To start with turn off everything.
+	//
+	
+	TurnOnOffODSensor(OD_SENSOR_FRONT, POWER_OFF);
+ 218:	80 e0       	ldi	r24, 0x00	; 0
+ 21a:	90 e0       	ldi	r25, 0x00	; 0
+ 21c:	60 e0       	ldi	r22, 0x00	; 0
+ 21e:	70 e0       	ldi	r23, 0x00	; 0
+ 220:	c2 df       	rcall	.-124    	; 0x1a6 <TurnOnOffODSensor>
+
+	TurnOnOffODSensor(OD_SENSOR_BACK, POWER_OFF);
+ 222:	81 e0       	ldi	r24, 0x01	; 1
+ 224:	90 e0       	ldi	r25, 0x00	; 0
+ 226:	60 e0       	ldi	r22, 0x00	; 0
+ 228:	70 e0       	ldi	r23, 0x00	; 0
+ 22a:	bd df       	rcall	.-134    	; 0x1a6 <TurnOnOffODSensor>
+
+	TurnOnOffODServo(OD_SERVO_FRONT, POWER_OFF);
+ 22c:	80 e0       	ldi	r24, 0x00	; 0
+ 22e:	90 e0       	ldi	r25, 0x00	; 0
+ 230:	60 e0       	ldi	r22, 0x00	; 0
+ 232:	70 e0       	ldi	r23, 0x00	; 0
+ 234:	d3 df       	rcall	.-90     	; 0x1dc <TurnOnOffODServo>
+
+	TurnOnOffODServo(OD_SERVO_BACK, POWER_OFF);
+ 236:	81 e0       	ldi	r24, 0x01	; 1
+ 238:	90 e0       	ldi	r25, 0x00	; 0
+ 23a:	60 e0       	ldi	r22, 0x00	; 0
+ 23c:	70 e0       	ldi	r23, 0x00	; 0
+ 23e:	ce df       	rcall	.-100    	; 0x1dc <TurnOnOffODServo>
+
+}
+ 240:	08 95       	ret
+
+00000242 <InitDriveServos>:
+{
+	//
+	// Set pin PD5 (OC1A) to output.
+	//
+	
+	DDRD |= (1 << PD5);
+ 242:	8d 9a       	sbi	0x11, 5	; 17
+
+	//
+	// Set pin PE2 (OC1B) to output.
+	//
+
+	DDRE |= (1 << PE2);
+ 244:	32 9a       	sbi	0x06, 2	; 6
+
+	//
+	// Set TCNT1 to zero.
+	//
+	
+	TCNT1 = 0;
+ 246:	1d bc       	out	0x2d, r1	; 45
+ 248:	1c bc       	out	0x2c, r1	; 44
+	// Clear OC1A on compare match when up counting.
+	// Set OC1A on compare match when down counting.
+	// Top = 0xFF
+	//
+
+	TCCR1A = ((1 << WGM10) | (1 << COM1A1) | (1 << COM1B1) | (1 << COM1A0) | (1 << COM1B0));
+ 24a:	81 ef       	ldi	r24, 0xF1	; 241
+ 24c:	8f bd       	out	0x2f, r24	; 47
+	//
+	// Set values for TCCR1B
+	// PWM, Phase and Frequency Correct, PRE SCALER to 256.
+	//
+
+	TCCR1B = (1 << CS12);
+ 24e:	84 e0       	ldi	r24, 0x04	; 4
+ 250:	8e bd       	out	0x2e, r24	; 46
+
+	//
+	// Enable TOIE1 interrupt
+	//
+
+	TIMSK |= (1 << TOIE1);
+ 252:	89 b7       	in	r24, 0x39	; 57
+ 254:	80 68       	ori	r24, 0x80	; 128
+ 256:	89 bf       	out	0x39, r24	; 57
+
+	//
+	// Set OCR1A Value
+	//	
+
+	OCR1A = 0xFF;
+ 258:	8f ef       	ldi	r24, 0xFF	; 255
+ 25a:	90 e0       	ldi	r25, 0x00	; 0
+ 25c:	9b bd       	out	0x2b, r25	; 43
+ 25e:	8a bd       	out	0x2a, r24	; 42
+	
+	//
+	// Set OCR1B Value
+	//
+	
+	OCR1B = 0xFF;
+ 260:	99 bd       	out	0x29, r25	; 41
+ 262:	88 bd       	out	0x28, r24	; 40
+		
+}
+ 264:	08 95       	ret
+
+00000266 <StopRobot>:
+
+void
+StopRobot()
+{
+
+	OCR1A = 0xFF;
+ 266:	8f ef       	ldi	r24, 0xFF	; 255
+ 268:	90 e0       	ldi	r25, 0x00	; 0
+ 26a:	9b bd       	out	0x2b, r25	; 43
+ 26c:	8a bd       	out	0x2a, r24	; 42
+
+	OCR1B = 0xFF;
+ 26e:	99 bd       	out	0x29, r25	; 41
+ 270:	88 bd       	out	0x28, r24	; 40
+
+}
+ 272:	08 95       	ret
+
+00000274 <WaitForRobotTurnPulse>:
+WaitForRobotTurnPulse(unsigned int PulseCount)
+{
+
+	unsigned int RobotPWMPulseCount = 0;
+
+	sei();
+ 274:	78 94       	sei
+ 276:	20 e0       	ldi	r18, 0x00	; 0
+ 278:	30 e0       	ldi	r19, 0x00	; 0
+ 27a:	05 c0       	rjmp	.+10     	; 0x286 <WaitForRobotTurnPulse+0x12>
+
+	while (RobotPWMPulseCount < PulseCount)
+	{
+		while (1)
+		{
+			if (TIFR & (1 << TOV1))
+ 27c:	08 b6       	in	r0, 0x38	; 56
+ 27e:	07 fe       	sbrs	r0, 7
+ 280:	fd cf       	rjmp	.-6      	; 0x27c <WaitForRobotTurnPulse+0x8>
+			{
+
+				RobotPWMPulseCount++;
+ 282:	2f 5f       	subi	r18, 0xFF	; 255
+ 284:	3f 4f       	sbci	r19, 0xFF	; 255
+
+	unsigned int RobotPWMPulseCount = 0;
+
+	sei();
+
+	while (RobotPWMPulseCount < PulseCount)
+ 286:	28 17       	cp	r18, r24
+ 288:	39 07       	cpc	r19, r25
+ 28a:	c0 f3       	brcs	.-16     	; 0x27c <WaitForRobotTurnPulse+0x8>
+				break;
+			}
+		}
+	}
+
+	cli();
+ 28c:	f8 94       	cli
+
+}
+ 28e:	08 95       	ret
+
+00000290 <TurnRobot>:
+}
+
+void 
+TurnRobot(TURN_ANGLE TurnAngle,
+		  TURN_DIRECTION TurnDirection)
+{
+ 290:	0f 93       	push	r16
+ 292:	1f 93       	push	r17
+ 294:	cf 93       	push	r28
+ 296:	df 93       	push	r29
+ 298:	ec 01       	movw	r28, r24
+ 29a:	8b 01       	movw	r16, r22
+
+void
+StopRobot()
+{
+
+	OCR1A = 0xFF;
+ 29c:	8f ef       	ldi	r24, 0xFF	; 255
+ 29e:	90 e0       	ldi	r25, 0x00	; 0
+ 2a0:	9b bd       	out	0x2b, r25	; 43
+ 2a2:	8a bd       	out	0x2a, r24	; 42
+
+	OCR1B = 0xFF;
+ 2a4:	99 bd       	out	0x29, r25	; 41
+ 2a6:	88 bd       	out	0x28, r24	; 40
+
+	//
+	// Wait until we reach the end of a Clock Pulse
+	//
+
+	WaitForRobotTurnPulse(PWM_PULSES_1);
+ 2a8:	81 e0       	ldi	r24, 0x01	; 1
+ 2aa:	90 e0       	ldi	r25, 0x00	; 0
+ 2ac:	e3 df       	rcall	.-58     	; 0x274 <WaitForRobotTurnPulse>
+
+	if (TurnDirection == FORWARD)
+ 2ae:	01 2b       	or	r16, r17
+ 2b0:	81 f4       	brne	.+32     	; 0x2d2 <TurnRobot+0x42>
+	{
+		
+		switch (TurnAngle)
+ 2b2:	c1 30       	cpi	r28, 0x01	; 1
+ 2b4:	d1 05       	cpc	r29, r1
+ 2b6:	00 f1       	brcs	.+64     	; 0x2f8 <TurnRobot+0x68>
+ 2b8:	c3 30       	cpi	r28, 0x03	; 3
+ 2ba:	d1 05       	cpc	r29, r1
+ 2bc:	20 f0       	brcs	.+8      	; 0x2c6 <TurnRobot+0x36>
+ 2be:	c5 30       	cpi	r28, 0x05	; 5
+ 2c0:	d1 05       	cpc	r29, r1
+ 2c2:	d0 f4       	brcc	.+52     	; 0x2f8 <TurnRobot+0x68>
+ 2c4:	03 c0       	rjmp	.+6      	; 0x2cc <TurnRobot+0x3c>
+			case LEFT_90:
+
+			case LEFT_45:
+			{
+			
+				OCR1A = DS_CLOCKWISE_90;
+ 2c6:	8b ee       	ldi	r24, 0xEB	; 235
+ 2c8:	90 e0       	ldi	r25, 0x00	; 0
+ 2ca:	0f c0       	rjmp	.+30     	; 0x2ea <TurnRobot+0x5a>
+			case RIGHT_45:
+				
+			case RIGHT_90:
+			{
+
+				OCR1B = DS_ANTICLOCKWISE_90;
+ 2cc:	84 ee       	ldi	r24, 0xE4	; 228
+ 2ce:	90 e0       	ldi	r25, 0x00	; 0
+ 2d0:	11 c0       	rjmp	.+34     	; 0x2f4 <TurnRobot+0x64>
+
+	}
+	else
+	{
+
+		switch (TurnAngle)
+ 2d2:	c1 30       	cpi	r28, 0x01	; 1
+ 2d4:	d1 05       	cpc	r29, r1
+ 2d6:	80 f0       	brcs	.+32     	; 0x2f8 <TurnRobot+0x68>
+ 2d8:	c3 30       	cpi	r28, 0x03	; 3
+ 2da:	d1 05       	cpc	r29, r1
+ 2dc:	20 f0       	brcs	.+8      	; 0x2e6 <TurnRobot+0x56>
+ 2de:	c5 30       	cpi	r28, 0x05	; 5
+ 2e0:	d1 05       	cpc	r29, r1
+ 2e2:	50 f4       	brcc	.+20     	; 0x2f8 <TurnRobot+0x68>
+ 2e4:	05 c0       	rjmp	.+10     	; 0x2f0 <TurnRobot+0x60>
+
+			case LEFT_45:
+			{
+			
+				
+				OCR1A = DS_ANTICLOCKWISE_90;
+ 2e6:	84 ee       	ldi	r24, 0xE4	; 228
+ 2e8:	90 e0       	ldi	r25, 0x00	; 0
+ 2ea:	9b bd       	out	0x2b, r25	; 43
+ 2ec:	8a bd       	out	0x2a, r24	; 42
+ 2ee:	04 c0       	rjmp	.+8      	; 0x2f8 <TurnRobot+0x68>
+
+			case RIGHT_45:
+			{
+
+			
+				OCR1B = DS_CLOCKWISE_90;
+ 2f0:	8b ee       	ldi	r24, 0xEB	; 235
+ 2f2:	90 e0       	ldi	r25, 0x00	; 0
+ 2f4:	99 bd       	out	0x29, r25	; 41
+ 2f6:	88 bd       	out	0x28, r24	; 40
+
+	//
+	// Now wait until we satisfy the required number of pulses
+	//
+	
+	switch (TurnAngle)
+ 2f8:	c4 30       	cpi	r28, 0x04	; 4
+ 2fa:	d1 05       	cpc	r29, r1
+ 2fc:	30 f4       	brcc	.+12     	; 0x30a <TurnRobot+0x7a>
+ 2fe:	c2 30       	cpi	r28, 0x02	; 2
+ 300:	d1 05       	cpc	r29, r1
+ 302:	40 f4       	brcc	.+16     	; 0x314 <TurnRobot+0x84>
+ 304:	21 97       	sbiw	r28, 0x01	; 1
+ 306:	49 f4       	brne	.+18     	; 0x31a <TurnRobot+0x8a>
+ 308:	02 c0       	rjmp	.+4      	; 0x30e <TurnRobot+0x7e>
+ 30a:	24 97       	sbiw	r28, 0x04	; 4
+ 30c:	31 f4       	brne	.+12     	; 0x31a <TurnRobot+0x8a>
+		case RIGHT_90:
+
+		case LEFT_90:
+		{
+
+			WaitForRobotTurnPulse(PWM_PULSES_24);
+ 30e:	88 e1       	ldi	r24, 0x18	; 24
+ 310:	90 e0       	ldi	r25, 0x00	; 0
+ 312:	02 c0       	rjmp	.+4      	; 0x318 <TurnRobot+0x88>
+		case RIGHT_45:
+
+		case LEFT_45:
+		{
+
+			WaitForRobotTurnPulse(PWM_PULSES_11);
+ 314:	8b e0       	ldi	r24, 0x0B	; 11
+ 316:	90 e0       	ldi	r25, 0x00	; 0
+ 318:	ad df       	rcall	.-166    	; 0x274 <WaitForRobotTurnPulse>
+
+void
+StopRobot()
+{
+
+	OCR1A = 0xFF;
+ 31a:	8f ef       	ldi	r24, 0xFF	; 255
+ 31c:	90 e0       	ldi	r25, 0x00	; 0
+ 31e:	9b bd       	out	0x2b, r25	; 43
+ 320:	8a bd       	out	0x2a, r24	; 42
+
+	OCR1B = 0xFF;
+ 322:	99 bd       	out	0x29, r25	; 41
+ 324:	88 bd       	out	0x28, r24	; 40
+
+	}
+
+	StopRobot();
+
+}
+ 326:	df 91       	pop	r29
+ 328:	cf 91       	pop	r28
+ 32a:	1f 91       	pop	r17
+ 32c:	0f 91       	pop	r16
+ 32e:	08 95       	ret
+
+00000330 <DriveRobotBackward>:
+
+	//
+	// Wait until we reach the end of a Clock Pulse
+	//
+
+	WaitForRobotTurnPulse(PWM_PULSES_1);
+ 330:	81 e0       	ldi	r24, 0x01	; 1
+ 332:	90 e0       	ldi	r25, 0x00	; 0
+ 334:	9f df       	rcall	.-194    	; 0x274 <WaitForRobotTurnPulse>
+
+	OCR1A = DS_ANTICLOCKWISE_90;
+ 336:	84 ee       	ldi	r24, 0xE4	; 228
+ 338:	90 e0       	ldi	r25, 0x00	; 0
+ 33a:	9b bd       	out	0x2b, r25	; 43
+ 33c:	8a bd       	out	0x2a, r24	; 42
+
+	OCR1B = DS_CLOCKWISE_90;
+ 33e:	8b ee       	ldi	r24, 0xEB	; 235
+ 340:	90 e0       	ldi	r25, 0x00	; 0
+ 342:	99 bd       	out	0x29, r25	; 41
+ 344:	88 bd       	out	0x28, r24	; 40
+
+}
+ 346:	08 95       	ret
+
+00000348 <DriveRobotForward>:
+
+	//
+	// Wait until we reach the end of a Clock Pulse
+	//
+
+	WaitForRobotTurnPulse(PWM_PULSES_1);
+ 348:	81 e0       	ldi	r24, 0x01	; 1
+ 34a:	90 e0       	ldi	r25, 0x00	; 0
+ 34c:	93 df       	rcall	.-218    	; 0x274 <WaitForRobotTurnPulse>
+
+	OCR1A = DS_CLOCKWISE_90;
+ 34e:	8b ee       	ldi	r24, 0xEB	; 235
+ 350:	90 e0       	ldi	r25, 0x00	; 0
+ 352:	9b bd       	out	0x2b, r25	; 43
+ 354:	8a bd       	out	0x2a, r24	; 42
+
+	OCR1B = DS_ANTICLOCKWISE_90;
+ 356:	84 ee       	ldi	r24, 0xE4	; 228
+ 358:	90 e0       	ldi	r25, 0x00	; 0
+ 35a:	99 bd       	out	0x29, r25	; 41
+ 35c:	88 bd       	out	0x28, r24	; 40
+
+}
+ 35e:	08 95       	ret
+
+00000360 <__vector_6>:
+	cli();
+
+}
+
+ISR(TIMER1_OVF_vect)
+{
+ 360:	1f 92       	push	r1
+ 362:	0f 92       	push	r0
+ 364:	0f b6       	in	r0, 0x3f	; 63
+ 366:	0f 92       	push	r0
+ 368:	11 24       	eor	r1, r1
+
+}
+ 36a:	0f 90       	pop	r0
+ 36c:	0f be       	out	0x3f, r0	; 63
+ 36e:	0f 90       	pop	r0
+ 370:	1f 90       	pop	r1
+ 372:	18 95       	reti
+
+00000374 <InitSPI>:
+	// PB6 = MISO (Master In Slave Out)
+	// PB7 = SCK (Clock)
+	// Make PB4, PB5, PB7 to output
+	//
+
+	DDRB |= ((1 << PB4) | (1 << PB5) | (1 << PB7));
+ 374:	87 b3       	in	r24, 0x17	; 23
+ 376:	80 6b       	ori	r24, 0xB0	; 176
+ 378:	87 bb       	out	0x17, r24	; 23
+
+	//
+	// Make the CS pin high
+	//
+
+	CS_HIGH();
+ 37a:	c4 9a       	sbi	0x18, 4	; 24
+	// Initialize SPCR register.
+	// Set SPI as Master
+	// Set the clock to 16 KHz
+	//
+
+	SPCR = ((1 << MSTR) | (1 << SPR0) | (1 << SPR1) | (1 << SPE));
+ 37c:	83 e5       	ldi	r24, 0x53	; 83
+ 37e:	8d b9       	out	0x0d, r24	; 13
+	
+		
+}
+ 380:	08 95       	ret
+
+00000382 <ReadDataFromAD>:
+
+	//
+	// First select the channel to read
+	//
+
+	switch (Channel)
+ 382:	00 97       	sbiw	r24, 0x00	; 0
+ 384:	39 f0       	breq	.+14     	; 0x394 <ReadDataFromAD+0x12>
+ 386:	01 97       	sbiw	r24, 0x01	; 1
+ 388:	19 f0       	breq	.+6      	; 0x390 <ReadDataFromAD+0xe>
+ 38a:	20 e0       	ldi	r18, 0x00	; 0
+ 38c:	30 e0       	ldi	r19, 0x00	; 0
+ 38e:	19 c0       	rjmp	.+50     	; 0x3c2 <ReadDataFromAD+0x40>
+ 390:	90 e4       	ldi	r25, 0x40	; 64
+ 392:	01 c0       	rjmp	.+2      	; 0x396 <ReadDataFromAD+0x14>
+ 394:	90 e0       	ldi	r25, 0x00	; 0
+
+	//
+	// Now lower the CS pin
+	//
+
+	CS_LOW();
+ 396:	c4 98       	cbi	0x18, 4	; 24
+
+unsigned char
+SendReceiveSPI(unsigned char Value)
+{
+
+	SPDR = Value;
+ 398:	86 e0       	ldi	r24, 0x06	; 6
+ 39a:	8f b9       	out	0x0f, r24	; 15
+	
+	while (!(SPSR & (1 << SPIF)));
+ 39c:	77 9b       	sbis	0x0e, 7	; 14
+ 39e:	fe cf       	rjmp	.-4      	; 0x39c <ReadDataFromAD+0x1a>
+	
+	return SPDR;	
+ 3a0:	8f b1       	in	r24, 0x0f	; 15
+
+unsigned char
+SendReceiveSPI(unsigned char Value)
+{
+
+	SPDR = Value;
+ 3a2:	9f b9       	out	0x0f, r25	; 15
+	
+	while (!(SPSR & (1 << SPIF)));
+ 3a4:	77 9b       	sbis	0x0e, 7	; 14
+ 3a6:	fe cf       	rjmp	.-4      	; 0x3a4 <ReadDataFromAD+0x22>
+	
+	return SPDR;	
+ 3a8:	3f b1       	in	r19, 0x0f	; 15
+
+unsigned char
+SendReceiveSPI(unsigned char Value)
+{
+
+	SPDR = Value;
+ 3aa:	8f ef       	ldi	r24, 0xFF	; 255
+ 3ac:	8f b9       	out	0x0f, r24	; 15
+	
+	while (!(SPSR & (1 << SPIF)));
+ 3ae:	77 9b       	sbis	0x0e, 7	; 14
+ 3b0:	fe cf       	rjmp	.-4      	; 0x3ae <ReadDataFromAD+0x2c>
+	
+	return SPDR;	
+ 3b2:	2f b1       	in	r18, 0x0f	; 15
+
+	//
+	// Make the chip select signal high.
+	//
+
+	CS_HIGH();
+ 3b4:	c4 9a       	sbi	0x18, 4	; 24
+	// Now assemble 12 bit value.
+	//
+
+	Value = Receive2;
+
+	Value = Value << 8;
+ 3b6:	93 2f       	mov	r25, r19
+ 3b8:	9f 70       	andi	r25, 0x0F	; 15
+ 3ba:	80 e0       	ldi	r24, 0x00	; 0
+
+	Value |= Receive1;
+ 3bc:	30 e0       	ldi	r19, 0x00	; 0
+ 3be:	28 2b       	or	r18, r24
+ 3c0:	39 2b       	or	r19, r25
+
+Exit:
+
+	return Value;
+
+}
+ 3c2:	c9 01       	movw	r24, r18
+ 3c4:	08 95       	ret
+
+000003c6 <SendReceiveSPI>:
+
+unsigned char
+SendReceiveSPI(unsigned char Value)
+{
+
+	SPDR = Value;
+ 3c6:	8f b9       	out	0x0f, r24	; 15
+	
+	while (!(SPSR & (1 << SPIF)));
+ 3c8:	77 9b       	sbis	0x0e, 7	; 14
+ 3ca:	fe cf       	rjmp	.-4      	; 0x3c8 <SendReceiveSPI+0x2>
+	
+	return SPDR;	
+ 3cc:	8f b1       	in	r24, 0x0f	; 15
+}
+ 3ce:	08 95       	ret
+
+000003d0 <InitSevenSegmentDisplay>:
+
+void 
+InitSevenSegmentDisplay()
+{
+
+	DDRA = ((1 << PA0) | (1 << PA1) | (1 << PA2) | (1 << PA3) | (1 << PA4) | (1 << PA5) | (1 << PA6));
+ 3d0:	8f e7       	ldi	r24, 0x7F	; 127
+ 3d2:	8a bb       	out	0x1a, r24	; 26
+
+}
+ 3d4:	08 95       	ret
+
+000003d6 <DisplayValue>:
+
+void 
+DisplayValue(unsigned int Value)
+{
+ 3d6:	9f 92       	push	r9
+ 3d8:	af 92       	push	r10
+ 3da:	bf 92       	push	r11
+ 3dc:	cf 92       	push	r12
+ 3de:	df 92       	push	r13
+ 3e0:	ef 92       	push	r14
+ 3e2:	ff 92       	push	r15
+ 3e4:	0f 93       	push	r16
+ 3e6:	1f 93       	push	r17
+ 3e8:	cf 93       	push	r28
+ 3ea:	df 93       	push	r29
+ 3ec:	9c 01       	movw	r18, r24
+
+			}
+			case 9:
+			{
+
+				PORTA = NINE;
+ 3ee:	e3 e7       	ldi	r30, 0x73	; 115
+ 3f0:	9e 2e       	mov	r9, r30
+
+			}
+			case 8:
+			{
+
+				PORTA = EIGHT;
+ 3f2:	7f e7       	ldi	r23, 0x7F	; 127
+ 3f4:	a7 2e       	mov	r10, r23
+
+			}
+			case 7:
+			{
+
+				PORTA = SEVEN;
+ 3f6:	60 e7       	ldi	r22, 0x70	; 112
+ 3f8:	b6 2e       	mov	r11, r22
+
+			}
+			case 6:
+			{
+
+				PORTA = SIX;
+ 3fa:	5f e1       	ldi	r21, 0x1F	; 31
+ 3fc:	c5 2e       	mov	r12, r21
+
+			}
+			case 5:
+			{
+
+				PORTA = FIVE;
+ 3fe:	4b e5       	ldi	r20, 0x5B	; 91
+ 400:	d4 2e       	mov	r13, r20
+
+			}
+			case 4:
+			{
+
+				PORTA = FOUR;
+ 402:	93 e3       	ldi	r25, 0x33	; 51
+ 404:	e9 2e       	mov	r14, r25
+
+			}
+			case 3:
+			{
+
+				PORTA = THREE;
+ 406:	8a e7       	ldi	r24, 0x7A	; 122
+ 408:	f8 2e       	mov	r15, r24
+				
+			}
+			case 2:
+			{
+
+				PORTA = TWO;
+ 40a:	0e e6       	ldi	r16, 0x6E	; 110
+						
+			}
+			case 1:
+			{
+
+				PORTA = ONE;
+ 40c:	10 e3       	ldi	r17, 0x30	; 48
+		switch (Digit)
+		{
+			case 0:
+			{
+				
+				PORTA = ZERO;
+ 40e:	4d e7       	ldi	r20, 0x7D	; 125
+ 410:	c9 e1       	ldi	r28, 0x19	; 25
+ 412:	d0 e0       	ldi	r29, 0x00	; 0
+ 414:	2a c0       	rjmp	.+84     	; 0x46a <DisplayValue+0x94>
+
+		Digit = Value % 10;
+
+		Value = Value / 10;
+
+		switch (Digit)
+ 416:	c9 01       	movw	r24, r18
+ 418:	6a e0       	ldi	r22, 0x0A	; 10
+ 41a:	70 e0       	ldi	r23, 0x00	; 0
+ 41c:	16 d1       	rcall	.+556    	; 0x64a <__udivmodhi4>
+ 41e:	fc 01       	movw	r30, r24
+ 420:	8a 30       	cpi	r24, 0x0A	; 10
+ 422:	91 05       	cpc	r25, r1
+ 424:	b0 f4       	brcc	.+44     	; 0x452 <DisplayValue+0x7c>
+ 426:	ef 5e       	subi	r30, 0xEF	; 239
+ 428:	ff 4f       	sbci	r31, 0xFF	; 255
+ 42a:	09 94       	ijmp
+		{
+			case 0:
+			{
+				
+				PORTA = ZERO;
+ 42c:	4b bb       	out	0x1b, r20	; 27
+ 42e:	11 c0       	rjmp	.+34     	; 0x452 <DisplayValue+0x7c>
+						
+			}
+			case 1:
+			{
+
+				PORTA = ONE;
+ 430:	1b bb       	out	0x1b, r17	; 27
+ 432:	0f c0       	rjmp	.+30     	; 0x452 <DisplayValue+0x7c>
+				
+			}
+			case 2:
+			{
+
+				PORTA = TWO;
+ 434:	0b bb       	out	0x1b, r16	; 27
+ 436:	0d c0       	rjmp	.+26     	; 0x452 <DisplayValue+0x7c>
+
+			}
+			case 3:
+			{
+
+				PORTA = THREE;
+ 438:	fb ba       	out	0x1b, r15	; 27
+ 43a:	0b c0       	rjmp	.+22     	; 0x452 <DisplayValue+0x7c>
+
+			}
+			case 4:
+			{
+
+				PORTA = FOUR;
+ 43c:	eb ba       	out	0x1b, r14	; 27
+ 43e:	09 c0       	rjmp	.+18     	; 0x452 <DisplayValue+0x7c>
+
+			}
+			case 5:
+			{
+
+				PORTA = FIVE;
+ 440:	db ba       	out	0x1b, r13	; 27
+ 442:	07 c0       	rjmp	.+14     	; 0x452 <DisplayValue+0x7c>
+
+			}
+			case 6:
+			{
+
+				PORTA = SIX;
+ 444:	cb ba       	out	0x1b, r12	; 27
+ 446:	05 c0       	rjmp	.+10     	; 0x452 <DisplayValue+0x7c>
+
+			}
+			case 7:
+			{
+
+				PORTA = SEVEN;
+ 448:	bb ba       	out	0x1b, r11	; 27
+ 44a:	03 c0       	rjmp	.+6      	; 0x452 <DisplayValue+0x7c>
+
+			}
+			case 8:
+			{
+
+				PORTA = EIGHT;
+ 44c:	ab ba       	out	0x1b, r10	; 27
+ 44e:	01 c0       	rjmp	.+2      	; 0x452 <DisplayValue+0x7c>
+
+			}
+			case 9:
+			{
+
+				PORTA = NINE;
+ 450:	9b ba       	out	0x1b, r9	; 27
+ 452:	8f ef       	ldi	r24, 0xFF	; 255
+ 454:	9f ef       	ldi	r25, 0xFF	; 255
+ 456:	fe 01       	movw	r30, r28
+ 458:	31 97       	sbiw	r30, 0x01	; 1
+ 45a:	f1 f7       	brne	.-4      	; 0x458 <DisplayValue+0x82>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 45c:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 45e:	d9 f7       	brne	.-10     	; 0x456 <DisplayValue+0x80>
+	while (Value != 0)
+	{
+
+		Digit = Value % 10;
+
+		Value = Value / 10;
+ 460:	c9 01       	movw	r24, r18
+ 462:	6a e0       	ldi	r22, 0x0A	; 10
+ 464:	70 e0       	ldi	r23, 0x00	; 0
+ 466:	f1 d0       	rcall	.+482    	; 0x64a <__udivmodhi4>
+ 468:	9b 01       	movw	r18, r22
+void 
+DisplayValue(unsigned int Value)
+{
+	unsigned short Digit;
+
+	while (Value != 0)
+ 46a:	21 15       	cp	r18, r1
+ 46c:	31 05       	cpc	r19, r1
+ 46e:	99 f6       	brne	.-90     	; 0x416 <DisplayValue+0x40>
+		}
+		
+		_delay_ms(10000);
+
+	}
+}
+ 470:	df 91       	pop	r29
+ 472:	cf 91       	pop	r28
+ 474:	1f 91       	pop	r17
+ 476:	0f 91       	pop	r16
+ 478:	ff 90       	pop	r15
+ 47a:	ef 90       	pop	r14
+ 47c:	df 90       	pop	r13
+ 47e:	cf 90       	pop	r12
+ 480:	bf 90       	pop	r11
+ 482:	af 90       	pop	r10
+ 484:	9f 90       	pop	r9
+ 486:	08 95       	ret
+
+00000488 <InitUART>:
+
+	//
+	// Set UBRRH to 0
+	//
+
+	UBRRH = BAUD_RATE_9600 >> 8;
+ 488:	10 bc       	out	0x20, r1	; 32
+
+	//
+	// Set the baud rate first.
+	//
+
+	UBRRL = BAUD_RATE_9600;
+ 48a:	83 e3       	ldi	r24, 0x33	; 51
+ 48c:	89 b9       	out	0x09, r24	; 9
+
+	//
+	// Enable Transmission
+	//
+
+	UCSRB = (1 << TXEN);
+ 48e:	88 e0       	ldi	r24, 0x08	; 8
+ 490:	8a b9       	out	0x0a, r24	; 10
+	
+	//
+	// Set Character Size in UCSRC.
+	//
+
+	UCSRC = ((1 << URSEL) | (1 << UCSZ1) | (1 << UCSZ0));	
+ 492:	86 e8       	ldi	r24, 0x86	; 134
+ 494:	80 bd       	out	0x20, r24	; 32
+
+}
+ 496:	08 95       	ret
+
+00000498 <SendTrace>:
+
+void 
+SendTrace(unsigned int Value)
+{
+ 498:	0f 93       	push	r16
+ 49a:	1f 93       	push	r17
+ 49c:	df 93       	push	r29
+ 49e:	cf 93       	push	r28
+ 4a0:	cd b7       	in	r28, 0x3d	; 61
+ 4a2:	de b7       	in	r29, 0x3e	; 62
+ 4a4:	2a 97       	sbiw	r28, 0x0a	; 10
+ 4a6:	0f b6       	in	r0, 0x3f	; 63
+ 4a8:	f8 94       	cli
+ 4aa:	de bf       	out	0x3e, r29	; 62
+ 4ac:	0f be       	out	0x3f, r0	; 63
+ 4ae:	cd bf       	out	0x3d, r28	; 61
+ 4b0:	9c 01       	movw	r18, r24
+ 4b2:	40 e0       	ldi	r20, 0x00	; 0
+ 4b4:	8e 01       	movw	r16, r28
+ 4b6:	0f 5f       	subi	r16, 0xFF	; 255
+ 4b8:	1f 4f       	sbci	r17, 0xFF	; 255
+ 4ba:	e4 2f       	mov	r30, r20
+ 4bc:	f0 e0       	ldi	r31, 0x00	; 0
+	unsigned char Count = 0;
+
+	do
+	{
+
+		if (Value < 10)
+ 4be:	2a 30       	cpi	r18, 0x0A	; 10
+ 4c0:	31 05       	cpc	r19, r1
+ 4c2:	30 f4       	brcc	.+12     	; 0x4d0 <SendTrace+0x38>
+		{
+			TransmitChar[Count] = Value;
+ 4c4:	e0 0f       	add	r30, r16
+ 4c6:	f1 1f       	adc	r31, r17
+ 4c8:	20 83       	st	Z, r18
+ 4ca:	20 e0       	ldi	r18, 0x00	; 0
+ 4cc:	30 e0       	ldi	r19, 0x00	; 0
+ 4ce:	0c c0       	rjmp	.+24     	; 0x4e8 <SendTrace+0x50>
+
+			Value = 0;
+		}	
+		else
+		{
+			TransmitChar[Count] = Value % 10;
+ 4d0:	e0 0f       	add	r30, r16
+ 4d2:	f1 1f       	adc	r31, r17
+ 4d4:	c9 01       	movw	r24, r18
+ 4d6:	6a e0       	ldi	r22, 0x0A	; 10
+ 4d8:	70 e0       	ldi	r23, 0x00	; 0
+ 4da:	b7 d0       	rcall	.+366    	; 0x64a <__udivmodhi4>
+ 4dc:	80 83       	st	Z, r24
+
+			Value = Value / 10;
+ 4de:	c9 01       	movw	r24, r18
+ 4e0:	6a e0       	ldi	r22, 0x0A	; 10
+ 4e2:	70 e0       	ldi	r23, 0x00	; 0
+ 4e4:	b2 d0       	rcall	.+356    	; 0x64a <__udivmodhi4>
+ 4e6:	9b 01       	movw	r18, r22
+
+		}
+			
+		Count++;  
+ 4e8:	4f 5f       	subi	r20, 0xFF	; 255
+
+	} while (Value != 0);
+ 4ea:	21 15       	cp	r18, r1
+ 4ec:	31 05       	cpc	r19, r1
+ 4ee:	29 f7       	brne	.-54     	; 0x4ba <SendTrace+0x22>
+ 4f0:	0a c0       	rjmp	.+20     	; 0x506 <SendTrace+0x6e>
+
+	while (Count != 0)
+	{
+
+		Count--;
+ 4f2:	41 50       	subi	r20, 0x01	; 1
+
+		Transmit(TransmitChar[Count] + ASCII_CONVERSION);
+ 4f4:	fc 01       	movw	r30, r24
+ 4f6:	e4 0f       	add	r30, r20
+ 4f8:	f1 1d       	adc	r31, r1
+ 4fa:	e0 81       	ld	r30, Z
+}
+
+void Transmit(unsigned char Value)
+{
+
+	while (!(UCSRA & (1 << UDRE)));
+ 4fc:	5d 9b       	sbis	0x0b, 5	; 11
+ 4fe:	fe cf       	rjmp	.-4      	; 0x4fc <SendTrace+0x64>
+	while (Count != 0)
+	{
+
+		Count--;
+
+		Transmit(TransmitChar[Count] + ASCII_CONVERSION);
+ 500:	e0 5d       	subi	r30, 0xD0	; 208
+void Transmit(unsigned char Value)
+{
+
+	while (!(UCSRA & (1 << UDRE)));
+
+	UDR = Value;
+ 502:	ec b9       	out	0x0c, r30	; 12
+ 504:	02 c0       	rjmp	.+4      	; 0x50a <SendTrace+0x72>
+	while (Count != 0)
+	{
+
+		Count--;
+
+		Transmit(TransmitChar[Count] + ASCII_CONVERSION);
+ 506:	ce 01       	movw	r24, r28
+ 508:	01 96       	adiw	r24, 0x01	; 1
+			
+		Count++;  
+
+	} while (Value != 0);
+
+	while (Count != 0)
+ 50a:	44 23       	and	r20, r20
+ 50c:	91 f7       	brne	.-28     	; 0x4f2 <SendTrace+0x5a>
+}
+
+void Transmit(unsigned char Value)
+{
+
+	while (!(UCSRA & (1 << UDRE)));
+ 50e:	5d 9b       	sbis	0x0b, 5	; 11
+ 510:	fe cf       	rjmp	.-4      	; 0x50e <SendTrace+0x76>
+
+	UDR = Value;
+ 512:	89 e0       	ldi	r24, 0x09	; 9
+ 514:	8c b9       	out	0x0c, r24	; 12
+	//
+	// Transmit a tab space
+	//
+
+	Transmit(ASCII_TAB);
+}
+ 516:	2a 96       	adiw	r28, 0x0a	; 10
+ 518:	0f b6       	in	r0, 0x3f	; 63
+ 51a:	f8 94       	cli
+ 51c:	de bf       	out	0x3e, r29	; 62
+ 51e:	0f be       	out	0x3f, r0	; 63
+ 520:	cd bf       	out	0x3d, r28	; 61
+ 522:	cf 91       	pop	r28
+ 524:	df 91       	pop	r29
+ 526:	1f 91       	pop	r17
+ 528:	0f 91       	pop	r16
+ 52a:	08 95       	ret
+
+0000052c <Transmit>:
+
+void Transmit(unsigned char Value)
+{
+
+	while (!(UCSRA & (1 << UDRE)));
+ 52c:	5d 9b       	sbis	0x0b, 5	; 11
+ 52e:	fe cf       	rjmp	.-4      	; 0x52c <Transmit>
+
+	UDR = Value;
+ 530:	8c b9       	out	0x0c, r24	; 12
+
+}
+ 532:	08 95       	ret
+
+00000534 <FindEnoughSpace>:
+
+}
+
+TURN_ANGLE
+FindEnoughSpace(OD_SENSOR ODSensor)
+{
+ 534:	6f 92       	push	r6
+ 536:	7f 92       	push	r7
+ 538:	8f 92       	push	r8
+ 53a:	9f 92       	push	r9
+ 53c:	af 92       	push	r10
+ 53e:	bf 92       	push	r11
+ 540:	cf 92       	push	r12
+ 542:	df 92       	push	r13
+ 544:	ef 92       	push	r14
+ 546:	ff 92       	push	r15
+ 548:	0f 93       	push	r16
+ 54a:	1f 93       	push	r17
+ 54c:	cf 93       	push	r28
+ 54e:	df 93       	push	r29
+ 550:	5c 01       	movw	r10, r24
+
+	AD_CHANNEL ADChannel = AD_CHANNEL_0;;
+
+	OD_SERVO ODServo = OD_SERVO_FRONT;
+
+	switch(ODSensor)
+ 552:	00 97       	sbiw	r24, 0x00	; 0
+ 554:	71 f0       	breq	.+28     	; 0x572 <FindEnoughSpace+0x3e>
+ 556:	81 30       	cpi	r24, 0x01	; 1
+ 558:	91 05       	cpc	r25, r1
+ 55a:	21 f0       	breq	.+8      	; 0x564 <FindEnoughSpace+0x30>
+ 55c:	45 e0       	ldi	r20, 0x05	; 5
+ 55e:	e4 2e       	mov	r14, r20
+ 560:	f1 2c       	mov	r15, r1
+ 562:	36 c0       	rjmp	.+108    	; 0x5d0 <FindEnoughSpace+0x9c>
+ 564:	31 e0       	ldi	r19, 0x01	; 1
+ 566:	63 2e       	mov	r6, r19
+ 568:	71 2c       	mov	r7, r1
+ 56a:	21 e0       	ldi	r18, 0x01	; 1
+ 56c:	c2 2e       	mov	r12, r18
+ 56e:	d1 2c       	mov	r13, r1
+ 570:	04 c0       	rjmp	.+8      	; 0x57a <FindEnoughSpace+0x46>
+ 572:	66 24       	eor	r6, r6
+ 574:	77 24       	eor	r7, r7
+ 576:	cc 24       	eor	r12, r12
+ 578:	dd 24       	eor	r13, r13
+			goto Exit;
+
+		}
+	}
+
+	TurnOnOffODSensor(ODSensor, POWER_ON);
+ 57a:	c5 01       	movw	r24, r10
+ 57c:	61 e0       	ldi	r22, 0x01	; 1
+ 57e:	70 e0       	ldi	r23, 0x00	; 0
+ 580:	12 de       	rcall	.-988    	; 0x1a6 <TurnOnOffODSensor>
+ 582:	9c ed       	ldi	r25, 0xDC	; 220
+ 584:	89 2e       	mov	r8, r25
+ 586:	95 e0       	ldi	r25, 0x05	; 5
+ 588:	99 2e       	mov	r9, r25
+ 58a:	85 e0       	ldi	r24, 0x05	; 5
+ 58c:	e8 2e       	mov	r14, r24
+ 58e:	f1 2c       	mov	r15, r1
+ 590:	c1 e0       	ldi	r28, 0x01	; 1
+ 592:	d0 e0       	ldi	r29, 0x00	; 0
+ 594:	00 e0       	ldi	r16, 0x00	; 0
+ 596:	10 e0       	ldi	r17, 0x00	; 0
+
+	for (TurnAngle = LEFT_90; TurnAngle < TURN_ANGLE_MAX; TurnAngle++)
+	{
+
+		TurnODServo(ODServo, TurnAngle);
+ 598:	c6 01       	movw	r24, r12
+ 59a:	be 01       	movw	r22, r28
+ 59c:	b6 dd       	rcall	.-1172   	; 0x10a <TurnODServo>
+
+		ADValue = ReadDataFromAD(ADChannel);
+ 59e:	c3 01       	movw	r24, r6
+ 5a0:	f0 de       	rcall	.-544    	; 0x382 <ReadDataFromAD>
+
+		if ((ADValue < OD_SENSOR_MAX_LIMIT) && (ADValue < ADValueMin))
+ 5a2:	25 e0       	ldi	r18, 0x05	; 5
+ 5a4:	8c 3d       	cpi	r24, 0xDC	; 220
+ 5a6:	92 07       	cpc	r25, r18
+ 5a8:	28 f4       	brcc	.+10     	; 0x5b4 <FindEnoughSpace+0x80>
+ 5aa:	88 15       	cp	r24, r8
+ 5ac:	99 05       	cpc	r25, r9
+ 5ae:	10 f4       	brcc	.+4      	; 0x5b4 <FindEnoughSpace+0x80>
+ 5b0:	4c 01       	movw	r8, r24
+ 5b2:	7e 01       	movw	r14, r28
+		}
+	}
+
+	TurnOnOffODSensor(ODSensor, POWER_ON);
+
+	for (TurnAngle = LEFT_90; TurnAngle < TURN_ANGLE_MAX; TurnAngle++)
+ 5b4:	21 96       	adiw	r28, 0x01	; 1
+ 5b6:	0f 5f       	subi	r16, 0xFF	; 255
+ 5b8:	1f 4f       	sbci	r17, 0xFF	; 255
+ 5ba:	04 30       	cpi	r16, 0x04	; 4
+ 5bc:	11 05       	cpc	r17, r1
+ 5be:	61 f7       	brne	.-40     	; 0x598 <FindEnoughSpace+0x64>
+			ODServoTurnAngle = TurnAngle;
+
+		}
+	}
+
+	TurnODServo(ODServo, NEUTRAL);
+ 5c0:	c6 01       	movw	r24, r12
+ 5c2:	60 e0       	ldi	r22, 0x00	; 0
+ 5c4:	70 e0       	ldi	r23, 0x00	; 0
+ 5c6:	a1 dd       	rcall	.-1214   	; 0x10a <TurnODServo>
+
+	TurnOnOffODSensor(ODSensor, POWER_OFF);
+ 5c8:	c5 01       	movw	r24, r10
+ 5ca:	60 e0       	ldi	r22, 0x00	; 0
+ 5cc:	70 e0       	ldi	r23, 0x00	; 0
+ 5ce:	eb dd       	rcall	.-1066   	; 0x1a6 <TurnOnOffODSensor>
+
+Exit:
+
+	return ODServoTurnAngle;
+}
+ 5d0:	c7 01       	movw	r24, r14
+ 5d2:	df 91       	pop	r29
+ 5d4:	cf 91       	pop	r28
+ 5d6:	1f 91       	pop	r17
+ 5d8:	0f 91       	pop	r16
+ 5da:	ff 90       	pop	r15
+ 5dc:	ef 90       	pop	r14
+ 5de:	df 90       	pop	r13
+ 5e0:	cf 90       	pop	r12
+ 5e2:	bf 90       	pop	r11
+ 5e4:	af 90       	pop	r10
+ 5e6:	9f 90       	pop	r9
+ 5e8:	8f 90       	pop	r8
+ 5ea:	7f 90       	pop	r7
+ 5ec:	6f 90       	pop	r6
+ 5ee:	08 95       	ret
+
+000005f0 <CheckForEnoughSpace>:
+
+#include "UART-Trace.h"
+
+unsigned char
+CheckForEnoughSpace(OD_SENSOR ODSensor)
+{
+ 5f0:	0f 93       	push	r16
+ 5f2:	1f 93       	push	r17
+ 5f4:	cf 93       	push	r28
+ 5f6:	df 93       	push	r29
+ 5f8:	ec 01       	movw	r28, r24
+	unsigned int ADValue;
+
+	TurnOnOffODSensor(ODSensor, POWER_ON);
+ 5fa:	61 e0       	ldi	r22, 0x01	; 1
+ 5fc:	70 e0       	ldi	r23, 0x00	; 0
+ 5fe:	d3 dd       	rcall	.-1114   	; 0x1a6 <TurnOnOffODSensor>
+ 600:	80 e1       	ldi	r24, 0x10	; 16
+ 602:	97 e2       	ldi	r25, 0x27	; 39
+ 604:	29 e1       	ldi	r18, 0x19	; 25
+ 606:	30 e0       	ldi	r19, 0x00	; 0
+ 608:	f9 01       	movw	r30, r18
+ 60a:	31 97       	sbiw	r30, 0x01	; 1
+ 60c:	f1 f7       	brne	.-4      	; 0x60a <CheckForEnoughSpace+0x1a>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 60e:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 610:	d9 f7       	brne	.-10     	; 0x608 <CheckForEnoughSpace+0x18>
+
+	_delay_ms(1000);
+
+	switch(ODSensor)
+ 612:	20 97       	sbiw	r28, 0x00	; 0
+ 614:	29 f0       	breq	.+10     	; 0x620 <CheckForEnoughSpace+0x30>
+ 616:	c1 30       	cpi	r28, 0x01	; 1
+ 618:	d1 05       	cpc	r29, r1
+ 61a:	29 f0       	breq	.+10     	; 0x626 <CheckForEnoughSpace+0x36>
+ 61c:	80 e0       	ldi	r24, 0x00	; 0
+ 61e:	10 c0       	rjmp	.+32     	; 0x640 <CheckForEnoughSpace+0x50>
+	{
+		case OD_SENSOR_FRONT:
+		{
+
+			ADValue = ReadDataFromAD(AD_CHANNEL_0);
+ 620:	80 e0       	ldi	r24, 0x00	; 0
+ 622:	90 e0       	ldi	r25, 0x00	; 0
+ 624:	02 c0       	rjmp	.+4      	; 0x62a <CheckForEnoughSpace+0x3a>
+
+		}
+		case OD_SENSOR_BACK:
+		{
+
+			ADValue = ReadDataFromAD(AD_CHANNEL_1);
+ 626:	81 e0       	ldi	r24, 0x01	; 1
+ 628:	90 e0       	ldi	r25, 0x00	; 0
+ 62a:	ab de       	rcall	.-682    	; 0x382 <ReadDataFromAD>
+ 62c:	8c 01       	movw	r16, r24
+			return 0;
+
+		}
+	}
+
+	TurnOnOffODSensor(ODSensor, POWER_OFF);
+ 62e:	ce 01       	movw	r24, r28
+ 630:	60 e0       	ldi	r22, 0x00	; 0
+ 632:	70 e0       	ldi	r23, 0x00	; 0
+ 634:	b8 dd       	rcall	.-1168   	; 0x1a6 <TurnOnOffODSensor>
+ 636:	80 e0       	ldi	r24, 0x00	; 0
+ 638:	0c 5d       	subi	r16, 0xDC	; 220
+ 63a:	15 40       	sbci	r17, 0x05	; 5
+ 63c:	08 f4       	brcc	.+2      	; 0x640 <CheckForEnoughSpace+0x50>
+ 63e:	81 e0       	ldi	r24, 0x01	; 1
+	else
+	{
+		return 1;
+	}
+
+}
+ 640:	df 91       	pop	r29
+ 642:	cf 91       	pop	r28
+ 644:	1f 91       	pop	r17
+ 646:	0f 91       	pop	r16
+ 648:	08 95       	ret
+
+0000064a <__udivmodhi4>:
+ 64a:	aa 1b       	sub	r26, r26
+ 64c:	bb 1b       	sub	r27, r27
+ 64e:	51 e1       	ldi	r21, 0x11	; 17
+ 650:	07 c0       	rjmp	.+14     	; 0x660 <__udivmodhi4_ep>
+
+00000652 <__udivmodhi4_loop>:
+ 652:	aa 1f       	adc	r26, r26
+ 654:	bb 1f       	adc	r27, r27
+ 656:	a6 17       	cp	r26, r22
+ 658:	b7 07       	cpc	r27, r23
+ 65a:	10 f0       	brcs	.+4      	; 0x660 <__udivmodhi4_ep>
+ 65c:	a6 1b       	sub	r26, r22
+ 65e:	b7 0b       	sbc	r27, r23
+
+00000660 <__udivmodhi4_ep>:
+ 660:	88 1f       	adc	r24, r24
+ 662:	99 1f       	adc	r25, r25
+ 664:	5a 95       	dec	r21
+ 666:	a9 f7       	brne	.-22     	; 0x652 <__udivmodhi4_loop>
+ 668:	80 95       	com	r24
+ 66a:	90 95       	com	r25
+ 66c:	bc 01       	movw	r22, r24
+ 66e:	cd 01       	movw	r24, r26
+ 670:	08 95       	ret
+
+00000672 <_exit>:
+ 672:	f8 94       	cli
+
+00000674 <__stop_program>:
+ 674:	ff cf       	rjmp	.-2      	; 0x674 <__stop_program>

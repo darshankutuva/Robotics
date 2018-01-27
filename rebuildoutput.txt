@@ -1,0 +1,1471 @@
+------ Rebuild All started: Project: ADC, Configuration: Release AVR ------
+Build started.
+Project "ADC.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\ADC\ADC\ADC.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  ADC.o   
+		rm -rf  ADC.d   
+		rm -rf "libADC.elf" "libADC.a" "libADC.hex" "libADC.lss" "libADC.eep" "libADC.map" "libADC.srec" "libADC.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "ADC.cproj".
+Done building project "ADC.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: ADC, Configuration: Release AVR ------
+Build started.
+Project "ADC.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\ADC\ADC\ADC.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././ADC.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "ADC.d" -MT"ADC.d" -MT"ADC.o"   -o "ADC.o" ".././ADC.c" 
+		Finished building: .././ADC.c
+		Building target: libADC.a
+		Invoking: AVR/GNU Archiver : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe" -r  -o libADC.a  ADC.o   
+		C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe: creating libADC.a
+		Finished building target: libADC.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "ADC.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\ADC\ADC\ADC.cproj" (entry point):
+Done building target "Build" in project "ADC.cproj".
+Done building project "ADC.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: ADXL345, Configuration: Release AVR ------
+Build started.
+Project "ADXL345.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\ADXL345\ADXL345\ADXL345.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  ADXL345.o   
+		rm -rf  ADXL345.d   
+		rm -rf "libADXL345.elf" "libADXL345.a" "libADXL345.hex" "libADXL345.lss" "libADXL345.eep" "libADXL345.map" "libADXL345.srec" "libADXL345.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "ADXL345.cproj".
+Done building project "ADXL345.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: ADXL345, Configuration: Release AVR ------
+Build started.
+Project "ADXL345.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\ADXL345\ADXL345\ADXL345.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././ADXL345.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "ADXL345.d" -MT"ADXL345.d" -MT"ADXL345.o"   -o "ADXL345.o" ".././ADXL345.c" 
+		Finished building: .././ADXL345.c
+		Building target: libADXL345.a
+		Invoking: AVR/GNU Archiver : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe" -r  -o libADXL345.a  ADXL345.o   
+		C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe: creating libADXL345.a
+		Finished building target: libADXL345.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "ADXL345.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\ADXL345\ADXL345\ADXL345.cproj" (entry point):
+Done building target "Build" in project "ADXL345.cproj".
+Done building project "ADXL345.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: Common, Configuration: Release AVR ------
+Build started.
+Project "Common.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\Common\Common\Common.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  Common.o   
+		rm -rf  Common.d   
+		rm -rf "libCommon.elf" "libCommon.a" "libCommon.hex" "libCommon.lss" "libCommon.eep" "libCommon.map" "libCommon.srec" "libCommon.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "Common.cproj".
+Done building project "Common.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: Common, Configuration: Release AVR ------
+Build started.
+Project "Common.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\Common\Common\Common.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././Common.c
+		Invoking: AVR/GNU C Compiler : 4.3.3
+		"C:\WinAVR-20100110\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "Common.d" -MT"Common.d" -MT"Common.o"   -o "Common.o" ".././Common.c" 
+		Finished building: .././Common.c
+		Building target: libCommon.a
+		Invoking: AVR/GNU Archiver : 4.3.3
+		"C:\WinAVR-20100110\bin\avr-ar.exe" -r  -o libCommon.a  Common.o   
+		C:\WinAVR-20100110\bin\avr-ar.exe: creating libCommon.a
+		Finished building target: libCommon.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "Common.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\Common\Common\Common.cproj" (entry point):
+Done building target "Build" in project "Common.cproj".
+Done building project "Common.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: ExtInt, Configuration: Release AVR ------
+Build started.
+Project "ExtInt.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\ExtInt\ExtInt\ExtInt.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  ExtInt.o   
+		rm -rf  ExtInt.d   
+		rm -rf "libExtInt.elf" "libExtInt.a" "libExtInt.hex" "libExtInt.lss" "libExtInt.eep" "libExtInt.map" "libExtInt.srec" "libExtInt.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "ExtInt.cproj".
+Done building project "ExtInt.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: ExtInt, Configuration: Release AVR ------
+Build started.
+Project "ExtInt.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\ExtInt\ExtInt\ExtInt.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././ExtInt.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "ExtInt.d" -MT"ExtInt.d" -MT"ExtInt.o"   -o "ExtInt.o" ".././ExtInt.c" 
+		Finished building: .././ExtInt.c
+		Building target: libExtInt.a
+		Invoking: AVR/GNU Archiver : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe" -r  -o libExtInt.a  ExtInt.o   
+		C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe: creating libExtInt.a
+		Finished building target: libExtInt.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "ExtInt.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\ExtInt\ExtInt\ExtInt.cproj" (entry point):
+Done building target "Build" in project "ExtInt.cproj".
+Done building project "ExtInt.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: HMC5883L, Configuration: Release AVR ------
+Build started.
+Project "HMC5883L.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\HMC5883L\HMC5883L\HMC5883L.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  HMC5883L.o   
+		rm -rf  HMC5883L.d   
+		rm -rf "libHMC5883L.elf" "libHMC5883L.a" "libHMC5883L.hex" "libHMC5883L.lss" "libHMC5883L.eep" "libHMC5883L.map" "libHMC5883L.srec" "libHMC5883L.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "HMC5883L.cproj".
+Done building project "HMC5883L.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: HMC5883L, Configuration: Release AVR ------
+Build started.
+Project "HMC5883L.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\HMC5883L\HMC5883L\HMC5883L.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././HMC5883L.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "HMC5883L.d" -MT"HMC5883L.d" -MT"HMC5883L.o"   -o "HMC5883L.o" ".././HMC5883L.c" 
+		Finished building: .././HMC5883L.c
+		Building target: libHMC5883L.a
+		Invoking: AVR/GNU Archiver : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe" -r  -o libHMC5883L.a  HMC5883L.o   
+		C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe: creating libHMC5883L.a
+		Finished building target: libHMC5883L.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "HMC5883L.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\HMC5883L\HMC5883L\HMC5883L.cproj" (entry point):
+Done building target "Build" in project "HMC5883L.cproj".
+Done building project "HMC5883L.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: ITG3205, Configuration: Release AVR ------
+Build started.
+Project "ITG3205.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\ITG3205\ITG3205\ITG3205.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  ITG3205.o   
+		rm -rf  ITG3205.d   
+		rm -rf "libITG3205.elf" "libITG3205.a" "libITG3205.hex" "libITG3205.lss" "libITG3205.eep" "libITG3205.map" "libITG3205.srec" "libITG3205.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "ITG3205.cproj".
+Done building project "ITG3205.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: ITG3205, Configuration: Release AVR ------
+Build started.
+Project "ITG3205.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\ITG3205\ITG3205\ITG3205.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././ITG3205.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "ITG3205.d" -MT"ITG3205.d" -MT"ITG3205.o"   -o "ITG3205.o" ".././ITG3205.c" 
+		Finished building: .././ITG3205.c
+		Building target: libITG3205.a
+		Invoking: AVR/GNU Archiver : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe" -r  -o libITG3205.a  ITG3205.o   
+		C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe: creating libITG3205.a
+		Finished building target: libITG3205.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "ITG3205.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\ITG3205\ITG3205\ITG3205.cproj" (entry point):
+Done building target "Build" in project "ITG3205.cproj".
+Done building project "ITG3205.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: LCD, Configuration: Release AVR ------
+Build started.
+Project "LCD.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\LCD\LCD\LCD.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  LCD.o   
+		rm -rf  LCD.d   
+		rm -rf "libLCD.elf" "libLCD.a" "libLCD.hex" "libLCD.lss" "libLCD.eep" "libLCD.map" "libLCD.srec" "libLCD.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "LCD.cproj".
+Done building project "LCD.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: LCD, Configuration: Release AVR ------
+Build started.
+Project "LCD.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\LCD\LCD\LCD.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././LCD.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "LCD.d" -MT"LCD.d" -MT"LCD.o"   -o "LCD.o" ".././LCD.c" 
+		Finished building: .././LCD.c
+		Building target: libLCD.a
+		Invoking: AVR/GNU Archiver : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe" -r  -o libLCD.a  LCD.o   
+		C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe: creating libLCD.a
+		Finished building target: libLCD.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "LCD.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\LCD\LCD\LCD.cproj" (entry point):
+Done building target "Build" in project "LCD.cproj".
+Done building project "LCD.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: PWM, Configuration: Release AVR ------
+Build started.
+Project "PWM.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\PWM\PWM\PWM.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  PWM.o   
+		rm -rf  PWM.d   
+		rm -rf "libPWM.elf" "libPWM.a" "libPWM.hex" "libPWM.lss" "libPWM.eep" "libPWM.map" "libPWM.srec" "libPWM.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "PWM.cproj".
+Done building project "PWM.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: PWM, Configuration: Release AVR ------
+Build started.
+Project "PWM.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\PWM\PWM\PWM.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././PWM.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "PWM.d" -MT"PWM.d" -MT"PWM.o"   -o "PWM.o" ".././PWM.c" 
+		Finished building: .././PWM.c
+		Building target: libPWM.a
+		Invoking: AVR/GNU Archiver : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe" -r  -o libPWM.a  PWM.o   
+		C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe: creating libPWM.a
+		Finished building target: libPWM.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "PWM.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\PWM\PWM\PWM.cproj" (entry point):
+Done building target "Build" in project "PWM.cproj".
+Done building project "PWM.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: QuadcopterLib, Configuration: Release AVR ------
+Build started.
+Project "QuadcopterLib.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\QuadcopterLib\QuadcopterLib\QuadcopterLib.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  QuadcopterLib.o   
+		rm -rf  QuadcopterLib.d   
+		rm -rf "libQuadcopterLib.elf" "libQuadcopterLib.a" "libQuadcopterLib.hex" "libQuadcopterLib.lss" "libQuadcopterLib.eep" "libQuadcopterLib.map" "libQuadcopterLib.srec" "libQuadcopterLib.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "QuadcopterLib.cproj".
+Done building project "QuadcopterLib.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: QuadcopterLib, Configuration: Release AVR ------
+Build started.
+Project "QuadcopterLib.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\QuadcopterLib\QuadcopterLib\QuadcopterLib.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././QuadcopterLib.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "QuadcopterLib.d" -MT"QuadcopterLib.d" -MT"QuadcopterLib.o"   -o "QuadcopterLib.o" ".././QuadcopterLib.c" 
+		Finished building: .././QuadcopterLib.c
+		Building target: libQuadcopterLib.a
+		Invoking: AVR/GNU Archiver : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe" -r  -o libQuadcopterLib.a  QuadcopterLib.o   
+		C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe: creating libQuadcopterLib.a
+		Finished building target: libQuadcopterLib.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "QuadcopterLib.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\QuadcopterLib\QuadcopterLib\QuadcopterLib.cproj" (entry point):
+Done building target "Build" in project "QuadcopterLib.cproj".
+Done building project "QuadcopterLib.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: SPI, Configuration: Release AVR ------
+Build started.
+Project "SPI.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\SPI\SPI\SPI.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  SPI.o   
+		rm -rf  SPI.d   
+		rm -rf "libSPI.elf" "libSPI.a" "libSPI.hex" "libSPI.lss" "libSPI.eep" "libSPI.map" "libSPI.srec" "libSPI.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "SPI.cproj".
+Done building project "SPI.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: SPI, Configuration: Release AVR ------
+Build started.
+Project "SPI.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\SPI\SPI\SPI.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././SPI.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "SPI.d" -MT"SPI.d" -MT"SPI.o"   -o "SPI.o" ".././SPI.c" 
+		Finished building: .././SPI.c
+		Building target: libSPI.a
+		Invoking: AVR/GNU Archiver : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe" -r  -o libSPI.a  SPI.o   
+		C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe: creating libSPI.a
+		Finished building target: libSPI.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "SPI.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\SPI\SPI\SPI.cproj" (entry point):
+Done building target "Build" in project "SPI.cproj".
+Done building project "SPI.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: Trace, Configuration: Release AVR ------
+Build started.
+Project "Trace.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\Trace\Trace\Trace.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  Trace.o   
+		rm -rf  Trace.d   
+		rm -rf "libTrace.elf" "libTrace.a" "libTrace.hex" "libTrace.lss" "libTrace.eep" "libTrace.map" "libTrace.srec" "libTrace.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "Trace.cproj".
+Done building project "Trace.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: Trace, Configuration: Release AVR ------
+Build started.
+Project "Trace.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\Trace\Trace\Trace.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././Trace.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "Trace.d" -MT"Trace.d" -MT"Trace.o"   -o "Trace.o" ".././Trace.c" 
+		Finished building: .././Trace.c
+		Building target: libTrace.a
+		Invoking: AVR/GNU Archiver : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe" -r  -o libTrace.a  Trace.o   
+		C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe: creating libTrace.a
+		Finished building target: libTrace.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "Trace.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\Trace\Trace\Trace.cproj" (entry point):
+Done building target "Build" in project "Trace.cproj".
+Done building project "Trace.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: Transceiver, Configuration: Release AVR ------
+Build started.
+Project "Transceiver.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\Transceiver\Transceiver\Transceiver.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  Transfer.o Transceiver.o   
+		rm -rf  Transfer.d Transceiver.d   
+		rm -rf "libTransceiver.elf" "libTransceiver.a" "libTransceiver.hex" "libTransceiver.lss" "libTransceiver.eep" "libTransceiver.map" "libTransceiver.srec" "libTransceiver.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "Transceiver.cproj".
+Done building project "Transceiver.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: Transceiver, Configuration: Release AVR ------
+Build started.
+Project "Transceiver.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\Transceiver\Transceiver\Transceiver.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././Transfer.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG -DATMEGA_1284P  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "Transfer.d" -MT"Transfer.d" -MT"Transfer.o"   -o "Transfer.o" ".././Transfer.c" 
+		Finished building: .././Transfer.c
+		Building file: .././Transceiver.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG -DATMEGA_1284P  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "Transceiver.d" -MT"Transceiver.d" -MT"Transceiver.o"   -o "Transceiver.o" ".././Transceiver.c" 
+		Finished building: .././Transceiver.c
+		Building target: libTransceiver.a
+		Invoking: AVR/GNU Archiver : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe" -r  -o libTransceiver.a  Transfer.o Transceiver.o   
+		C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe: creating libTransceiver.a
+		Finished building target: libTransceiver.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "Transceiver.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\Transceiver\Transceiver\Transceiver.cproj" (entry point):
+Done building target "Build" in project "Transceiver.cproj".
+Done building project "Transceiver.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: TWI, Configuration: Release AVR ------
+Build started.
+Project "TWI.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\TWI\TWI\TWI.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  TWI.o   
+		rm -rf  TWI.d   
+		rm -rf "libTWI.elf" "libTWI.a" "libTWI.hex" "libTWI.lss" "libTWI.eep" "libTWI.map" "libTWI.srec" "libTWI.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "TWI.cproj".
+Done building project "TWI.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: TWI, Configuration: Release AVR ------
+Build started.
+Project "TWI.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\TWI\TWI\TWI.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././TWI.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "TWI.d" -MT"TWI.d" -MT"TWI.o"   -o "TWI.o" ".././TWI.c" 
+		Finished building: .././TWI.c
+		Building target: libTWI.a
+		Invoking: AVR/GNU Archiver : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe" -r  -o libTWI.a  TWI.o   
+		C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe: creating libTWI.a
+		Finished building target: libTWI.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "TWI.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\TWI\TWI\TWI.cproj" (entry point):
+Done building target "Build" in project "TWI.cproj".
+Done building project "TWI.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: UART, Configuration: Release AVR ------
+Build started.
+Project "UART.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\UART\UART\UART.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  UART.o   
+		rm -rf  UART.d   
+		rm -rf "libUART.elf" "libUART.a" "libUART.hex" "libUART.lss" "libUART.eep" "libUART.map" "libUART.srec" "libUART.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "UART.cproj".
+Done building project "UART.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: UART, Configuration: Release AVR ------
+Build started.
+Project "UART.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\UART\UART\UART.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././UART.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "UART.d" -MT"UART.d" -MT"UART.o"   -o "UART.o" ".././UART.c" 
+		Finished building: .././UART.c
+		Building target: libUART.a
+		Invoking: AVR/GNU Archiver : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe" -r  -o libUART.a  UART.o   
+		C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-ar.exe: creating libUART.a
+		Finished building target: libUART.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "UART.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\UART\UART\UART.cproj" (entry point):
+Done building target "Build" in project "UART.cproj".
+Done building project "UART.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: XY-MK-5V-XY-FST, Configuration: Release AVR ------
+Build started.
+Project "XY-MK-5V-XY-FST.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\XY-MK-5V-XY-FST\XY-MK-5V-XY-FST\XY-MK-5V-XY-FST.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  XY-MK-5V-XY-FST.o   
+		rm -rf  XY-MK-5V-XY-FST.d   
+		rm -rf "libXY-MK-5V-XY-FST.elf" "libXY-MK-5V-XY-FST.a" "libXY-MK-5V-XY-FST.hex" "libXY-MK-5V-XY-FST.lss" "libXY-MK-5V-XY-FST.eep" "libXY-MK-5V-XY-FST.map" "libXY-MK-5V-XY-FST.srec" "libXY-MK-5V-XY-FST.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "XY-MK-5V-XY-FST.cproj".
+Done building project "XY-MK-5V-XY-FST.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: XY-MK-5V-XY-FST, Configuration: Release AVR ------
+Build started.
+Project "XY-MK-5V-XY-FST.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\XY-MK-5V-XY-FST\XY-MK-5V-XY-FST\XY-MK-5V-XY-FST.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././XY-MK-5V-XY-FST.c
+		Invoking: AVR/GNU C Compiler : 4.3.3
+		"C:\WinAVR-20100110\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "XY-MK-5V-XY-FST.d" -MT"XY-MK-5V-XY-FST.d" -MT"XY-MK-5V-XY-FST.o"   -o "XY-MK-5V-XY-FST.o" ".././XY-MK-5V-XY-FST.c" 
+		Finished building: .././XY-MK-5V-XY-FST.c
+		Building target: libXY-MK-5V-XY-FST.a
+		Invoking: AVR/GNU Archiver : 4.3.3
+		"C:\WinAVR-20100110\bin\avr-ar.exe" -r  -o libXY-MK-5V-XY-FST.a  XY-MK-5V-XY-FST.o   
+		C:\WinAVR-20100110\bin\avr-ar.exe: creating libXY-MK-5V-XY-FST.a
+		Finished building target: libXY-MK-5V-XY-FST.a
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "XY-MK-5V-XY-FST.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\Library\XY-MK-5V-XY-FST\XY-MK-5V-XY-FST\XY-MK-5V-XY-FST.cproj" (entry point):
+Done building target "Build" in project "XY-MK-5V-XY-FST.cproj".
+Done building project "XY-MK-5V-XY-FST.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: AccelerometerTest, Configuration: Release AVR ------
+Build started.
+Project "AccelerometerTest.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\AccelerometerTest\AccelerometerTest\AccelerometerTest.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  AccelerometerTest.o   
+		rm -rf  AccelerometerTest.d   
+		rm -rf "AccelerometerTest.elf" "AccelerometerTest.a" "AccelerometerTest.hex" "AccelerometerTest.lss" "AccelerometerTest.eep" "AccelerometerTest.map" "AccelerometerTest.srec" "AccelerometerTest.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "AccelerometerTest.cproj".
+Done building project "AccelerometerTest.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: AccelerometerTest, Configuration: Release AVR ------
+Build started.
+Project "AccelerometerTest.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\AccelerometerTest\AccelerometerTest\AccelerometerTest.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././AccelerometerTest.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "AccelerometerTest.d" -MT"AccelerometerTest.d" -MT"AccelerometerTest.o"   -o "AccelerometerTest.o" ".././AccelerometerTest.c" 
+		Finished building: .././AccelerometerTest.c
+		Building target: AccelerometerTest.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o AccelerometerTest.elf  AccelerometerTest.o   -Wl,-Map="AccelerometerTest.map" -Wl,--start-group -Wl,-lm -Wl,-lADXL345 -Wl,-lTrace -Wl,-lTWI -Wl,-lUART  -Wl,--end-group -Wl,-L"../../../../Library/ADXL345/ADXL345/Release" -Wl,-L"../../../../Library/Trace/Trace/Release" -Wl,-L"../../../../Library/TWI/TWI/Release" -Wl,-L"../../../../Library/UART/UART/Release"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		Finished building target: AccelerometerTest.elf
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "AccelerometerTest.elf" "AccelerometerTest.hex"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "AccelerometerTest.elf" "AccelerometerTest.eep" || exit 0
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "AccelerometerTest.elf" > "AccelerometerTest.lss"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "AccelerometerTest.elf" "AccelerometerTest.srec"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-size.exe" "AccelerometerTest.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		   7402	   2520	     27	   9949	   26dd	AccelerometerTest.elf
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	9922 bytes   7.6 % Full
+				Data Memory Usage 		:	2547 bytes   15.5 % Full
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "AccelerometerTest.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\AccelerometerTest\AccelerometerTest\AccelerometerTest.cproj" (entry point):
+Done building target "Build" in project "AccelerometerTest.cproj".
+Done building project "AccelerometerTest.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: ADCTest, Configuration: Release AVR ------
+Build started.
+Project "ADCTest.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\ADCTest\ADCTest\ADCTest.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  ADCTest.o   
+		rm -rf  ADCTest.d   
+		rm -rf "ADCTest.elf" "ADCTest.a" "ADCTest.hex" "ADCTest.lss" "ADCTest.eep" "ADCTest.map" "ADCTest.srec" "ADCTest.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "ADCTest.cproj".
+Done building project "ADCTest.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: ADCTest, Configuration: Release AVR ------
+Build started.
+Project "ADCTest.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\ADCTest\ADCTest\ADCTest.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././ADCTest.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "ADCTest.d" -MT"ADCTest.d" -MT"ADCTest.o"   -o "ADCTest.o" ".././ADCTest.c" 
+		Finished building: .././ADCTest.c
+		Building target: ADCTest.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o ADCTest.elf  ADCTest.o   -Wl,-Map="ADCTest.map" -Wl,--start-group -Wl,-lm -Wl,-lADC -Wl,-lUART -Wl,-lTrace  -Wl,--end-group -Wl,-L"../../../../Library/ADC/ADC/Release" -Wl,-L"../../../../Library/UART/UART/Release" -Wl,-L"../../../../Library/Trace/Trace/Release"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		Finished building target: ADCTest.elf
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "ADCTest.elf" "ADCTest.hex"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "ADCTest.elf" "ADCTest.eep" || exit 0
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "ADCTest.elf" > "ADCTest.lss"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "ADCTest.elf" "ADCTest.srec"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-size.exe" "ADCTest.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		   1000	     56	     18	   1074	    432	ADCTest.elf
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	1056 bytes   0.8 % Full
+				Data Memory Usage 		:	74 bytes   0.5 % Full
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "ADCTest.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\ADCTest\ADCTest\ADCTest.cproj" (entry point):
+Done building target "Build" in project "ADCTest.cproj".
+Done building project "ADCTest.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: GyroscopeTest, Configuration: Release AVR ------
+Build started.
+Project "GyroscopeTest.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\GyroscopeTest\GyroscopeTest\GyroscopeTest.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  GyroscopeTest.o   
+		rm -rf  GyroscopeTest.d   
+		rm -rf "GyroscopeTest.elf" "GyroscopeTest.a" "GyroscopeTest.hex" "GyroscopeTest.lss" "GyroscopeTest.eep" "GyroscopeTest.map" "GyroscopeTest.srec" "GyroscopeTest.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "GyroscopeTest.cproj".
+Done building project "GyroscopeTest.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: GyroscopeTest, Configuration: Release AVR ------
+Build started.
+Project "GyroscopeTest.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\GyroscopeTest\GyroscopeTest\GyroscopeTest.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././GyroscopeTest.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "GyroscopeTest.d" -MT"GyroscopeTest.d" -MT"GyroscopeTest.o"   -o "GyroscopeTest.o" ".././GyroscopeTest.c" 
+		Finished building: .././GyroscopeTest.c
+		Building target: GyroscopeTest.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o GyroscopeTest.elf  GyroscopeTest.o   -Wl,-Map="GyroscopeTest.map" -Wl,--start-group -Wl,-lm -Wl,-lITG3205 -Wl,-lTWI -Wl,-lUART -Wl,-lTrace  -Wl,--end-group -Wl,-L"../../../../Library/ITG3205/ITG3205/Release" -Wl,-L"../../../../Library/TWI/TWI/Release" -Wl,-L"../../../../Library/UART/UART/Release" -Wl,-L"../../../../Library/Trace/Trace/Release"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		Finished building target: GyroscopeTest.elf
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "GyroscopeTest.elf" "GyroscopeTest.hex"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "GyroscopeTest.elf" "GyroscopeTest.eep" || exit 0
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "GyroscopeTest.elf" > "GyroscopeTest.lss"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "GyroscopeTest.elf" "GyroscopeTest.srec"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-size.exe" "GyroscopeTest.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		   4492	   1586	     22	   6100	   17d4	GyroscopeTest.elf
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	6078 bytes   4.6 % Full
+				Data Memory Usage 		:	1608 bytes   9.8 % Full
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "GyroscopeTest.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\GyroscopeTest\GyroscopeTest\GyroscopeTest.cproj" (entry point):
+Done building target "Build" in project "GyroscopeTest.cproj".
+Done building project "GyroscopeTest.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: MagnetometerTest, Configuration: Release AVR ------
+Build started.
+Project "MagnetometerTest.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\MagnetometerTest\MagnetometerTest\MagnetometerTest.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  MagnetometerTest.o   
+		rm -rf  MagnetometerTest.d   
+		rm -rf "MagnetometerTest.elf" "MagnetometerTest.a" "MagnetometerTest.hex" "MagnetometerTest.lss" "MagnetometerTest.eep" "MagnetometerTest.map" "MagnetometerTest.srec" "MagnetometerTest.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "MagnetometerTest.cproj".
+Done building project "MagnetometerTest.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: MagnetometerTest, Configuration: Release AVR ------
+Build started.
+Project "MagnetometerTest.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\MagnetometerTest\MagnetometerTest\MagnetometerTest.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././MagnetometerTest.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "MagnetometerTest.d" -MT"MagnetometerTest.d" -MT"MagnetometerTest.o"   -o "MagnetometerTest.o" ".././MagnetometerTest.c" 
+		Finished building: .././MagnetometerTest.c
+		Building target: MagnetometerTest.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o MagnetometerTest.elf  MagnetometerTest.o   -Wl,-Map="MagnetometerTest.map" -Wl,--start-group -Wl,-lm -Wl,-lADXL345 -Wl,-lHMC5883L -Wl,-lTrace -Wl,-lTWI -Wl,-lUART  -Wl,--end-group -Wl,-L"../../../../Library/ADXL345/ADXL345/Release" -Wl,-L"../../../../Library/HMC5883L/HMC5883L/Release" -Wl,-L"../../../../Library/Trace/Trace/Release" -Wl,-L"../../../../Library/TWI/TWI/Release" -Wl,-L"../../../../Library/UART/UART/Release"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		Finished building target: MagnetometerTest.elf
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "MagnetometerTest.elf" "MagnetometerTest.hex"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "MagnetometerTest.elf" "MagnetometerTest.eep" || exit 0
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "MagnetometerTest.elf" > "MagnetometerTest.lss"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "MagnetometerTest.elf" "MagnetometerTest.srec"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-size.exe" "MagnetometerTest.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		  10222	   3554	     30	  13806	   35ee	MagnetometerTest.elf
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	13776 bytes   10.5 % Full
+				Data Memory Usage 		:	3584 bytes   21.9 % Full
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "MagnetometerTest.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\MagnetometerTest\MagnetometerTest\MagnetometerTest.cproj" (entry point):
+Done building target "Build" in project "MagnetometerTest.cproj".
+Done building project "MagnetometerTest.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: PWMTest, Configuration: Release AVR ------
+Build started.
+Project "PWMTest.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\PWMTest\PWMTest\PWMTest.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  PWMTest.o   
+		rm -rf  PWMTest.d   
+		rm -rf "PWMTest.elf" "PWMTest.a" "PWMTest.hex" "PWMTest.lss" "PWMTest.eep" "PWMTest.map" "PWMTest.srec" "PWMTest.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "PWMTest.cproj".
+Done building project "PWMTest.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: PWMTest, Configuration: Release AVR ------
+Build started.
+Project "PWMTest.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\PWMTest\PWMTest\PWMTest.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././PWMTest.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "PWMTest.d" -MT"PWMTest.d" -MT"PWMTest.o"   -o "PWMTest.o" ".././PWMTest.c" 
+		Finished building: .././PWMTest.c
+		Building target: PWMTest.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o PWMTest.elf  PWMTest.o   -Wl,-Map="PWMTest.map" -Wl,--start-group -Wl,-lm -Wl,-lPWM -Wl,-lADC -Wl,-lUART -Wl,-lTrace  -Wl,--end-group -Wl,-L"../../../../Library/ADC/ADC/Release" -Wl,-L"../../../../Library/PWM/PWM/Release" -Wl,-L"../../../../Library/Trace/Trace/Release" -Wl,-L"../../../../Library/UART/UART/Release"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		Finished building target: PWMTest.elf
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "PWMTest.elf" "PWMTest.hex"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "PWMTest.elf" "PWMTest.eep" || exit 0
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "PWMTest.elf" > "PWMTest.lss"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "PWMTest.elf" "PWMTest.srec"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-size.exe" "PWMTest.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		   1384	    132	     23	   1539	    603	PWMTest.elf
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	1516 bytes   1.2 % Full
+				Data Memory Usage 		:	155 bytes   0.9 % Full
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "PWMTest.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\PWMTest\PWMTest\PWMTest.cproj" (entry point):
+Done building target "Build" in project "PWMTest.cproj".
+Done building project "PWMTest.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: Quadcopter, Configuration: Release AVR ------
+Build started.
+Project "Quadcopter.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\Quadcopter\Quadcopter\Quadcopter.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  Accelerometer.o Quadcopter.o   
+		rm -rf  Accelerometer.d Quadcopter.d   
+		rm -rf "Quadcopter.elf" "Quadcopter.a" "Quadcopter.hex" "Quadcopter.lss" "Quadcopter.eep" "Quadcopter.map" "Quadcopter.srec" "Quadcopter.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "Quadcopter.cproj".
+Done building project "Quadcopter.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: Quadcopter, Configuration: Release AVR ------
+Build started.
+Project "Quadcopter.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\Quadcopter\Quadcopter\Quadcopter.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././Accelerometer.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "Accelerometer.d" -MT"Accelerometer.d" -MT"Accelerometer.o"   -o "Accelerometer.o" ".././Accelerometer.c" 
+		Finished building: .././Accelerometer.c
+		Building file: .././Quadcopter.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "Quadcopter.d" -MT"Quadcopter.d" -MT"Quadcopter.o"   -o "Quadcopter.o" ".././Quadcopter.c" 
+		Finished building: .././Quadcopter.c
+		Building target: Quadcopter.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o Quadcopter.elf  Accelerometer.o Quadcopter.o   -Wl,-Map="Quadcopter.map" -Wl,--start-group -Wl,-lm -Wl,-lTrace -Wl,-lUART -Wl,-lPWM -Wl,-lTransceiver -Wl,-lSPI -Wl,-lExtInt -Wl,-lTWI -Wl,-lADXL345 -Wl,-lHMC5883L -Wl,-lQuadcopterLib -Wl,-lCommon  -Wl,--end-group -Wl,-L"../../../../Library/PWM/PWM/Release" -Wl,-L"../../../../Library/Trace/Trace/Release" -Wl,-L"../../../../Library/Transceiver/Transceiver/Release" -Wl,-L"../../../../Library/UART/UART/Release" -Wl,-L"../../../../Library/SPI/SPI/Release" -Wl,-L"../../../../Library/ExtInt/ExtInt/Release" -Wl,-L"../../../../Library/TWI/TWI/Release" -Wl,-L"../../../../Library/ADXL345/ADXL345/Release" -Wl,-L"../../../../Library/HMC5883L/HMC5883L/Release" -Wl,-L"../../../../Library/QuadcopterLib/QuadcopterLib/Release" -Wl,-L"../../../../Library/Common/Common/Release"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		Finished building target: Quadcopter.elf
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "Quadcopter.elf" "Quadcopter.hex"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "Quadcopter.elf" "Quadcopter.eep" || exit 0
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "Quadcopter.elf" > "Quadcopter.lss"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "Quadcopter.elf" "Quadcopter.srec"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-size.exe" "Quadcopter.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		  15068	   5336	    125	  20529	   5031	Quadcopter.elf
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	20404 bytes   15.6 % Full
+				Data Memory Usage 		:	5461 bytes   33.3 % Full
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "Quadcopter.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\Quadcopter\Quadcopter\Quadcopter.cproj" (entry point):
+Done building target "Build" in project "Quadcopter.cproj".
+Done building project "Quadcopter.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: RCCar, Configuration: Release AVR ------
+Build started.
+Project "RCCar.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\RCCar\RCCar\RCCar.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  RCCar.o   
+		rm -rf  RCCar.d   
+		rm -rf "RCCar.elf" "RCCar.a" "RCCar.hex" "RCCar.lss" "RCCar.eep" "RCCar.map" "RCCar.srec" "RCCar.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "RCCar.cproj".
+Done building project "RCCar.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: RCCar, Configuration: Release AVR ------
+Build started.
+Project "RCCar.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\RCCar\RCCar\RCCar.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././RCCar.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "RCCar.d" -MT"RCCar.d" -MT"RCCar.o"   -o "RCCar.o" ".././RCCar.c" 
+		Finished building: .././RCCar.c
+		Building target: RCCar.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o RCCar.elf  RCCar.o   -Wl,-Map="RCCar.map" -Wl,--start-group -Wl,-lm -Wl,-lUART -Wl,-lTrace -Wl,-lXY-MK-5V-XY-FST -Wl,-lADC  -Wl,--end-group -Wl,-L"../../../../Library/UART/UART/Release" -Wl,-L"../../../../Library/Trace/Trace/Release" -Wl,-L"../../../../Library/XY-MK-5V-XY-FST/XY-MK-5V-XY-FST/Release" -Wl,-L"../../../../Library/ADC/ADC/Release"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		Finished building target: RCCar.elf
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "RCCar.elf" "RCCar.hex"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "RCCar.elf" "RCCar.eep" || exit 0
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "RCCar.elf" > "RCCar.lss"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "RCCar.elf" "RCCar.srec"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-size.exe" "RCCar.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		   5112	   1296	     31	   6439	   1927	RCCar.elf
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	6408 bytes   4.9 % Full
+				Data Memory Usage 		:	1327 bytes   8.1 % Full
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "RCCar.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\RCCar\RCCar\RCCar.cproj" (entry point):
+Done building target "Build" in project "RCCar.cproj".
+Done building project "RCCar.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: RCCarBT, Configuration: Release AVR ------
+Build started.
+Project "RCCarBT.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\RCCarBT\RCCarBT\RCCarBT.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  RCCarBT.o   
+		rm -rf  RCCarBT.d   
+		rm -rf "RCCarBT.elf" "RCCarBT.a" "RCCarBT.hex" "RCCarBT.lss" "RCCarBT.eep" "RCCarBT.map" "RCCarBT.srec" "RCCarBT.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "RCCarBT.cproj".
+Done building project "RCCarBT.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: RCCarBT, Configuration: Release AVR ------
+Build started.
+Project "RCCarBT.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\RCCarBT\RCCarBT\RCCarBT.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././RCCarBT.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "RCCarBT.d" -MT"RCCarBT.d" -MT"RCCarBT.o"   -o "RCCarBT.o" ".././RCCarBT.c" 
+C:\Users\Darshan\Desktop\ATMega1284p\App\RCCarBT\RCCarBT\RCCarBT.c(24,20): error: common.h: No such file or directory
+		 #include "common.h"
+		                    ^
+		compilation terminated.
+		make: *** [RCCarBT.o] Error 1
+	Done executing task "RunCompilerTask" -- FAILED.
+Done building target "CoreBuild" in project "RCCarBT.cproj" -- FAILED.
+Done building project "RCCarBT.cproj" -- FAILED.
+
+Build FAILED.
+========== Rebuild All: 0 succeeded, 1 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: RemoteController, Configuration: Release AVR ------
+Build started.
+Project "RemoteController.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\RCCarRemoteController\RemoteController\RemoteController.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  RemoteController.o   
+		rm -rf  RemoteController.d   
+		rm -rf "RemoteController.elf" "RemoteController.a" "RemoteController.hex" "RemoteController.lss" "RemoteController.eep" "RemoteController.map" "RemoteController.srec" "RemoteController.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "RemoteController.cproj".
+Done building project "RemoteController.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: RemoteController, Configuration: Release AVR ------
+Build started.
+Project "RemoteController.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\RCCarRemoteController\RemoteController\RemoteController.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././RemoteController.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "RemoteController.d" -MT"RemoteController.d" -MT"RemoteController.o"   -o "RemoteController.o" ".././RemoteController.c" 
+		Finished building: .././RemoteController.c
+		Building target: RemoteController.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o RemoteController.elf  RemoteController.o   -Wl,-Map="RemoteController.map" -Wl,--start-group -Wl,-lm -Wl,-lUART -Wl,-lSPI -Wl,-lTWI -Wl,-lTrace -Wl,-lADC -Wl,-lLCD -Wl,-lExtInt -Wl,-lXY-MK-5V-XY-FST  -Wl,--end-group -Wl,-L"../../../../Library/ADC/ADC/Release" -Wl,-L"../../../../Library/LCD/LCD/Release" -Wl,-L"../../../../Library/SPI/SPI/Release" -Wl,-L"../../../../Library/Trace/Trace/Release" -Wl,-L"../../../../Library/TWI/TWI/Release" -Wl,-L"../../../../Library/UART/UART/Release" -Wl,-L"../../../../Library/ExtInt/ExtInt/Release" -Wl,-L"../../../../Library/XY-MK-5V-XY-FST/XY-MK-5V-XY-FST/Release"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		Finished building target: RemoteController.elf
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "RemoteController.elf" "RemoteController.hex"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "RemoteController.elf" "RemoteController.eep" || exit 0
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "RemoteController.elf" > "RemoteController.lss"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "RemoteController.elf" "RemoteController.srec"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-size.exe" "RemoteController.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		   7686	   2698	     55	  10439	   28c7	RemoteController.elf
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	10384 bytes   7.9 % Full
+				Data Memory Usage 		:	2753 bytes   16.8 % Full
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "RemoteController.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\RCCarRemoteController\RemoteController\RemoteController.cproj" (entry point):
+Done building target "Build" in project "RemoteController.cproj".
+Done building project "RemoteController.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: RemoteController, Configuration: Release AVR ------
+Build started.
+Project "RemoteController.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\RemoteController\RemoteController\RemoteController.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  RemoteController.o   
+		rm -rf  RemoteController.d   
+		rm -rf "RemoteController.elf" "RemoteController.a" "RemoteController.hex" "RemoteController.lss" "RemoteController.eep" "RemoteController.map" "RemoteController.srec" "RemoteController.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "RemoteController.cproj".
+Done building project "RemoteController.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: RemoteController, Configuration: Release AVR ------
+Build started.
+Project "RemoteController.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\RemoteController\RemoteController\RemoteController.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././RemoteController.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "RemoteController.d" -MT"RemoteController.d" -MT"RemoteController.o"   -o "RemoteController.o" ".././RemoteController.c" 
+		Finished building: .././RemoteController.c
+		Building target: RemoteController.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o RemoteController.elf  RemoteController.o   -Wl,-Map="RemoteController.map" -Wl,--start-group -Wl,-lm -Wl,-lUART -Wl,-lSPI -Wl,-lTWI -Wl,-lTrace -Wl,-lADC -Wl,-lLCD -Wl,-lTransceiver -Wl,-lExtInt  -Wl,--end-group -Wl,-L"../../../../Library/ADC/ADC/Release" -Wl,-L"../../../../Library/LCD/LCD/Release" -Wl,-L"../../../../Library/SPI/SPI/Release" -Wl,-L"../../../../Library/Trace/Trace/Release" -Wl,-L"../../../../Library/Transceiver/Transceiver/Release" -Wl,-L"../../../../Library/TWI/TWI/Release" -Wl,-L"../../../../Library/UART/UART/Release" -Wl,-L"../../../../Library/ExtInt/ExtInt/Release"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		Finished building target: RemoteController.elf
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "RemoteController.elf" "RemoteController.hex"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "RemoteController.elf" "RemoteController.eep" || exit 0
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "RemoteController.elf" > "RemoteController.lss"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "RemoteController.elf" "RemoteController.srec"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-size.exe" "RemoteController.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		   7250	   2636	    111	   9997	   270d	RemoteController.elf
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	9886 bytes   7.5 % Full
+				Data Memory Usage 		:	2747 bytes   16.8 % Full
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "RemoteController.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\RemoteController\RemoteController\RemoteController.cproj" (entry point):
+Done building target "Build" in project "RemoteController.cproj".
+Done building project "RemoteController.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: TraceTest, Configuration: Release AVR ------
+Build started.
+Project "TraceTest.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\TraceTest\TraceTest\TraceTest.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  TraceTest.o   
+		rm -rf  TraceTest.d   
+		rm -rf "TraceTest.elf" "TraceTest.a" "TraceTest.hex" "TraceTest.lss" "TraceTest.eep" "TraceTest.map" "TraceTest.srec" "TraceTest.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "TraceTest.cproj".
+Done building project "TraceTest.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: TraceTest, Configuration: Release AVR ------
+Build started.
+Project "TraceTest.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\TraceTest\TraceTest\TraceTest.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././TraceTest.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "TraceTest.d" -MT"TraceTest.d" -MT"TraceTest.o"   -o "TraceTest.o" ".././TraceTest.c" 
+		Finished building: .././TraceTest.c
+		Building target: TraceTest.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o TraceTest.elf  TraceTest.o   -Wl,-Map="TraceTest.map" -Wl,--start-group -Wl,-lm -Wl,-lUART -Wl,-lTrace  -Wl,--end-group -Wl,-L"../../../../Library/UART/UART/Release" -Wl,-L"../../../../Library/Trace/Trace/Release"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		Finished building target: TraceTest.elf
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "TraceTest.elf" "TraceTest.hex"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "TraceTest.elf" "TraceTest.eep" || exit 0
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "TraceTest.elf" > "TraceTest.lss"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "TraceTest.elf" "TraceTest.srec"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-size.exe" "TraceTest.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		    860	    344	     17	   1221	    4c5	TraceTest.elf
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	1204 bytes   0.9 % Full
+				Data Memory Usage 		:	361 bytes   2.2 % Full
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "TraceTest.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\TraceTest\TraceTest\TraceTest.cproj" (entry point):
+Done building target "Build" in project "TraceTest.cproj".
+Done building project "TraceTest.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: TransceiverMasterTest, Configuration: Release AVR ------
+Build started.
+Project "TransceiverMasterTest.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\TransceiverMasterTest\TransceiverMasterTest\TransceiverMasterTest.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  TransceiverMasterTest.o   
+		rm -rf  TransceiverMasterTest.d   
+		rm -rf "TransceiverMasterTest.elf" "TransceiverMasterTest.a" "TransceiverMasterTest.hex" "TransceiverMasterTest.lss" "TransceiverMasterTest.eep" "TransceiverMasterTest.map" "TransceiverMasterTest.srec" "TransceiverMasterTest.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "TransceiverMasterTest.cproj".
+Done building project "TransceiverMasterTest.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: TransceiverMasterTest, Configuration: Release AVR ------
+Build started.
+Project "TransceiverMasterTest.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\TransceiverMasterTest\TransceiverMasterTest\TransceiverMasterTest.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././TransceiverMasterTest.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "TransceiverMasterTest.d" -MT"TransceiverMasterTest.d" -MT"TransceiverMasterTest.o"   -o "TransceiverMasterTest.o" ".././TransceiverMasterTest.c" 
+		Finished building: .././TransceiverMasterTest.c
+		Building target: TransceiverMasterTest.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o TransceiverMasterTest.elf  TransceiverMasterTest.o   -Wl,-Map="TransceiverMasterTest.map" -Wl,--start-group -Wl,-lm -Wl,-lUART -Wl,-lSPI -Wl,-lTrace -Wl,-lTransceiver  -Wl,--end-group -Wl,-L"../../../../Library/UART/UART/Debug" -Wl,-L"../../../../Library/Trace/Trace/Debug" -Wl,-L"../../../../Library/SPI/SPI/Debug" -Wl,-L"../../../../Library/Transceiver/Transceiver/Debug"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		../../../../Library/Transceiver/Transceiver/Debug\libTransceiver.a(Transceiver.o): In function `InitTransceiver':
+C:\Users\Darshan\Desktop\ATMega1284p\App\TransceiverMasterTest\TransceiverMasterTest\Release\Transceiver.c(1,1): error: undefined reference to `RegisterExtInterrupt'
+collect2.exe(0,0): error: ld returned 1 exit status
+		make: *** [TransceiverMasterTest.elf] Error 1
+		The command exited with code 2.
+	Done executing task "RunCompilerTask" -- FAILED.
+Done building target "CoreBuild" in project "TransceiverMasterTest.cproj" -- FAILED.
+Done building project "TransceiverMasterTest.cproj" -- FAILED.
+
+Build FAILED.
+========== Rebuild All: 0 succeeded, 1 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: TransceiverSlaveTest, Configuration: Release AVR ------
+Build started.
+Project "TransceiverSlaveTest.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\TransceiverSlaveTest\TransceiverSlaveTest\TransceiverSlaveTest.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  TransceiverSlaveTest.o   
+		rm -rf  TransceiverSlaveTest.d   
+		rm -rf "TransceiverSlaveTest.elf" "TransceiverSlaveTest.a" "TransceiverSlaveTest.hex" "TransceiverSlaveTest.lss" "TransceiverSlaveTest.eep" "TransceiverSlaveTest.map" "TransceiverSlaveTest.srec" "TransceiverSlaveTest.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "TransceiverSlaveTest.cproj".
+Done building project "TransceiverSlaveTest.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: TransceiverSlaveTest, Configuration: Release AVR ------
+Build started.
+Project "TransceiverSlaveTest.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\TransceiverSlaveTest\TransceiverSlaveTest\TransceiverSlaveTest.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././TransceiverSlaveTest.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "TransceiverSlaveTest.d" -MT"TransceiverSlaveTest.d" -MT"TransceiverSlaveTest.o"   -o "TransceiverSlaveTest.o" ".././TransceiverSlaveTest.c" 
+		Finished building: .././TransceiverSlaveTest.c
+		Building target: TransceiverSlaveTest.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o TransceiverSlaveTest.elf  TransceiverSlaveTest.o   -Wl,-Map="TransceiverSlaveTest.map" -Wl,--start-group -Wl,-lm -Wl,-lUART -Wl,-lSPI -Wl,-lTrace -Wl,-lTransceiver  -Wl,--end-group -Wl,-L"../../../../Library/UART/UART/Debug" -Wl,-L"../../../../Library/Trace/Trace/Debug" -Wl,-L"../../../../Library/SPI/SPI/Debug" -Wl,-L"../../../../Library/Transceiver/Transceiver/Debug"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		../../../../Library/Transceiver/Transceiver/Debug\libTransceiver.a(Transceiver.o): In function `InitTransceiver':
+C:\Users\Darshan\Desktop\ATMega1284p\App\TransceiverSlaveTest\TransceiverSlaveTest\Release\Transceiver.c(1,1): error: undefined reference to `RegisterExtInterrupt'
+collect2.exe(0,0): error: ld returned 1 exit status
+		make: *** [TransceiverSlaveTest.elf] Error 1
+		The command exited with code 2.
+	Done executing task "RunCompilerTask" -- FAILED.
+Done building target "CoreBuild" in project "TransceiverSlaveTest.cproj" -- FAILED.
+Done building project "TransceiverSlaveTest.cproj" -- FAILED.
+
+Build FAILED.
+========== Rebuild All: 0 succeeded, 1 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: TWIMasterTest, Configuration: Release AVR ------
+Build started.
+Project "TWIMasterTest.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\TWIMasterTest\TWIMasterTest\TWIMasterTest.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  TWIMasterTest.o   
+		rm -rf  TWIMasterTest.d   
+		rm -rf "TWIMasterTest.elf" "TWIMasterTest.a" "TWIMasterTest.hex" "TWIMasterTest.lss" "TWIMasterTest.eep" "TWIMasterTest.map" "TWIMasterTest.srec" "TWIMasterTest.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "TWIMasterTest.cproj".
+Done building project "TWIMasterTest.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: TWIMasterTest, Configuration: Release AVR ------
+Build started.
+Project "TWIMasterTest.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\TWIMasterTest\TWIMasterTest\TWIMasterTest.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././TWIMasterTest.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "TWIMasterTest.d" -MT"TWIMasterTest.d" -MT"TWIMasterTest.o"   -o "TWIMasterTest.o" ".././TWIMasterTest.c" 
+		Finished building: .././TWIMasterTest.c
+		Building target: TWIMasterTest.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o TWIMasterTest.elf  TWIMasterTest.o   -Wl,-Map="TWIMasterTest.map" -Wl,--start-group -Wl,-lm -Wl,-lUART -Wl,-lTWI -Wl,-lTrace  -Wl,--end-group -Wl,-L"../../../../Library/UART/UART/Release" -Wl,-L"../../../../Library/TWI/TWI/Release" -Wl,-L"../../../../Library/Trace/Trace/Release"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		Finished building target: TWIMasterTest.elf
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "TWIMasterTest.elf" "TWIMasterTest.hex"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "TWIMasterTest.elf" "TWIMasterTest.eep" || exit 0
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "TWIMasterTest.elf" > "TWIMasterTest.lss"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "TWIMasterTest.elf" "TWIMasterTest.srec"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-size.exe" "TWIMasterTest.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		   2246	    732	     20	   2998	    bb6	TWIMasterTest.elf
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	2978 bytes   2.3 % Full
+				Data Memory Usage 		:	752 bytes   4.6 % Full
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "TWIMasterTest.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\TWIMasterTest\TWIMasterTest\TWIMasterTest.cproj" (entry point):
+Done building target "Build" in project "TWIMasterTest.cproj".
+Done building project "TWIMasterTest.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+
+------ Rebuild All started: Project: TwiSlaveTest, Configuration: Release AVR ------
+Build started.
+Project "TwiSlaveTest.cproj" (Clean target(s)):
+Target "Clean" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\TwiSlaveTest\TwiSlaveTest\TwiSlaveTest.cproj" (entry point):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe clean 
+		rm -rf  TwiSlaveTest.o   
+		rm -rf  TwiSlaveTest.d   
+		rm -rf "TwiSlaveTest.elf" "TwiSlaveTest.a" "TwiSlaveTest.hex" "TwiSlaveTest.lss" "TwiSlaveTest.eep" "TwiSlaveTest.map" "TwiSlaveTest.srec" "TwiSlaveTest.usersignatures"
+	Done executing task "RunCompilerTask".
+Done building target "Clean" in project "TwiSlaveTest.cproj".
+Done building project "TwiSlaveTest.cproj".
+
+Build succeeded.
+------ Rebuild All started: Project: TwiSlaveTest, Configuration: Release AVR ------
+Build started.
+Project "TwiSlaveTest.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Compiler.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\TwiSlaveTest\TwiSlaveTest\TwiSlaveTest.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils
+		C:\Program Files (x86)\Atmel\Atmel Studio 6.2\shellUtils\make.exe all 
+		Building file: .././TwiSlaveTest.c
+		Invoking: AVR/GNU C Compiler : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe"  -x c -funsigned-char -funsigned-bitfields -DNDEBUG  -I"../../../../Include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -Wall -mmcu=atmega1284p -c -std=gnu99 -MD -MP -MF "TwiSlaveTest.d" -MT"TwiSlaveTest.d" -MT"TwiSlaveTest.o"   -o "TwiSlaveTest.o" ".././TwiSlaveTest.c" 
+		Finished building: .././TwiSlaveTest.c
+		Building target: TwiSlaveTest.elf
+		Invoking: AVR/GNU Linker : 4.8.1
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-gcc.exe" -o TwiSlaveTest.elf  TwiSlaveTest.o   -Wl,-Map="TwiSlaveTest.map" -Wl,--start-group -Wl,-lm -Wl,-lUART -Wl,-lTWI -Wl,-lTrace  -Wl,--end-group -Wl,-L"../../../../Library/UART/UART/Release" -Wl,-L"../../../../Library/TWI/TWI/Release" -Wl,-L"../../../../Library/Trace/Trace/Release"  -Wl,--gc-sections -mrelax -mmcu=atmega1284p  
+		Finished building target: TwiSlaveTest.elf
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "TwiSlaveTest.elf" "TwiSlaveTest.hex"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "TwiSlaveTest.elf" "TwiSlaveTest.eep" || exit 0
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "TwiSlaveTest.elf" > "TwiSlaveTest.lss"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "TwiSlaveTest.elf" "TwiSlaveTest.srec"
+		"C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR8 GCC\Native\3.4.1061\avr8-gnu-toolchain\bin\avr-size.exe" "TwiSlaveTest.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		   2184	    730	     20	   2934	    b76	TwiSlaveTest.elf
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	2914 bytes   2.2 % Full
+				Data Memory Usage 		:	750 bytes   4.6 % Full
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "TwiSlaveTest.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files (x86)\Atmel\Atmel Studio 6.2\Vs\Avr.common.targets" from project "C:\Users\Darshan\Desktop\ATMega1284p\App\TwiSlaveTest\TwiSlaveTest\TwiSlaveTest.cproj" (entry point):
+Done building target "Build" in project "TwiSlaveTest.cproj".
+Done building project "TwiSlaveTest.cproj".
+
+Build succeeded.
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+

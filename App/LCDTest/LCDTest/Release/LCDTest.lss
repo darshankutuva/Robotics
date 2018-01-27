@@ -1,0 +1,3309 @@
+
+LCDTest.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         000002ec  00800100  000010d4  00001168  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000010d4  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000009  008003ec  008003ec  00001454  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00001454  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000148  00000000  00000000  00001484  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000193c  00000000  00000000  000015cc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000066a  00000000  00000000  00002f08  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000100c  00000000  00000000  00003572  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000604  00000000  00000000  00004580  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000091a  00000000  00000000  00004b84  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00002b03  00000000  00000000  0000549e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000108  00000000  00000000  00007fa1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+       2:	00 00       	nop
+       4:	61 c0       	rjmp	.+194    	; 0xc8 <__bad_interrupt>
+       6:	00 00       	nop
+       8:	5f c0       	rjmp	.+190    	; 0xc8 <__bad_interrupt>
+       a:	00 00       	nop
+       c:	5d c0       	rjmp	.+186    	; 0xc8 <__bad_interrupt>
+       e:	00 00       	nop
+      10:	5b c0       	rjmp	.+182    	; 0xc8 <__bad_interrupt>
+      12:	00 00       	nop
+      14:	59 c0       	rjmp	.+178    	; 0xc8 <__bad_interrupt>
+      16:	00 00       	nop
+      18:	57 c0       	rjmp	.+174    	; 0xc8 <__bad_interrupt>
+      1a:	00 00       	nop
+      1c:	55 c0       	rjmp	.+170    	; 0xc8 <__bad_interrupt>
+      1e:	00 00       	nop
+      20:	53 c0       	rjmp	.+166    	; 0xc8 <__bad_interrupt>
+      22:	00 00       	nop
+      24:	51 c0       	rjmp	.+162    	; 0xc8 <__bad_interrupt>
+      26:	00 00       	nop
+      28:	4f c0       	rjmp	.+158    	; 0xc8 <__bad_interrupt>
+      2a:	00 00       	nop
+      2c:	4d c0       	rjmp	.+154    	; 0xc8 <__bad_interrupt>
+      2e:	00 00       	nop
+      30:	4b c0       	rjmp	.+150    	; 0xc8 <__bad_interrupt>
+      32:	00 00       	nop
+      34:	49 c0       	rjmp	.+146    	; 0xc8 <__bad_interrupt>
+      36:	00 00       	nop
+      38:	47 c0       	rjmp	.+142    	; 0xc8 <__bad_interrupt>
+      3a:	00 00       	nop
+      3c:	45 c0       	rjmp	.+138    	; 0xc8 <__bad_interrupt>
+      3e:	00 00       	nop
+      40:	43 c0       	rjmp	.+134    	; 0xc8 <__bad_interrupt>
+      42:	00 00       	nop
+      44:	41 c0       	rjmp	.+130    	; 0xc8 <__bad_interrupt>
+      46:	00 00       	nop
+      48:	3f c0       	rjmp	.+126    	; 0xc8 <__bad_interrupt>
+      4a:	00 00       	nop
+      4c:	3d c0       	rjmp	.+122    	; 0xc8 <__bad_interrupt>
+      4e:	00 00       	nop
+      50:	3b c0       	rjmp	.+118    	; 0xc8 <__bad_interrupt>
+      52:	00 00       	nop
+      54:	39 c0       	rjmp	.+114    	; 0xc8 <__bad_interrupt>
+      56:	00 00       	nop
+      58:	37 c0       	rjmp	.+110    	; 0xc8 <__bad_interrupt>
+      5a:	00 00       	nop
+      5c:	35 c0       	rjmp	.+106    	; 0xc8 <__bad_interrupt>
+      5e:	00 00       	nop
+      60:	33 c0       	rjmp	.+102    	; 0xc8 <__bad_interrupt>
+      62:	00 00       	nop
+      64:	31 c0       	rjmp	.+98     	; 0xc8 <__bad_interrupt>
+      66:	00 00       	nop
+      68:	2f c0       	rjmp	.+94     	; 0xc8 <__bad_interrupt>
+      6a:	00 00       	nop
+      6c:	2d c0       	rjmp	.+90     	; 0xc8 <__bad_interrupt>
+      6e:	00 00       	nop
+      70:	2b c0       	rjmp	.+86     	; 0xc8 <__bad_interrupt>
+      72:	00 00       	nop
+      74:	29 c0       	rjmp	.+82     	; 0xc8 <__bad_interrupt>
+      76:	00 00       	nop
+      78:	27 c0       	rjmp	.+78     	; 0xc8 <__bad_interrupt>
+      7a:	00 00       	nop
+      7c:	25 c0       	rjmp	.+74     	; 0xc8 <__bad_interrupt>
+      7e:	00 00       	nop
+      80:	23 c0       	rjmp	.+70     	; 0xc8 <__bad_interrupt>
+      82:	00 00       	nop
+      84:	21 c0       	rjmp	.+66     	; 0xc8 <__bad_interrupt>
+      86:	00 00       	nop
+      88:	1f c0       	rjmp	.+62     	; 0xc8 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+      8c:	11 24       	eor	r1, r1
+      8e:	1f be       	out	0x3f, r1	; 63
+      90:	cf ef       	ldi	r28, 0xFF	; 255
+      92:	d0 e4       	ldi	r29, 0x40	; 64
+      94:	de bf       	out	0x3e, r29	; 62
+      96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+      98:	13 e0       	ldi	r17, 0x03	; 3
+      9a:	a0 e0       	ldi	r26, 0x00	; 0
+      9c:	b1 e0       	ldi	r27, 0x01	; 1
+      9e:	e4 ed       	ldi	r30, 0xD4	; 212
+      a0:	f0 e1       	ldi	r31, 0x10	; 16
+      a2:	00 e0       	ldi	r16, 0x00	; 0
+      a4:	0b bf       	out	0x3b, r16	; 59
+      a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+      a8:	07 90       	elpm	r0, Z+
+      aa:	0d 92       	st	X+, r0
+      ac:	ac 3e       	cpi	r26, 0xEC	; 236
+      ae:	b1 07       	cpc	r27, r17
+      b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+      b2:	23 e0       	ldi	r18, 0x03	; 3
+      b4:	ac ee       	ldi	r26, 0xEC	; 236
+      b6:	b3 e0       	ldi	r27, 0x03	; 3
+      b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+      ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+      bc:	a5 3f       	cpi	r26, 0xF5	; 245
+      be:	b2 07       	cpc	r27, r18
+      c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+      c2:	03 d0       	rcall	.+6      	; 0xca <main>
+      c4:	0c 94 68 08 	jmp	0x10d0	; 0x10d0 <_exit>
+
+000000c8 <__bad_interrupt>:
+      c8:	9b cf       	rjmp	.-202    	; 0x0 <__vectors>
+
+000000ca <main>:
+      ca:	cf 93       	push	r28
+      cc:	df 93       	push	r29
+      ce:	1f 92       	push	r1
+      d0:	cd b7       	in	r28, 0x3d	; 61
+      d2:	de b7       	in	r29, 0x3e	; 62
+      d4:	45 e0       	ldi	r20, 0x05	; 5
+      d6:	60 e0       	ldi	r22, 0x00	; 0
+      d8:	72 e1       	ldi	r23, 0x12	; 18
+      da:	8a e7       	ldi	r24, 0x7A	; 122
+      dc:	90 e0       	ldi	r25, 0x00	; 0
+      de:	0b d0       	rcall	.+22     	; 0xf6 <InitTrace>
+      e0:	8e ef       	ldi	r24, 0xFE	; 254
+      e2:	89 83       	std	Y+1, r24	; 0x01
+      e4:	ce 01       	movw	r24, r28
+      e6:	01 96       	adiw	r24, 0x01	; 1
+      e8:	43 d4       	rcall	.+2182   	; 0x970 <InitLCD>
+      ea:	80 e0       	ldi	r24, 0x00	; 0
+      ec:	90 e0       	ldi	r25, 0x00	; 0
+      ee:	0f 90       	pop	r0
+      f0:	df 91       	pop	r29
+      f2:	cf 91       	pop	r28
+      f4:	08 95       	ret
+
+000000f6 <InitTrace>:
+
+#ifdef DEBUG
+
+void
+InitTrace(unsigned long ProcFrequency, unsigned char TraceLevel)
+{
+      f6:	0f 93       	push	r16
+	if (!gTraceInitialized)
+      f8:	20 91 ec 03 	lds	r18, 0x03EC
+      fc:	21 11       	cpse	r18, r1
+      fe:	0c c0       	rjmp	.+24     	; 0x118 <InitTrace+0x22>
+	{
+
+		gTraceLevel = TraceLevel;
+     100:	40 93 f3 03 	sts	0x03F3, r20
+
+		InitUARTSync(UART_ZERO, ProcFrequency, TRACE_BAUD_RATE, NORMAL_MODE);	
+     104:	00 e1       	ldi	r16, 0x10	; 16
+     106:	20 e8       	ldi	r18, 0x80	; 128
+     108:	35 e2       	ldi	r19, 0x25	; 37
+     10a:	ab 01       	movw	r20, r22
+     10c:	bc 01       	movw	r22, r24
+     10e:	80 e0       	ldi	r24, 0x00	; 0
+     110:	62 d4       	rcall	.+2244   	; 0x9d6 <InitUARTSync>
+		
+		gTraceInitialized = TRUE;
+     112:	81 e0       	ldi	r24, 0x01	; 1
+     114:	80 93 ec 03 	sts	0x03EC, r24
+	
+	}
+}
+     118:	0f 91       	pop	r16
+     11a:	08 95       	ret
+
+0000011c <SendStringValue>:
+SendStringValue(char *String)
+{
+
+	unsigned long Length = 0;
+	
+	Length = strlen(String);
+     11c:	fc 01       	movw	r30, r24
+     11e:	01 90       	ld	r0, Z+
+     120:	00 20       	and	r0, r0
+     122:	e9 f7       	brne	.-6      	; 0x11e <SendStringValue+0x2>
+     124:	31 97       	sbiw	r30, 0x01	; 1
+     126:	9f 01       	movw	r18, r30
+     128:	28 1b       	sub	r18, r24
+     12a:	39 0b       	sbc	r19, r25
+     12c:	40 e0       	ldi	r20, 0x00	; 0
+     12e:	50 e0       	ldi	r21, 0x00	; 0
+	
+	UARTTransmitSync(UART_ZERO, (PVOID) String, Length);
+     130:	bc 01       	movw	r22, r24
+     132:	80 e0       	ldi	r24, 0x00	; 0
+     134:	96 c4       	rjmp	.+2348   	; 0xa62 <UARTTransmitSync>
+     136:	08 95       	ret
+
+00000138 <SendHexValue>:
+	
+}
+
+void
+SendHexValue(unsigned long long Value)
+{
+     138:	8f 92       	push	r8
+     13a:	9f 92       	push	r9
+     13c:	af 92       	push	r10
+     13e:	bf 92       	push	r11
+     140:	cf 92       	push	r12
+     142:	df 92       	push	r13
+     144:	ef 92       	push	r14
+     146:	ff 92       	push	r15
+     148:	0f 93       	push	r16
+     14a:	1f 93       	push	r17
+     14c:	cf 93       	push	r28
+     14e:	df 93       	push	r29
+     150:	cd b7       	in	r28, 0x3d	; 61
+     152:	de b7       	in	r29, 0x3e	; 62
+     154:	da 95       	dec	r29
+     156:	0f b6       	in	r0, 0x3f	; 63
+     158:	f8 94       	cli
+     15a:	de bf       	out	0x3e, r29	; 62
+     15c:	0f be       	out	0x3f, r0	; 63
+     15e:	cd bf       	out	0x3d, r28	; 61
+     160:	02 2f       	mov	r16, r18
+     162:	93 2e       	mov	r9, r19
+     164:	a4 2e       	mov	r10, r20
+     166:	b5 2e       	mov	r11, r21
+     168:	c6 2e       	mov	r12, r22
+     16a:	d7 2e       	mov	r13, r23
+     16c:	e8 2e       	mov	r14, r24
+     16e:	f9 2e       	mov	r15, r25
+
+	unsigned char TransmitChar[MAX_DECIMAL_CHARS];
+
+	unsigned char Count = 0;
+     170:	10 e0       	ldi	r17, 0x00	; 0
+
+		if (Value < 16)
+		{
+			TransmitChar[Count] = Value;
+
+			Value = 0;
+     172:	81 2c       	mov	r8, r1
+
+
+	do
+	{
+
+		if (Value < 16)
+     174:	20 2f       	mov	r18, r16
+     176:	39 2d       	mov	r19, r9
+     178:	4a 2d       	mov	r20, r10
+     17a:	5b 2d       	mov	r21, r11
+     17c:	6c 2d       	mov	r22, r12
+     17e:	7d 2d       	mov	r23, r13
+     180:	8e 2d       	mov	r24, r14
+     182:	9f 2d       	mov	r25, r15
+     184:	af e0       	ldi	r26, 0x0F	; 15
+     186:	98 d7       	rcall	.+3888   	; 0x10b8 <__cmpdi2_s8>
+     188:	09 f0       	breq	.+2      	; 0x18c <SendHexValue+0x54>
+     18a:	80 f4       	brcc	.+32     	; 0x1ac <SendHexValue+0x74>
+		{
+			TransmitChar[Count] = Value;
+     18c:	e1 e0       	ldi	r30, 0x01	; 1
+     18e:	f0 e0       	ldi	r31, 0x00	; 0
+     190:	ec 0f       	add	r30, r28
+     192:	fd 1f       	adc	r31, r29
+     194:	e1 0f       	add	r30, r17
+     196:	f1 1d       	adc	r31, r1
+     198:	00 83       	st	Z, r16
+
+			Value = 0;
+     19a:	08 2d       	mov	r16, r8
+     19c:	98 2c       	mov	r9, r8
+     19e:	a8 2c       	mov	r10, r8
+     1a0:	b8 2c       	mov	r11, r8
+     1a2:	c8 2c       	mov	r12, r8
+     1a4:	d8 2c       	mov	r13, r8
+     1a6:	e8 2c       	mov	r14, r8
+     1a8:	f8 2c       	mov	r15, r8
+     1aa:	1b c0       	rjmp	.+54     	; 0x1e2 <SendHexValue+0xaa>
+		}
+		else
+		{
+			TransmitChar[Count] = Value % 16;
+     1ac:	e1 e0       	ldi	r30, 0x01	; 1
+     1ae:	f0 e0       	ldi	r31, 0x00	; 0
+     1b0:	ec 0f       	add	r30, r28
+     1b2:	fd 1f       	adc	r31, r29
+     1b4:	e1 0f       	add	r30, r17
+     1b6:	f1 1d       	adc	r31, r1
+     1b8:	80 2f       	mov	r24, r16
+     1ba:	8f 70       	andi	r24, 0x0F	; 15
+     1bc:	80 83       	st	Z, r24
+
+			Value = Value / 16;
+     1be:	20 2f       	mov	r18, r16
+     1c0:	39 2d       	mov	r19, r9
+     1c2:	4a 2d       	mov	r20, r10
+     1c4:	5b 2d       	mov	r21, r11
+     1c6:	6c 2d       	mov	r22, r12
+     1c8:	7d 2d       	mov	r23, r13
+     1ca:	8e 2d       	mov	r24, r14
+     1cc:	9f 2d       	mov	r25, r15
+     1ce:	04 e0       	ldi	r16, 0x04	; 4
+     1d0:	57 d7       	rcall	.+3758   	; 0x1080 <__lshrdi3>
+     1d2:	02 2f       	mov	r16, r18
+     1d4:	93 2e       	mov	r9, r19
+     1d6:	a4 2e       	mov	r10, r20
+     1d8:	b5 2e       	mov	r11, r21
+     1da:	c6 2e       	mov	r12, r22
+     1dc:	d7 2e       	mov	r13, r23
+     1de:	e8 2e       	mov	r14, r24
+     1e0:	f9 2e       	mov	r15, r25
+
+		}
+		
+		if (TransmitChar[Count] > 9)
+     1e2:	e1 2f       	mov	r30, r17
+     1e4:	f0 e0       	ldi	r31, 0x00	; 0
+     1e6:	a1 e0       	ldi	r26, 0x01	; 1
+     1e8:	b0 e0       	ldi	r27, 0x00	; 0
+     1ea:	ac 0f       	add	r26, r28
+     1ec:	bd 1f       	adc	r27, r29
+     1ee:	ae 0f       	add	r26, r30
+     1f0:	bf 1f       	adc	r27, r31
+     1f2:	8c 91       	ld	r24, X
+     1f4:	8a 30       	cpi	r24, 0x0A	; 10
+     1f6:	20 f0       	brcs	.+8      	; 0x200 <SendHexValue+0xc8>
+		{
+			TransmitChar[Count] = TransmitChar[Count] + ASCII_HEX_CONVERSION;
+     1f8:	fd 01       	movw	r30, r26
+     1fa:	89 5a       	subi	r24, 0xA9	; 169
+     1fc:	80 83       	st	Z, r24
+     1fe:	08 c0       	rjmp	.+16     	; 0x210 <SendHexValue+0xd8>
+		}
+		else
+		{
+			TransmitChar[Count] = TransmitChar[Count] + ASCII_DECIMAL_CONVERSION;
+     200:	21 e0       	ldi	r18, 0x01	; 1
+     202:	30 e0       	ldi	r19, 0x00	; 0
+     204:	2c 0f       	add	r18, r28
+     206:	3d 1f       	adc	r19, r29
+     208:	e2 0f       	add	r30, r18
+     20a:	f3 1f       	adc	r31, r19
+     20c:	80 5d       	subi	r24, 0xD0	; 208
+     20e:	80 83       	st	Z, r24
+		}
+		
+		Count++;
+     210:	1f 5f       	subi	r17, 0xFF	; 255
+
+	} while (Value != 0);
+     212:	20 2f       	mov	r18, r16
+     214:	39 2d       	mov	r19, r9
+     216:	4a 2d       	mov	r20, r10
+     218:	5b 2d       	mov	r21, r11
+     21a:	6c 2d       	mov	r22, r12
+     21c:	7d 2d       	mov	r23, r13
+     21e:	8e 2d       	mov	r24, r14
+     220:	9f 2d       	mov	r25, r15
+     222:	a8 2d       	mov	r26, r8
+     224:	49 d7       	rcall	.+3730   	; 0x10b8 <__cmpdi2_s8>
+     226:	09 f0       	breq	.+2      	; 0x22a <SendHexValue+0xf2>
+     228:	a5 cf       	rjmp	.-182    	; 0x174 <SendHexValue+0x3c>
+
+	while (Count != 0)
+     22a:	11 23       	and	r17, r17
+     22c:	91 f0       	breq	.+36     	; 0x252 <SendHexValue+0x11a>
+	{
+		UARTTransmitSync(UART_ZERO, (PVOID) &TransmitChar[Count - 1], 1);
+     22e:	61 2f       	mov	r22, r17
+     230:	70 e0       	ldi	r23, 0x00	; 0
+     232:	61 50       	subi	r22, 0x01	; 1
+     234:	71 09       	sbc	r23, r1
+     236:	81 e0       	ldi	r24, 0x01	; 1
+     238:	90 e0       	ldi	r25, 0x00	; 0
+     23a:	8c 0f       	add	r24, r28
+     23c:	9d 1f       	adc	r25, r29
+     23e:	68 0f       	add	r22, r24
+     240:	79 1f       	adc	r23, r25
+     242:	21 e0       	ldi	r18, 0x01	; 1
+     244:	30 e0       	ldi	r19, 0x00	; 0
+     246:	40 e0       	ldi	r20, 0x00	; 0
+     248:	50 e0       	ldi	r21, 0x00	; 0
+     24a:	80 e0       	ldi	r24, 0x00	; 0
+     24c:	0a d4       	rcall	.+2068   	; 0xa62 <UARTTransmitSync>
+		
+		Count--;
+     24e:	11 50       	subi	r17, 0x01	; 1
+		
+		Count++;
+
+	} while (Value != 0);
+
+	while (Count != 0)
+     250:	71 f7       	brne	.-36     	; 0x22e <SendHexValue+0xf6>
+	{
+		UARTTransmitSync(UART_ZERO, (PVOID) &TransmitChar[Count - 1], 1);
+		
+		Count--;
+	}
+}
+     252:	d3 95       	inc	r29
+     254:	0f b6       	in	r0, 0x3f	; 63
+     256:	f8 94       	cli
+     258:	de bf       	out	0x3e, r29	; 62
+     25a:	0f be       	out	0x3f, r0	; 63
+     25c:	cd bf       	out	0x3d, r28	; 61
+     25e:	df 91       	pop	r29
+     260:	cf 91       	pop	r28
+     262:	1f 91       	pop	r17
+     264:	0f 91       	pop	r16
+     266:	ff 90       	pop	r15
+     268:	ef 90       	pop	r14
+     26a:	df 90       	pop	r13
+     26c:	cf 90       	pop	r12
+     26e:	bf 90       	pop	r11
+     270:	af 90       	pop	r10
+     272:	9f 90       	pop	r9
+     274:	8f 90       	pop	r8
+     276:	08 95       	ret
+
+00000278 <SendDecimalValue>:
+
+
+void
+SendDecimalValue(unsigned long long Value)
+{
+     278:	2f 92       	push	r2
+     27a:	3f 92       	push	r3
+     27c:	4f 92       	push	r4
+     27e:	5f 92       	push	r5
+     280:	6f 92       	push	r6
+     282:	7f 92       	push	r7
+     284:	8f 92       	push	r8
+     286:	9f 92       	push	r9
+     288:	af 92       	push	r10
+     28a:	bf 92       	push	r11
+     28c:	cf 92       	push	r12
+     28e:	df 92       	push	r13
+     290:	ef 92       	push	r14
+     292:	ff 92       	push	r15
+     294:	0f 93       	push	r16
+     296:	1f 93       	push	r17
+     298:	cf 93       	push	r28
+     29a:	df 93       	push	r29
+     29c:	cd b7       	in	r28, 0x3d	; 61
+     29e:	de b7       	in	r29, 0x3e	; 62
+     2a0:	c2 50       	subi	r28, 0x02	; 2
+     2a2:	d1 40       	sbci	r29, 0x01	; 1
+     2a4:	0f b6       	in	r0, 0x3f	; 63
+     2a6:	f8 94       	cli
+     2a8:	de bf       	out	0x3e, r29	; 62
+     2aa:	0f be       	out	0x3f, r0	; 63
+     2ac:	cd bf       	out	0x3d, r28	; 61
+     2ae:	cf 5f       	subi	r28, 0xFF	; 255
+     2b0:	de 4f       	sbci	r29, 0xFE	; 254
+     2b2:	28 83       	st	Y, r18
+     2b4:	c1 50       	subi	r28, 0x01	; 1
+     2b6:	d1 40       	sbci	r29, 0x01	; 1
+     2b8:	23 2e       	mov	r2, r19
+     2ba:	34 2e       	mov	r3, r20
+     2bc:	45 2e       	mov	r4, r21
+     2be:	56 2e       	mov	r5, r22
+     2c0:	67 2e       	mov	r6, r23
+     2c2:	78 2e       	mov	r7, r24
+     2c4:	89 2e       	mov	r8, r25
+
+	unsigned char TransmitChar[MAX_DECIMAL_CHARS];
+
+	unsigned char Count = 0;
+     2c6:	91 2c       	mov	r9, r1
+
+
+	do
+	{
+
+		if (Value < 10)
+     2c8:	cf 5f       	subi	r28, 0xFF	; 255
+     2ca:	de 4f       	sbci	r29, 0xFE	; 254
+     2cc:	28 81       	ld	r18, Y
+     2ce:	c1 50       	subi	r28, 0x01	; 1
+     2d0:	d1 40       	sbci	r29, 0x01	; 1
+     2d2:	32 2d       	mov	r19, r2
+     2d4:	43 2d       	mov	r20, r3
+     2d6:	54 2d       	mov	r21, r4
+     2d8:	65 2d       	mov	r22, r5
+     2da:	76 2d       	mov	r23, r6
+     2dc:	87 2d       	mov	r24, r7
+     2de:	98 2d       	mov	r25, r8
+     2e0:	a9 e0       	ldi	r26, 0x09	; 9
+     2e2:	ea d6       	rcall	.+3540   	; 0x10b8 <__cmpdi2_s8>
+     2e4:	09 f0       	breq	.+2      	; 0x2e8 <SendDecimalValue+0x70>
+     2e6:	40 f4       	brcc	.+16     	; 0x2f8 <SendDecimalValue+0x80>
+
+			Value = Value / 10;
+
+		}
+		
+		TransmitChar[Count] = TransmitChar[Count] + ASCII_DECIMAL_CONVERSION;
+     2e8:	fe 01       	movw	r30, r28
+     2ea:	e9 0d       	add	r30, r9
+     2ec:	f1 1d       	adc	r31, r1
+     2ee:	82 2f       	mov	r24, r18
+     2f0:	80 5d       	subi	r24, 0xD0	; 208
+     2f2:	81 83       	std	Z+1, r24	; 0x01
+		
+		Count++;
+     2f4:	93 94       	inc	r9
+     2f6:	48 c0       	rjmp	.+144    	; 0x388 <SendDecimalValue+0x110>
+
+			Value = 0;
+		}
+		else
+		{
+			TransmitChar[Count] = Value % 10;
+     2f8:	0f 2e       	mov	r0, r31
+     2fa:	fa e0       	ldi	r31, 0x0A	; 10
+     2fc:	af 2e       	mov	r10, r31
+     2fe:	f0 2d       	mov	r31, r0
+     300:	b1 2c       	mov	r11, r1
+     302:	c1 2c       	mov	r12, r1
+     304:	d1 2c       	mov	r13, r1
+     306:	e1 2c       	mov	r14, r1
+     308:	f1 2c       	mov	r15, r1
+     30a:	00 e0       	ldi	r16, 0x00	; 0
+     30c:	10 e0       	ldi	r17, 0x00	; 0
+     30e:	cf 5f       	subi	r28, 0xFF	; 255
+     310:	de 4f       	sbci	r29, 0xFE	; 254
+     312:	28 81       	ld	r18, Y
+     314:	c1 50       	subi	r28, 0x01	; 1
+     316:	d1 40       	sbci	r29, 0x01	; 1
+     318:	32 2d       	mov	r19, r2
+     31a:	43 2d       	mov	r20, r3
+     31c:	54 2d       	mov	r21, r4
+     31e:	65 2d       	mov	r22, r5
+     320:	76 2d       	mov	r23, r6
+     322:	87 2d       	mov	r24, r7
+     324:	98 2d       	mov	r25, r8
+     326:	05 d6       	rcall	.+3082   	; 0xf32 <__umoddi3>
+     328:	ce 5f       	subi	r28, 0xFE	; 254
+     32a:	de 4f       	sbci	r29, 0xFE	; 254
+     32c:	28 83       	st	Y, r18
+     32e:	c2 50       	subi	r28, 0x02	; 2
+     330:	d1 40       	sbci	r29, 0x01	; 1
+
+			Value = Value / 10;
+     332:	cf 5f       	subi	r28, 0xFF	; 255
+     334:	de 4f       	sbci	r29, 0xFE	; 254
+     336:	28 81       	ld	r18, Y
+     338:	c1 50       	subi	r28, 0x01	; 1
+     33a:	d1 40       	sbci	r29, 0x01	; 1
+     33c:	32 2d       	mov	r19, r2
+     33e:	43 2d       	mov	r20, r3
+     340:	54 2d       	mov	r21, r4
+     342:	65 2d       	mov	r22, r5
+     344:	76 2d       	mov	r23, r6
+     346:	87 2d       	mov	r24, r7
+     348:	98 2d       	mov	r25, r8
+     34a:	f5 d5       	rcall	.+3050   	; 0xf36 <__udivdi3>
+     34c:	cf 5f       	subi	r28, 0xFF	; 255
+     34e:	de 4f       	sbci	r29, 0xFE	; 254
+     350:	28 83       	st	Y, r18
+     352:	c1 50       	subi	r28, 0x01	; 1
+     354:	d1 40       	sbci	r29, 0x01	; 1
+     356:	23 2e       	mov	r2, r19
+     358:	34 2e       	mov	r3, r20
+     35a:	45 2e       	mov	r4, r21
+     35c:	56 2e       	mov	r5, r22
+     35e:	67 2e       	mov	r6, r23
+     360:	78 2e       	mov	r7, r24
+     362:	89 2e       	mov	r8, r25
+
+		}
+		
+		TransmitChar[Count] = TransmitChar[Count] + ASCII_DECIMAL_CONVERSION;
+     364:	e1 e0       	ldi	r30, 0x01	; 1
+     366:	f0 e0       	ldi	r31, 0x00	; 0
+     368:	ec 0f       	add	r30, r28
+     36a:	fd 1f       	adc	r31, r29
+     36c:	e9 0d       	add	r30, r9
+     36e:	f1 1d       	adc	r31, r1
+     370:	ce 5f       	subi	r28, 0xFE	; 254
+     372:	de 4f       	sbci	r29, 0xFE	; 254
+     374:	a8 81       	ld	r26, Y
+     376:	c2 50       	subi	r28, 0x02	; 2
+     378:	d1 40       	sbci	r29, 0x01	; 1
+     37a:	a0 5d       	subi	r26, 0xD0	; 208
+     37c:	a0 83       	st	Z, r26
+		
+		Count++;
+     37e:	93 94       	inc	r9
+
+	} while (Value != 0);
+     380:	a0 e0       	ldi	r26, 0x00	; 0
+     382:	9a d6       	rcall	.+3380   	; 0x10b8 <__cmpdi2_s8>
+     384:	09 f0       	breq	.+2      	; 0x388 <SendDecimalValue+0x110>
+     386:	a0 cf       	rjmp	.-192    	; 0x2c8 <SendDecimalValue+0x50>
+
+	while (Count != 0)
+     388:	99 20       	and	r9, r9
+     38a:	91 f0       	breq	.+36     	; 0x3b0 <SendDecimalValue+0x138>
+	{
+		UARTTransmitSync(UART_ZERO, (PVOID) &TransmitChar[Count - 1], 1);
+     38c:	69 2d       	mov	r22, r9
+     38e:	70 e0       	ldi	r23, 0x00	; 0
+     390:	61 50       	subi	r22, 0x01	; 1
+     392:	71 09       	sbc	r23, r1
+     394:	81 e0       	ldi	r24, 0x01	; 1
+     396:	90 e0       	ldi	r25, 0x00	; 0
+     398:	8c 0f       	add	r24, r28
+     39a:	9d 1f       	adc	r25, r29
+     39c:	68 0f       	add	r22, r24
+     39e:	79 1f       	adc	r23, r25
+     3a0:	21 e0       	ldi	r18, 0x01	; 1
+     3a2:	30 e0       	ldi	r19, 0x00	; 0
+     3a4:	40 e0       	ldi	r20, 0x00	; 0
+     3a6:	50 e0       	ldi	r21, 0x00	; 0
+     3a8:	80 e0       	ldi	r24, 0x00	; 0
+     3aa:	5b d3       	rcall	.+1718   	; 0xa62 <UARTTransmitSync>
+		
+		Count--;
+     3ac:	9a 94       	dec	r9
+		
+		Count++;
+
+	} while (Value != 0);
+
+	while (Count != 0)
+     3ae:	71 f7       	brne	.-36     	; 0x38c <SendDecimalValue+0x114>
+	{
+		UARTTransmitSync(UART_ZERO, (PVOID) &TransmitChar[Count - 1], 1);
+		
+		Count--;
+	}	
+}
+     3b0:	ce 5f       	subi	r28, 0xFE	; 254
+     3b2:	de 4f       	sbci	r29, 0xFE	; 254
+     3b4:	0f b6       	in	r0, 0x3f	; 63
+     3b6:	f8 94       	cli
+     3b8:	de bf       	out	0x3e, r29	; 62
+     3ba:	0f be       	out	0x3f, r0	; 63
+     3bc:	cd bf       	out	0x3d, r28	; 61
+     3be:	df 91       	pop	r29
+     3c0:	cf 91       	pop	r28
+     3c2:	1f 91       	pop	r17
+     3c4:	0f 91       	pop	r16
+     3c6:	ff 90       	pop	r15
+     3c8:	ef 90       	pop	r14
+     3ca:	df 90       	pop	r13
+     3cc:	cf 90       	pop	r12
+     3ce:	bf 90       	pop	r11
+     3d0:	af 90       	pop	r10
+     3d2:	9f 90       	pop	r9
+     3d4:	8f 90       	pop	r8
+     3d6:	7f 90       	pop	r7
+     3d8:	6f 90       	pop	r6
+     3da:	5f 90       	pop	r5
+     3dc:	4f 90       	pop	r4
+     3de:	3f 90       	pop	r3
+     3e0:	2f 90       	pop	r2
+     3e2:	08 95       	ret
+
+000003e4 <SendSignedDecimalValue>:
+
+void
+SendSignedDecimalValue(long long Value)
+{
+     3e4:	2f 92       	push	r2
+     3e6:	3f 92       	push	r3
+     3e8:	4f 92       	push	r4
+     3ea:	5f 92       	push	r5
+     3ec:	6f 92       	push	r6
+     3ee:	7f 92       	push	r7
+     3f0:	8f 92       	push	r8
+     3f2:	9f 92       	push	r9
+     3f4:	af 92       	push	r10
+     3f6:	bf 92       	push	r11
+     3f8:	cf 92       	push	r12
+     3fa:	df 92       	push	r13
+     3fc:	ef 92       	push	r14
+     3fe:	ff 92       	push	r15
+     400:	0f 93       	push	r16
+     402:	1f 93       	push	r17
+     404:	cf 93       	push	r28
+     406:	df 93       	push	r29
+     408:	cd b7       	in	r28, 0x3d	; 61
+     40a:	de b7       	in	r29, 0x3e	; 62
+     40c:	c3 50       	subi	r28, 0x03	; 3
+     40e:	d1 40       	sbci	r29, 0x01	; 1
+     410:	0f b6       	in	r0, 0x3f	; 63
+     412:	f8 94       	cli
+     414:	de bf       	out	0x3e, r29	; 62
+     416:	0f be       	out	0x3f, r0	; 63
+     418:	cd bf       	out	0x3d, r28	; 61
+     41a:	ce 5f       	subi	r28, 0xFE	; 254
+     41c:	de 4f       	sbci	r29, 0xFE	; 254
+     41e:	28 83       	st	Y, r18
+     420:	c2 50       	subi	r28, 0x02	; 2
+     422:	d1 40       	sbci	r29, 0x01	; 1
+     424:	83 2e       	mov	r8, r19
+     426:	74 2e       	mov	r7, r20
+     428:	65 2e       	mov	r6, r21
+     42a:	56 2e       	mov	r5, r22
+     42c:	47 2e       	mov	r4, r23
+     42e:	38 2e       	mov	r3, r24
+     430:	29 2e       	mov	r2, r25
+	unsigned char TransmitChar[MAX_DECIMAL_CHARS];
+
+	unsigned char Count = 0;
+	
+	unsigned char Minus = '-';
+     432:	8d e2       	ldi	r24, 0x2D	; 45
+     434:	cf 5f       	subi	r28, 0xFF	; 255
+     436:	de 4f       	sbci	r29, 0xFE	; 254
+     438:	88 83       	st	Y, r24
+     43a:	c1 50       	subi	r28, 0x01	; 1
+     43c:	d1 40       	sbci	r29, 0x01	; 1
+
+	//
+	// If the value is negative, print - sign and make the value positive.
+	//
+
+	if (Value < 0)
+     43e:	83 2d       	mov	r24, r3
+     440:	a0 e0       	ldi	r26, 0x00	; 0
+     442:	3a d6       	rcall	.+3188   	; 0x10b8 <__cmpdi2_s8>
+     444:	14 f5       	brge	.+68     	; 0x48a <SendSignedDecimalValue+0xa6>
+	{
+		UARTTransmitSync(UART_ZERO, (PVOID) &Minus, 1);
+     446:	21 e0       	ldi	r18, 0x01	; 1
+     448:	30 e0       	ldi	r19, 0x00	; 0
+     44a:	40 e0       	ldi	r20, 0x00	; 0
+     44c:	50 e0       	ldi	r21, 0x00	; 0
+     44e:	be 01       	movw	r22, r28
+     450:	6f 5f       	subi	r22, 0xFF	; 255
+     452:	7e 4f       	sbci	r23, 0xFE	; 254
+     454:	80 e0       	ldi	r24, 0x00	; 0
+     456:	05 d3       	rcall	.+1546   	; 0xa62 <UARTTransmitSync>
+
+		Value *= -1;
+     458:	ce 5f       	subi	r28, 0xFE	; 254
+     45a:	de 4f       	sbci	r29, 0xFE	; 254
+     45c:	28 81       	ld	r18, Y
+     45e:	c2 50       	subi	r28, 0x02	; 2
+     460:	d1 40       	sbci	r29, 0x01	; 1
+     462:	38 2d       	mov	r19, r8
+     464:	47 2d       	mov	r20, r7
+     466:	56 2d       	mov	r21, r6
+     468:	65 2d       	mov	r22, r5
+     46a:	74 2d       	mov	r23, r4
+     46c:	83 2d       	mov	r24, r3
+     46e:	92 2d       	mov	r25, r2
+     470:	be d5       	rcall	.+2940   	; 0xfee <__negdi2>
+     472:	ce 5f       	subi	r28, 0xFE	; 254
+     474:	de 4f       	sbci	r29, 0xFE	; 254
+     476:	28 83       	st	Y, r18
+     478:	c2 50       	subi	r28, 0x02	; 2
+     47a:	d1 40       	sbci	r29, 0x01	; 1
+     47c:	83 2e       	mov	r8, r19
+     47e:	74 2e       	mov	r7, r20
+     480:	65 2e       	mov	r6, r21
+     482:	56 2e       	mov	r5, r22
+     484:	47 2e       	mov	r4, r23
+     486:	38 2e       	mov	r3, r24
+     488:	29 2e       	mov	r2, r25
+	}	
+}
+
+void
+SendSignedDecimalValue(long long Value)
+{
+     48a:	91 2c       	mov	r9, r1
+	}
+
+	do
+	{
+
+		if (Value < 10)
+     48c:	ce 5f       	subi	r28, 0xFE	; 254
+     48e:	de 4f       	sbci	r29, 0xFE	; 254
+     490:	28 81       	ld	r18, Y
+     492:	c2 50       	subi	r28, 0x02	; 2
+     494:	d1 40       	sbci	r29, 0x01	; 1
+     496:	38 2d       	mov	r19, r8
+     498:	47 2d       	mov	r20, r7
+     49a:	56 2d       	mov	r21, r6
+     49c:	65 2d       	mov	r22, r5
+     49e:	74 2d       	mov	r23, r4
+     4a0:	83 2d       	mov	r24, r3
+     4a2:	92 2d       	mov	r25, r2
+     4a4:	a9 e0       	ldi	r26, 0x09	; 9
+     4a6:	08 d6       	rcall	.+3088   	; 0x10b8 <__cmpdi2_s8>
+     4a8:	09 f0       	breq	.+2      	; 0x4ac <SendSignedDecimalValue+0xc8>
+     4aa:	44 f4       	brge	.+16     	; 0x4bc <SendSignedDecimalValue+0xd8>
+
+			Value = Value / 10;
+
+		}
+	
+		TransmitChar[Count] = TransmitChar[Count] + ASCII_DECIMAL_CONVERSION;
+     4ac:	fe 01       	movw	r30, r28
+     4ae:	e9 0d       	add	r30, r9
+     4b0:	f1 1d       	adc	r31, r1
+     4b2:	82 2f       	mov	r24, r18
+     4b4:	80 5d       	subi	r24, 0xD0	; 208
+     4b6:	81 83       	std	Z+1, r24	; 0x01
+		
+		Count++;
+     4b8:	93 94       	inc	r9
+     4ba:	48 c0       	rjmp	.+144    	; 0x54c <SendSignedDecimalValue+0x168>
+
+			Value = 0;
+		}
+		else
+		{
+			TransmitChar[Count] = Value % 10;
+     4bc:	0f 2e       	mov	r0, r31
+     4be:	fa e0       	ldi	r31, 0x0A	; 10
+     4c0:	af 2e       	mov	r10, r31
+     4c2:	f0 2d       	mov	r31, r0
+     4c4:	b1 2c       	mov	r11, r1
+     4c6:	c1 2c       	mov	r12, r1
+     4c8:	d1 2c       	mov	r13, r1
+     4ca:	e1 2c       	mov	r14, r1
+     4cc:	f1 2c       	mov	r15, r1
+     4ce:	00 e0       	ldi	r16, 0x00	; 0
+     4d0:	10 e0       	ldi	r17, 0x00	; 0
+     4d2:	ce 5f       	subi	r28, 0xFE	; 254
+     4d4:	de 4f       	sbci	r29, 0xFE	; 254
+     4d6:	28 81       	ld	r18, Y
+     4d8:	c2 50       	subi	r28, 0x02	; 2
+     4da:	d1 40       	sbci	r29, 0x01	; 1
+     4dc:	38 2d       	mov	r19, r8
+     4de:	47 2d       	mov	r20, r7
+     4e0:	56 2d       	mov	r21, r6
+     4e2:	65 2d       	mov	r22, r5
+     4e4:	74 2d       	mov	r23, r4
+     4e6:	83 2d       	mov	r24, r3
+     4e8:	92 2d       	mov	r25, r2
+     4ea:	f8 d4       	rcall	.+2544   	; 0xedc <__moddi3>
+     4ec:	cd 5f       	subi	r28, 0xFD	; 253
+     4ee:	de 4f       	sbci	r29, 0xFE	; 254
+     4f0:	28 83       	st	Y, r18
+     4f2:	c3 50       	subi	r28, 0x03	; 3
+     4f4:	d1 40       	sbci	r29, 0x01	; 1
+
+			Value = Value / 10;
+     4f6:	ce 5f       	subi	r28, 0xFE	; 254
+     4f8:	de 4f       	sbci	r29, 0xFE	; 254
+     4fa:	28 81       	ld	r18, Y
+     4fc:	c2 50       	subi	r28, 0x02	; 2
+     4fe:	d1 40       	sbci	r29, 0x01	; 1
+     500:	38 2d       	mov	r19, r8
+     502:	47 2d       	mov	r20, r7
+     504:	56 2d       	mov	r21, r6
+     506:	65 2d       	mov	r22, r5
+     508:	74 2d       	mov	r23, r4
+     50a:	83 2d       	mov	r24, r3
+     50c:	92 2d       	mov	r25, r2
+     50e:	e8 d4       	rcall	.+2512   	; 0xee0 <__divdi3>
+     510:	ce 5f       	subi	r28, 0xFE	; 254
+     512:	de 4f       	sbci	r29, 0xFE	; 254
+     514:	28 83       	st	Y, r18
+     516:	c2 50       	subi	r28, 0x02	; 2
+     518:	d1 40       	sbci	r29, 0x01	; 1
+     51a:	83 2e       	mov	r8, r19
+     51c:	74 2e       	mov	r7, r20
+     51e:	65 2e       	mov	r6, r21
+     520:	56 2e       	mov	r5, r22
+     522:	47 2e       	mov	r4, r23
+     524:	38 2e       	mov	r3, r24
+     526:	29 2e       	mov	r2, r25
+
+		}
+	
+		TransmitChar[Count] = TransmitChar[Count] + ASCII_DECIMAL_CONVERSION;
+     528:	e1 e0       	ldi	r30, 0x01	; 1
+     52a:	f0 e0       	ldi	r31, 0x00	; 0
+     52c:	ec 0f       	add	r30, r28
+     52e:	fd 1f       	adc	r31, r29
+     530:	e9 0d       	add	r30, r9
+     532:	f1 1d       	adc	r31, r1
+     534:	cd 5f       	subi	r28, 0xFD	; 253
+     536:	de 4f       	sbci	r29, 0xFE	; 254
+     538:	a8 81       	ld	r26, Y
+     53a:	c3 50       	subi	r28, 0x03	; 3
+     53c:	d1 40       	sbci	r29, 0x01	; 1
+     53e:	a0 5d       	subi	r26, 0xD0	; 208
+     540:	a0 83       	st	Z, r26
+		
+		Count++;
+     542:	93 94       	inc	r9
+
+	} while (Value != 0);
+     544:	a0 e0       	ldi	r26, 0x00	; 0
+     546:	b8 d5       	rcall	.+2928   	; 0x10b8 <__cmpdi2_s8>
+     548:	09 f0       	breq	.+2      	; 0x54c <SendSignedDecimalValue+0x168>
+     54a:	a0 cf       	rjmp	.-192    	; 0x48c <SendSignedDecimalValue+0xa8>
+
+	while (Count != 0)
+     54c:	99 20       	and	r9, r9
+     54e:	91 f0       	breq	.+36     	; 0x574 <SendSignedDecimalValue+0x190>
+	{
+		UARTTransmitSync(UART_ZERO, (PVOID) &TransmitChar[Count - 1], 1);
+     550:	69 2d       	mov	r22, r9
+     552:	70 e0       	ldi	r23, 0x00	; 0
+     554:	61 50       	subi	r22, 0x01	; 1
+     556:	71 09       	sbc	r23, r1
+     558:	81 e0       	ldi	r24, 0x01	; 1
+     55a:	90 e0       	ldi	r25, 0x00	; 0
+     55c:	8c 0f       	add	r24, r28
+     55e:	9d 1f       	adc	r25, r29
+     560:	68 0f       	add	r22, r24
+     562:	79 1f       	adc	r23, r25
+     564:	21 e0       	ldi	r18, 0x01	; 1
+     566:	30 e0       	ldi	r19, 0x00	; 0
+     568:	40 e0       	ldi	r20, 0x00	; 0
+     56a:	50 e0       	ldi	r21, 0x00	; 0
+     56c:	80 e0       	ldi	r24, 0x00	; 0
+     56e:	79 d2       	rcall	.+1266   	; 0xa62 <UARTTransmitSync>
+		
+		Count--;
+     570:	9a 94       	dec	r9
+		
+		Count++;
+
+	} while (Value != 0);
+
+	while (Count != 0)
+     572:	71 f7       	brne	.-36     	; 0x550 <SendSignedDecimalValue+0x16c>
+	{
+		UARTTransmitSync(UART_ZERO, (PVOID) &TransmitChar[Count - 1], 1);
+		
+		Count--;
+	}
+}
+     574:	cd 5f       	subi	r28, 0xFD	; 253
+     576:	de 4f       	sbci	r29, 0xFE	; 254
+     578:	0f b6       	in	r0, 0x3f	; 63
+     57a:	f8 94       	cli
+     57c:	de bf       	out	0x3e, r29	; 62
+     57e:	0f be       	out	0x3f, r0	; 63
+     580:	cd bf       	out	0x3d, r28	; 61
+     582:	df 91       	pop	r29
+     584:	cf 91       	pop	r28
+     586:	1f 91       	pop	r17
+     588:	0f 91       	pop	r16
+     58a:	ff 90       	pop	r15
+     58c:	ef 90       	pop	r14
+     58e:	df 90       	pop	r13
+     590:	cf 90       	pop	r12
+     592:	bf 90       	pop	r11
+     594:	af 90       	pop	r10
+     596:	9f 90       	pop	r9
+     598:	8f 90       	pop	r8
+     59a:	7f 90       	pop	r7
+     59c:	6f 90       	pop	r6
+     59e:	5f 90       	pop	r5
+     5a0:	4f 90       	pop	r4
+     5a2:	3f 90       	pop	r3
+     5a4:	2f 90       	pop	r2
+     5a6:	08 95       	ret
+
+000005a8 <SendTrace>:
+	}
+}
+
+void
+SendTrace(TRACE_LEVEL TraceLevel, const char *String, ...)
+{
+     5a8:	3f 92       	push	r3
+     5aa:	4f 92       	push	r4
+     5ac:	5f 92       	push	r5
+     5ae:	6f 92       	push	r6
+     5b0:	7f 92       	push	r7
+     5b2:	8f 92       	push	r8
+     5b4:	9f 92       	push	r9
+     5b6:	af 92       	push	r10
+     5b8:	bf 92       	push	r11
+     5ba:	cf 92       	push	r12
+     5bc:	df 92       	push	r13
+     5be:	ef 92       	push	r14
+     5c0:	ff 92       	push	r15
+     5c2:	0f 93       	push	r16
+     5c4:	1f 93       	push	r17
+     5c6:	cf 93       	push	r28
+     5c8:	df 93       	push	r29
+     5ca:	1f 92       	push	r1
+     5cc:	cd b7       	in	r28, 0x3d	; 61
+     5ce:	de b7       	in	r29, 0x3e	; 62
+     5d0:	0e 89       	ldd	r16, Y+22	; 0x16
+     5d2:	1f 89       	ldd	r17, Y+23	; 0x17
+	
+	char Character;
+
+	va_list ArgList;
+
+	if (!gTraceInitialized || !(TraceLevel & gTraceLevel))
+     5d4:	80 91 ec 03 	lds	r24, 0x03EC
+     5d8:	88 23       	and	r24, r24
+     5da:	09 f4       	brne	.+2      	; 0x5de <SendTrace+0x36>
+     5dc:	16 c1       	rjmp	.+556    	; 0x80a <SendTrace+0x262>
+     5de:	80 91 f3 03 	lds	r24, 0x03F3
+     5e2:	9d 89       	ldd	r25, Y+21	; 0x15
+     5e4:	89 23       	and	r24, r25
+     5e6:	09 f4       	brne	.+2      	; 0x5ea <SendTrace+0x42>
+     5e8:	10 c1       	rjmp	.+544    	; 0x80a <SendTrace+0x262>
+	{
+		return;
+	}
+
+	va_start(ArgList, String);
+     5ea:	7e 01       	movw	r14, r28
+     5ec:	28 e1       	ldi	r18, 0x18	; 24
+     5ee:	e2 0e       	add	r14, r18
+     5f0:	f1 1c       	adc	r15, r1
+
+	while (*String != '\0')
+     5f2:	f8 01       	movw	r30, r16
+     5f4:	20 81       	ld	r18, Z
+     5f6:	22 23       	and	r18, r18
+     5f8:	09 f4       	brne	.+2      	; 0x5fc <SendTrace+0x54>
+     5fa:	07 c1       	rjmp	.+526    	; 0x80a <SendTrace+0x262>
+SendTrace(TRACE_LEVEL TraceLevel, const char *String, ...)
+{
+
+	bool IsLong = FALSE;
+	
+	bool IsLongLong = FALSE;
+     5fc:	41 2c       	mov	r4, r1
+
+void
+SendTrace(TRACE_LEVEL TraceLevel, const char *String, ...)
+{
+
+	bool IsLong = FALSE;
+     5fe:	d1 2c       	mov	r13, r1
+						
+						IsLong = FALSE;
+					}
+					else
+					{
+						IsLong = TRUE;
+     600:	33 24       	eor	r3, r3
+     602:	33 94       	inc	r3
+
+					if (IsLong)
+					{
+						IsLongLong = TRUE;
+						
+						IsLong = FALSE;
+     604:	51 2c       	mov	r5, r1
+	va_start(ArgList, String);
+
+	while (*String != '\0')
+	{
+
+		if (*String == '%' || IsLong || IsLongLong)
+     606:	25 32       	cpi	r18, 0x25	; 37
+     608:	29 f0       	breq	.+10     	; 0x614 <SendTrace+0x6c>
+     60a:	d1 10       	cpse	r13, r1
+     60c:	05 c0       	rjmp	.+10     	; 0x618 <SendTrace+0x70>
+     60e:	41 10       	cpse	r4, r1
+     610:	03 c0       	rjmp	.+6      	; 0x618 <SendTrace+0x70>
+     612:	ea c0       	rjmp	.+468    	; 0x7e8 <SendTrace+0x240>
+		{
+
+			if (*String == '%')
+			{
+				String++;
+     614:	0f 5f       	subi	r16, 0xFF	; 255
+     616:	1f 4f       	sbci	r17, 0xFF	; 255
+			}
+
+			switch (*String)
+     618:	f8 01       	movw	r30, r16
+     61a:	80 81       	ld	r24, Z
+     61c:	8c 36       	cpi	r24, 0x6C	; 108
+     61e:	09 f4       	brne	.+2      	; 0x622 <SendTrace+0x7a>
+     620:	d6 c0       	rjmp	.+428    	; 0x7ce <SendTrace+0x226>
+     622:	28 f4       	brcc	.+10     	; 0x62e <SendTrace+0x86>
+     624:	83 36       	cpi	r24, 0x63	; 99
+     626:	69 f0       	breq	.+26     	; 0x642 <SendTrace+0x9a>
+     628:	84 36       	cpi	r24, 0x64	; 100
+     62a:	e9 f0       	breq	.+58     	; 0x666 <SendTrace+0xbe>
+     62c:	e6 c0       	rjmp	.+460    	; 0x7fa <SendTrace+0x252>
+     62e:	85 37       	cpi	r24, 0x75	; 117
+     630:	09 f4       	brne	.+2      	; 0x634 <SendTrace+0x8c>
+     632:	5b c0       	rjmp	.+182    	; 0x6ea <SendTrace+0x142>
+     634:	88 37       	cpi	r24, 0x78	; 120
+     636:	09 f4       	brne	.+2      	; 0x63a <SendTrace+0x92>
+     638:	92 c0       	rjmp	.+292    	; 0x75e <SendTrace+0x1b6>
+     63a:	83 37       	cpi	r24, 0x73	; 115
+     63c:	09 f0       	breq	.+2      	; 0x640 <SendTrace+0x98>
+     63e:	dd c0       	rjmp	.+442    	; 0x7fa <SendTrace+0x252>
+     640:	cb c0       	rjmp	.+406    	; 0x7d8 <SendTrace+0x230>
+			{
+				case 'c':
+				{
+
+					Character = va_arg(ArgList, int);
+     642:	57 01       	movw	r10, r14
+     644:	f2 e0       	ldi	r31, 0x02	; 2
+     646:	af 0e       	add	r10, r31
+     648:	b1 1c       	adc	r11, r1
+     64a:	f7 01       	movw	r30, r14
+     64c:	80 81       	ld	r24, Z
+     64e:	89 83       	std	Y+1, r24	; 0x01
+					
+					UARTTransmitSync(UART_ZERO, (PVOID) &Character, 1);
+     650:	21 e0       	ldi	r18, 0x01	; 1
+     652:	30 e0       	ldi	r19, 0x00	; 0
+     654:	40 e0       	ldi	r20, 0x00	; 0
+     656:	50 e0       	ldi	r21, 0x00	; 0
+     658:	be 01       	movw	r22, r28
+     65a:	6f 5f       	subi	r22, 0xFF	; 255
+     65c:	7f 4f       	sbci	r23, 0xFF	; 255
+     65e:	85 2d       	mov	r24, r5
+     660:	00 d2       	rcall	.+1024   	; 0xa62 <UARTTransmitSync>
+			switch (*String)
+			{
+				case 'c':
+				{
+
+					Character = va_arg(ArgList, int);
+     662:	75 01       	movw	r14, r10
+					
+					UARTTransmitSync(UART_ZERO, (PVOID) &Character, 1);
+
+					break;
+     664:	ca c0       	rjmp	.+404    	; 0x7fa <SendTrace+0x252>
+
+				}
+				case 'd':
+				{
+
+					if (IsLong)
+     666:	dd 20       	and	r13, r13
+     668:	d9 f0       	breq	.+54     	; 0x6a0 <SendTrace+0xf8>
+					{
+
+						SendSignedDecimalValue(va_arg(ArgList, long));
+     66a:	67 01       	movw	r12, r14
+     66c:	f4 e0       	ldi	r31, 0x04	; 4
+     66e:	cf 0e       	add	r12, r31
+     670:	d1 1c       	adc	r13, r1
+     672:	f7 01       	movw	r30, r14
+     674:	80 81       	ld	r24, Z
+     676:	91 81       	ldd	r25, Z+1	; 0x01
+     678:	a2 81       	ldd	r26, Z+2	; 0x02
+     67a:	b3 81       	ldd	r27, Z+3	; 0x03
+     67c:	4c 01       	movw	r8, r24
+     67e:	5d 01       	movw	r10, r26
+     680:	bb 0c       	add	r11, r11
+     682:	88 08       	sbc	r8, r8
+     684:	98 2c       	mov	r9, r8
+     686:	54 01       	movw	r10, r8
+     688:	28 2f       	mov	r18, r24
+     68a:	39 2f       	mov	r19, r25
+     68c:	4a 2f       	mov	r20, r26
+     68e:	5b 2f       	mov	r21, r27
+     690:	68 2d       	mov	r22, r8
+     692:	78 2d       	mov	r23, r8
+     694:	88 2d       	mov	r24, r8
+     696:	98 2d       	mov	r25, r8
+     698:	a5 de       	rcall	.-694    	; 0x3e4 <SendSignedDecimalValue>
+     69a:	76 01       	movw	r14, r12
+
+						IsLong = FALSE;
+     69c:	d5 2c       	mov	r13, r5
+     69e:	ad c0       	rjmp	.+346    	; 0x7fa <SendTrace+0x252>
+
+					}
+					else if (IsLongLong)
+     6a0:	44 20       	and	r4, r4
+     6a2:	89 f0       	breq	.+34     	; 0x6c6 <SendTrace+0x11e>
+					{
+						SendSignedDecimalValue(va_arg(ArgList, long long));
+     6a4:	57 01       	movw	r10, r14
+     6a6:	f8 e0       	ldi	r31, 0x08	; 8
+     6a8:	af 0e       	add	r10, r31
+     6aa:	b1 1c       	adc	r11, r1
+     6ac:	f7 01       	movw	r30, r14
+     6ae:	20 81       	ld	r18, Z
+     6b0:	31 81       	ldd	r19, Z+1	; 0x01
+     6b2:	42 81       	ldd	r20, Z+2	; 0x02
+     6b4:	53 81       	ldd	r21, Z+3	; 0x03
+     6b6:	64 81       	ldd	r22, Z+4	; 0x04
+     6b8:	75 81       	ldd	r23, Z+5	; 0x05
+     6ba:	86 81       	ldd	r24, Z+6	; 0x06
+     6bc:	97 81       	ldd	r25, Z+7	; 0x07
+     6be:	92 de       	rcall	.-732    	; 0x3e4 <SendSignedDecimalValue>
+     6c0:	75 01       	movw	r14, r10
+
+						IsLongLong = FALSE;
+     6c2:	45 2c       	mov	r4, r5
+     6c4:	9a c0       	rjmp	.+308    	; 0x7fa <SendTrace+0x252>
+					}
+					else
+					{
+
+						SendSignedDecimalValue(va_arg(ArgList, int));
+     6c6:	57 01       	movw	r10, r14
+     6c8:	f2 e0       	ldi	r31, 0x02	; 2
+     6ca:	af 0e       	add	r10, r31
+     6cc:	b1 1c       	adc	r11, r1
+     6ce:	f7 01       	movw	r30, r14
+     6d0:	31 81       	ldd	r19, Z+1	; 0x01
+     6d2:	20 81       	ld	r18, Z
+     6d4:	93 2f       	mov	r25, r19
+     6d6:	99 0f       	add	r25, r25
+     6d8:	99 0b       	sbc	r25, r25
+     6da:	49 2f       	mov	r20, r25
+     6dc:	59 2f       	mov	r21, r25
+     6de:	69 2f       	mov	r22, r25
+     6e0:	79 2f       	mov	r23, r25
+     6e2:	89 2f       	mov	r24, r25
+     6e4:	7f de       	rcall	.-770    	; 0x3e4 <SendSignedDecimalValue>
+     6e6:	75 01       	movw	r14, r10
+     6e8:	88 c0       	rjmp	.+272    	; 0x7fa <SendTrace+0x252>
+					break;
+				}
+				case 'u':
+				{
+
+					if(IsLong)
+     6ea:	dd 20       	and	r13, r13
+     6ec:	b9 f0       	breq	.+46     	; 0x71c <SendTrace+0x174>
+					{
+
+						SendDecimalValue(va_arg(ArgList, unsigned long));
+     6ee:	37 01       	movw	r6, r14
+     6f0:	f4 e0       	ldi	r31, 0x04	; 4
+     6f2:	6f 0e       	add	r6, r31
+     6f4:	71 1c       	adc	r7, r1
+     6f6:	f7 01       	movw	r30, r14
+     6f8:	80 81       	ld	r24, Z
+     6fa:	91 81       	ldd	r25, Z+1	; 0x01
+     6fc:	a2 81       	ldd	r26, Z+2	; 0x02
+     6fe:	b3 81       	ldd	r27, Z+3	; 0x03
+     700:	4c 01       	movw	r8, r24
+     702:	5d 01       	movw	r10, r26
+     704:	28 2f       	mov	r18, r24
+     706:	39 2d       	mov	r19, r9
+     708:	4a 2d       	mov	r20, r10
+     70a:	5b 2d       	mov	r21, r11
+     70c:	65 2d       	mov	r22, r5
+     70e:	75 2d       	mov	r23, r5
+     710:	85 2d       	mov	r24, r5
+     712:	95 2d       	mov	r25, r5
+     714:	b1 dd       	rcall	.-1182   	; 0x278 <SendDecimalValue>
+     716:	73 01       	movw	r14, r6
+						
+						IsLong = FALSE;
+     718:	d5 2c       	mov	r13, r5
+     71a:	6f c0       	rjmp	.+222    	; 0x7fa <SendTrace+0x252>
+					
+					}
+					else if(IsLongLong)
+     71c:	44 20       	and	r4, r4
+     71e:	79 f0       	breq	.+30     	; 0x73e <SendTrace+0x196>
+					{
+						SendDecimalValue(va_arg(ArgList, unsigned long long));
+     720:	f7 01       	movw	r30, r14
+     722:	20 81       	ld	r18, Z
+     724:	88 e0       	ldi	r24, 0x08	; 8
+     726:	e8 0e       	add	r14, r24
+     728:	f1 1c       	adc	r15, r1
+     72a:	31 81       	ldd	r19, Z+1	; 0x01
+     72c:	42 81       	ldd	r20, Z+2	; 0x02
+     72e:	53 81       	ldd	r21, Z+3	; 0x03
+     730:	64 81       	ldd	r22, Z+4	; 0x04
+     732:	75 81       	ldd	r23, Z+5	; 0x05
+     734:	86 81       	ldd	r24, Z+6	; 0x06
+     736:	97 81       	ldd	r25, Z+7	; 0x07
+     738:	9f dd       	rcall	.-1218   	; 0x278 <SendDecimalValue>
+						
+						IsLongLong = FALSE;
+     73a:	45 2c       	mov	r4, r5
+     73c:	5e c0       	rjmp	.+188    	; 0x7fa <SendTrace+0x252>
+					}
+					else
+					{
+
+						SendDecimalValue(va_arg(ArgList, unsigned int));
+     73e:	f7 01       	movw	r30, r14
+     740:	40 81       	ld	r20, Z
+     742:	51 81       	ldd	r21, Z+1	; 0x01
+     744:	e2 e0       	ldi	r30, 0x02	; 2
+     746:	ee 0e       	add	r14, r30
+     748:	f1 1c       	adc	r15, r1
+     74a:	24 2f       	mov	r18, r20
+     74c:	35 2f       	mov	r19, r21
+     74e:	45 2d       	mov	r20, r5
+     750:	55 2d       	mov	r21, r5
+     752:	65 2d       	mov	r22, r5
+     754:	75 2d       	mov	r23, r5
+     756:	85 2d       	mov	r24, r5
+     758:	95 2d       	mov	r25, r5
+     75a:	8e dd       	rcall	.-1252   	; 0x278 <SendDecimalValue>
+     75c:	4e c0       	rjmp	.+156    	; 0x7fa <SendTrace+0x252>
+					break;
+				}
+				case 'x':
+				{
+
+					if (IsLong)
+     75e:	dd 20       	and	r13, r13
+     760:	a9 f0       	breq	.+42     	; 0x78c <SendTrace+0x1e4>
+					{
+
+						SendHexValue(va_arg(ArgList, unsigned long));
+     762:	f7 01       	movw	r30, r14
+     764:	80 81       	ld	r24, Z
+     766:	91 81       	ldd	r25, Z+1	; 0x01
+     768:	a2 81       	ldd	r26, Z+2	; 0x02
+     76a:	b3 81       	ldd	r27, Z+3	; 0x03
+     76c:	f4 e0       	ldi	r31, 0x04	; 4
+     76e:	ef 0e       	add	r14, r31
+     770:	f1 1c       	adc	r15, r1
+     772:	3c 01       	movw	r6, r24
+     774:	4d 01       	movw	r8, r26
+     776:	28 2f       	mov	r18, r24
+     778:	37 2d       	mov	r19, r7
+     77a:	48 2d       	mov	r20, r8
+     77c:	59 2d       	mov	r21, r9
+     77e:	65 2d       	mov	r22, r5
+     780:	75 2d       	mov	r23, r5
+     782:	85 2d       	mov	r24, r5
+     784:	95 2d       	mov	r25, r5
+     786:	d8 dc       	rcall	.-1616   	; 0x138 <SendHexValue>
+
+						IsLong = FALSE;
+     788:	d5 2c       	mov	r13, r5
+     78a:	37 c0       	rjmp	.+110    	; 0x7fa <SendTrace+0x252>
+
+					}
+					else if (IsLongLong)
+     78c:	44 20       	and	r4, r4
+     78e:	79 f0       	breq	.+30     	; 0x7ae <SendTrace+0x206>
+					{
+						SendHexValue(va_arg(ArgList, unsigned long long));
+     790:	f7 01       	movw	r30, r14
+     792:	20 81       	ld	r18, Z
+     794:	88 e0       	ldi	r24, 0x08	; 8
+     796:	e8 0e       	add	r14, r24
+     798:	f1 1c       	adc	r15, r1
+     79a:	31 81       	ldd	r19, Z+1	; 0x01
+     79c:	42 81       	ldd	r20, Z+2	; 0x02
+     79e:	53 81       	ldd	r21, Z+3	; 0x03
+     7a0:	64 81       	ldd	r22, Z+4	; 0x04
+     7a2:	75 81       	ldd	r23, Z+5	; 0x05
+     7a4:	86 81       	ldd	r24, Z+6	; 0x06
+     7a6:	97 81       	ldd	r25, Z+7	; 0x07
+     7a8:	c7 dc       	rcall	.-1650   	; 0x138 <SendHexValue>
+						
+						IsLongLong = FALSE;
+     7aa:	45 2c       	mov	r4, r5
+     7ac:	26 c0       	rjmp	.+76     	; 0x7fa <SendTrace+0x252>
+					}
+					else
+					{
+
+						SendHexValue(va_arg(ArgList, unsigned int));
+     7ae:	f7 01       	movw	r30, r14
+     7b0:	40 81       	ld	r20, Z
+     7b2:	51 81       	ldd	r21, Z+1	; 0x01
+     7b4:	e2 e0       	ldi	r30, 0x02	; 2
+     7b6:	ee 0e       	add	r14, r30
+     7b8:	f1 1c       	adc	r15, r1
+     7ba:	24 2f       	mov	r18, r20
+     7bc:	35 2f       	mov	r19, r21
+     7be:	45 2d       	mov	r20, r5
+     7c0:	55 2d       	mov	r21, r5
+     7c2:	65 2d       	mov	r22, r5
+     7c4:	75 2d       	mov	r23, r5
+     7c6:	85 2d       	mov	r24, r5
+     7c8:	95 2d       	mov	r25, r5
+     7ca:	b6 dc       	rcall	.-1684   	; 0x138 <SendHexValue>
+     7cc:	16 c0       	rjmp	.+44     	; 0x7fa <SendTrace+0x252>
+					break;
+				}
+				case 'l':
+				{
+
+					if (IsLong)
+     7ce:	dd 20       	and	r13, r13
+     7d0:	99 f0       	breq	.+38     	; 0x7f8 <SendTrace+0x250>
+					{
+						IsLongLong = TRUE;
+     7d2:	43 2c       	mov	r4, r3
+						
+						IsLong = FALSE;
+     7d4:	d5 2c       	mov	r13, r5
+     7d6:	11 c0       	rjmp	.+34     	; 0x7fa <SendTrace+0x252>
+					break;
+				}
+				case 's':
+				{
+					
+					SendStringValue(va_arg(ArgList, char *)); 
+     7d8:	f7 01       	movw	r30, r14
+     7da:	80 81       	ld	r24, Z
+     7dc:	91 81       	ldd	r25, Z+1	; 0x01
+     7de:	f2 e0       	ldi	r31, 0x02	; 2
+     7e0:	ef 0e       	add	r14, r31
+     7e2:	f1 1c       	adc	r15, r1
+     7e4:	9b dc       	rcall	.-1738   	; 0x11c <SendStringValue>
+
+					break;
+     7e6:	09 c0       	rjmp	.+18     	; 0x7fa <SendTrace+0x252>
+
+		}
+		else
+		{
+
+			UARTTransmitSync(UART_ZERO, (PVOID) String, 1);
+     7e8:	21 e0       	ldi	r18, 0x01	; 1
+     7ea:	30 e0       	ldi	r19, 0x00	; 0
+     7ec:	40 e0       	ldi	r20, 0x00	; 0
+     7ee:	50 e0       	ldi	r21, 0x00	; 0
+     7f0:	b8 01       	movw	r22, r16
+     7f2:	85 2d       	mov	r24, r5
+     7f4:	36 d1       	rcall	.+620    	; 0xa62 <UARTTransmitSync>
+     7f6:	01 c0       	rjmp	.+2      	; 0x7fa <SendTrace+0x252>
+						
+						IsLong = FALSE;
+					}
+					else
+					{
+						IsLong = TRUE;
+     7f8:	d3 2c       	mov	r13, r3
+
+			UARTTransmitSync(UART_ZERO, (PVOID) String, 1);
+				
+		}
+
+		String++;
+     7fa:	c8 01       	movw	r24, r16
+     7fc:	01 96       	adiw	r24, 0x01	; 1
+		return;
+	}
+
+	va_start(ArgList, String);
+
+	while (*String != '\0')
+     7fe:	f8 01       	movw	r30, r16
+     800:	21 81       	ldd	r18, Z+1	; 0x01
+     802:	22 23       	and	r18, r18
+     804:	11 f0       	breq	.+4      	; 0x80a <SendTrace+0x262>
+
+			UARTTransmitSync(UART_ZERO, (PVOID) String, 1);
+				
+		}
+
+		String++;
+     806:	8c 01       	movw	r16, r24
+     808:	fe ce       	rjmp	.-516    	; 0x606 <SendTrace+0x5e>
+		
+	}
+	
+	va_end(ArgList);
+	
+}
+     80a:	0f 90       	pop	r0
+     80c:	df 91       	pop	r29
+     80e:	cf 91       	pop	r28
+     810:	1f 91       	pop	r17
+     812:	0f 91       	pop	r16
+     814:	ff 90       	pop	r15
+     816:	ef 90       	pop	r14
+     818:	df 90       	pop	r13
+     81a:	cf 90       	pop	r12
+     81c:	bf 90       	pop	r11
+     81e:	af 90       	pop	r10
+     820:	9f 90       	pop	r9
+     822:	8f 90       	pop	r8
+     824:	7f 90       	pop	r7
+     826:	6f 90       	pop	r6
+     828:	5f 90       	pop	r5
+     82a:	4f 90       	pop	r4
+     82c:	3f 90       	pop	r3
+     82e:	08 95       	ret
+
+00000830 <LCDSend>:
+	}
+	
+	Status = LCDSend(Value, LCD_IR_REG, TRUE);
+
+	return Status;
+}
+     830:	ef 92       	push	r14
+     832:	ff 92       	push	r15
+     834:	0f 93       	push	r16
+     836:	1f 93       	push	r17
+     838:	cf 93       	push	r28
+     83a:	df 93       	push	r29
+     83c:	00 d0       	rcall	.+0      	; 0x83e <LCDSend+0xe>
+     83e:	cd b7       	in	r28, 0x3d	; 61
+     840:	de b7       	in	r29, 0x3e	; 62
+     842:	f8 2e       	mov	r15, r24
+     844:	e4 2e       	mov	r14, r20
+     846:	8a 81       	ldd	r24, Y+2	; 0x02
+     848:	81 70       	andi	r24, 0x01	; 1
+     84a:	8e 64       	ori	r24, 0x4E	; 78
+     84c:	8a 83       	std	Y+2, r24	; 0x02
+     84e:	99 81       	ldd	r25, Y+1	; 0x01
+     850:	94 60       	ori	r25, 0x04	; 4
+     852:	60 fb       	bst	r22, 0
+     854:	90 f9       	bld	r25, 0
+     856:	80 91 ed 03 	lds	r24, 0x03ED
+     85a:	80 fb       	bst	r24, 0
+     85c:	93 f9       	bld	r25, 3
+     85e:	8f 2d       	mov	r24, r15
+     860:	80 7f       	andi	r24, 0xF0	; 240
+     862:	9d 70       	andi	r25, 0x0D	; 13
+     864:	98 2b       	or	r25, r24
+     866:	99 83       	std	Y+1, r25	; 0x01
+     868:	00 e0       	ldi	r16, 0x00	; 0
+     86a:	9e 01       	movw	r18, r28
+     86c:	2e 5f       	subi	r18, 0xFE	; 254
+     86e:	3f 4f       	sbci	r19, 0xFF	; 255
+     870:	41 e0       	ldi	r20, 0x01	; 1
+     872:	50 e0       	ldi	r21, 0x00	; 0
+     874:	60 e0       	ldi	r22, 0x00	; 0
+     876:	70 e0       	ldi	r23, 0x00	; 0
+     878:	ce 01       	movw	r24, r28
+     87a:	01 96       	adiw	r24, 0x01	; 1
+     87c:	ba d2       	rcall	.+1396   	; 0xdf2 <TwiTransmit>
+     87e:	18 2f       	mov	r17, r24
+     880:	81 11       	cpse	r24, r1
+     882:	0b c0       	rjmp	.+22     	; 0x89a <LCDSend+0x6a>
+     884:	20 e0       	ldi	r18, 0x00	; 0
+     886:	31 e0       	ldi	r19, 0x01	; 1
+     888:	3f 93       	push	r19
+     88a:	2f 93       	push	r18
+     88c:	81 e0       	ldi	r24, 0x01	; 1
+     88e:	8f 93       	push	r24
+     890:	8b de       	rcall	.-746    	; 0x5a8 <SendTrace>
+     892:	0f 90       	pop	r0
+     894:	0f 90       	pop	r0
+     896:	0f 90       	pop	r0
+     898:	20 c0       	rjmp	.+64     	; 0x8da <LCDSend+0xaa>
+     89a:	ff 0c       	add	r15, r15
+     89c:	ff 0c       	add	r15, r15
+     89e:	ff 0c       	add	r15, r15
+     8a0:	ff 0c       	add	r15, r15
+     8a2:	89 81       	ldd	r24, Y+1	; 0x01
+     8a4:	8f 70       	andi	r24, 0x0F	; 15
+     8a6:	f8 2a       	or	r15, r24
+     8a8:	f9 82       	std	Y+1, r15	; 0x01
+     8aa:	0e 2d       	mov	r16, r14
+     8ac:	9e 01       	movw	r18, r28
+     8ae:	2e 5f       	subi	r18, 0xFE	; 254
+     8b0:	3f 4f       	sbci	r19, 0xFF	; 255
+     8b2:	41 e0       	ldi	r20, 0x01	; 1
+     8b4:	50 e0       	ldi	r21, 0x00	; 0
+     8b6:	60 e0       	ldi	r22, 0x00	; 0
+     8b8:	70 e0       	ldi	r23, 0x00	; 0
+     8ba:	ce 01       	movw	r24, r28
+     8bc:	01 96       	adiw	r24, 0x01	; 1
+     8be:	99 d2       	rcall	.+1330   	; 0xdf2 <TwiTransmit>
+     8c0:	18 2f       	mov	r17, r24
+     8c2:	81 11       	cpse	r24, r1
+     8c4:	0a c0       	rjmp	.+20     	; 0x8da <LCDSend+0xaa>
+     8c6:	20 e0       	ldi	r18, 0x00	; 0
+     8c8:	31 e0       	ldi	r19, 0x01	; 1
+     8ca:	3f 93       	push	r19
+     8cc:	2f 93       	push	r18
+     8ce:	81 e0       	ldi	r24, 0x01	; 1
+     8d0:	8f 93       	push	r24
+     8d2:	6a de       	rcall	.-812    	; 0x5a8 <SendTrace>
+     8d4:	0f 90       	pop	r0
+     8d6:	0f 90       	pop	r0
+     8d8:	0f 90       	pop	r0
+     8da:	81 2f       	mov	r24, r17
+     8dc:	0f 90       	pop	r0
+     8de:	0f 90       	pop	r0
+     8e0:	df 91       	pop	r29
+     8e2:	cf 91       	pop	r28
+     8e4:	1f 91       	pop	r17
+     8e6:	0f 91       	pop	r16
+     8e8:	ff 90       	pop	r15
+     8ea:	ef 90       	pop	r14
+     8ec:	08 95       	ret
+
+000008ee <LCDClearDisplay>:
+     8ee:	80 91 ee 03 	lds	r24, 0x03EE
+     8f2:	88 23       	and	r24, r24
+     8f4:	29 f0       	breq	.+10     	; 0x900 <LCDClearDisplay+0x12>
+     8f6:	41 e0       	ldi	r20, 0x01	; 1
+     8f8:	60 e0       	ldi	r22, 0x00	; 0
+     8fa:	81 e0       	ldi	r24, 0x01	; 1
+     8fc:	99 cf       	rjmp	.-206    	; 0x830 <LCDSend>
+     8fe:	08 95       	ret
+     900:	80 e0       	ldi	r24, 0x00	; 0
+     902:	08 95       	ret
+
+00000904 <LCDSetCursorToHomePos>:
+     904:	80 91 ee 03 	lds	r24, 0x03EE
+     908:	88 23       	and	r24, r24
+     90a:	29 f0       	breq	.+10     	; 0x916 <LCDSetCursorToHomePos+0x12>
+     90c:	41 e0       	ldi	r20, 0x01	; 1
+     90e:	60 e0       	ldi	r22, 0x00	; 0
+     910:	82 e0       	ldi	r24, 0x02	; 2
+     912:	8e cf       	rjmp	.-228    	; 0x830 <LCDSend>
+     914:	08 95       	ret
+     916:	80 e0       	ldi	r24, 0x00	; 0
+     918:	08 95       	ret
+
+0000091a <LCDSetDisplayControl>:
+     91a:	90 91 ee 03 	lds	r25, 0x03EE
+     91e:	99 23       	and	r25, r25
+     920:	79 f0       	breq	.+30     	; 0x940 <LCDSetDisplayControl+0x26>
+     922:	81 11       	cpse	r24, r1
+     924:	02 c0       	rjmp	.+4      	; 0x92a <LCDSetDisplayControl+0x10>
+     926:	88 e0       	ldi	r24, 0x08	; 8
+     928:	01 c0       	rjmp	.+2      	; 0x92c <LCDSetDisplayControl+0x12>
+     92a:	8c e0       	ldi	r24, 0x0C	; 12
+     92c:	61 11       	cpse	r22, r1
+     92e:	82 60       	ori	r24, 0x02	; 2
+     930:	41 11       	cpse	r20, r1
+     932:	81 60       	ori	r24, 0x01	; 1
+     934:	20 93 ed 03 	sts	0x03ED, r18
+     938:	41 e0       	ldi	r20, 0x01	; 1
+     93a:	60 e0       	ldi	r22, 0x00	; 0
+     93c:	79 cf       	rjmp	.-270    	; 0x830 <LCDSend>
+     93e:	08 95       	ret
+     940:	80 e0       	ldi	r24, 0x00	; 0
+     942:	08 95       	ret
+
+00000944 <LCDSetEntryMode>:
+     944:	81 11       	cpse	r24, r1
+     946:	02 c0       	rjmp	.+4      	; 0x94c <LCDSetEntryMode+0x8>
+     948:	84 e0       	ldi	r24, 0x04	; 4
+     94a:	01 c0       	rjmp	.+2      	; 0x94e <LCDSetEntryMode+0xa>
+     94c:	85 e0       	ldi	r24, 0x05	; 5
+     94e:	61 11       	cpse	r22, r1
+     950:	82 60       	ori	r24, 0x02	; 2
+     952:	41 e0       	ldi	r20, 0x01	; 1
+     954:	60 e0       	ldi	r22, 0x00	; 0
+     956:	6c cf       	rjmp	.-296    	; 0x830 <LCDSend>
+     958:	08 95       	ret
+
+0000095a <LCDSetFunctionControl>:
+	bool Status;
+	
+	unsigned char Value = FUNC_SET_CTRL;
+	
+	
+	if(IsTwoLineDisplay)
+     95a:	81 11       	cpse	r24, r1
+     95c:	02 c0       	rjmp	.+4      	; 0x962 <LCDSetFunctionControl+0x8>
+bool
+LCDSetFunctionControl(bool IsTwoLineDisplay, bool Is5X10Font)
+{
+	bool Status;
+	
+	unsigned char Value = FUNC_SET_CTRL;
+     95e:	80 e2       	ldi	r24, 0x20	; 32
+     960:	01 c0       	rjmp	.+2      	; 0x964 <LCDSetFunctionControl+0xa>
+	
+	
+	if(IsTwoLineDisplay)
+	{
+		Value |= TWO_LINES;
+     962:	88 e2       	ldi	r24, 0x28	; 40
+	}
+	
+	if(Is5X10Font)
+     964:	61 11       	cpse	r22, r1
+	{
+		Value |= FONT_5X10;
+     966:	84 60       	ori	r24, 0x04	; 4
+	}
+	
+	Status = LCDSend(Value, LCD_IR_REG, TRUE);
+     968:	41 e0       	ldi	r20, 0x01	; 1
+     96a:	60 e0       	ldi	r22, 0x00	; 0
+     96c:	61 cf       	rjmp	.-318    	; 0x830 <LCDSend>
+
+	return Status;
+}
+     96e:	08 95       	ret
+
+00000970 <InitLCD>:
+// Public Functions
+//
+
+bool
+InitLCD(PLCD_INIT_PARAMS InitParams)
+{
+     970:	1f 93       	push	r17
+     972:	cf 93       	push	r28
+     974:	df 93       	push	r29
+     976:	ec 01       	movw	r28, r24
+	bool Status;
+	
+	Status = InitTWI(TWI_MASTER, NULL, NULL);
+     978:	40 e0       	ldi	r20, 0x00	; 0
+     97a:	50 e0       	ldi	r21, 0x00	; 0
+     97c:	60 e0       	ldi	r22, 0x00	; 0
+     97e:	70 e0       	ldi	r23, 0x00	; 0
+     980:	81 e0       	ldi	r24, 0x01	; 1
+     982:	d1 d0       	rcall	.+418    	; 0xb26 <InitTWI>
+     984:	18 2f       	mov	r17, r24
+	
+	if (!Status)
+     986:	88 23       	and	r24, r24
+     988:	09 f1       	breq	.+66     	; 0x9cc <InitLCD+0x5c>
+	//
+	
+	LCDSetDisplayControl(InitParams->IsDisplayOn, 
+						 InitParams->IsCursorOn, 
+						 InitParams->IsCursorBlinkOn,
+						 InitParams->IsBackLightOn);
+     98a:	88 81       	ld	r24, Y
+     98c:	87 fb       	bst	r24, 7
+     98e:	22 27       	eor	r18, r18
+     990:	20 f9       	bld	r18, 0
+	// Set Display ON/OFF Control
+	//
+	
+	LCDSetDisplayControl(InitParams->IsDisplayOn, 
+						 InitParams->IsCursorOn, 
+						 InitParams->IsCursorBlinkOn,
+     992:	84 fb       	bst	r24, 4
+     994:	44 27       	eor	r20, r20
+     996:	40 f9       	bld	r20, 0
+	//
+	// Set Display ON/OFF Control
+	//
+	
+	LCDSetDisplayControl(InitParams->IsDisplayOn, 
+						 InitParams->IsCursorOn, 
+     998:	83 fb       	bst	r24, 3
+     99a:	66 27       	eor	r22, r22
+     99c:	60 f9       	bld	r22, 0
+	
+	//
+	// Set Display ON/OFF Control
+	//
+	
+	LCDSetDisplayControl(InitParams->IsDisplayOn, 
+     99e:	82 fb       	bst	r24, 2
+     9a0:	88 27       	eor	r24, r24
+     9a2:	80 f9       	bld	r24, 0
+     9a4:	ba df       	rcall	.-140    	; 0x91a <LCDSetDisplayControl>
+	
+	//
+	// Set Function Set Control
+	//
+	
+	LCDSetFunctionControl(InitParams->IsTwoLineDisplay, InitParams->Is5X10Font);
+     9a6:	88 81       	ld	r24, Y
+     9a8:	86 fb       	bst	r24, 6
+     9aa:	66 27       	eor	r22, r22
+     9ac:	60 f9       	bld	r22, 0
+     9ae:	85 fb       	bst	r24, 5
+     9b0:	88 27       	eor	r24, r24
+     9b2:	80 f9       	bld	r24, 0
+     9b4:	d2 df       	rcall	.-92     	; 0x95a <LCDSetFunctionControl>
+	
+	//
+	// Set Entry Mode
+	//
+	
+	LCDSetEntryMode(InitParams->IsIncrementPos, InitParams->IsDisplayShift);
+     9b6:	88 81       	ld	r24, Y
+     9b8:	68 2f       	mov	r22, r24
+     9ba:	61 70       	andi	r22, 0x01	; 1
+     9bc:	86 95       	lsr	r24
+     9be:	81 70       	andi	r24, 0x01	; 1
+     9c0:	c1 df       	rcall	.-126    	; 0x944 <LCDSetEntryMode>
+	
+	//
+	// Clear Display
+	//
+	
+	LCDClearDisplay();
+     9c2:	95 df       	rcall	.-214    	; 0x8ee <LCDClearDisplay>
+	
+	//
+	// Return Home
+	//
+	
+	LCDSetCursorToHomePos();
+     9c4:	9f df       	rcall	.-194    	; 0x904 <LCDSetCursorToHomePos>
+	
+	gLCDInitialized = TRUE;
+     9c6:	81 e0       	ldi	r24, 0x01	; 1
+     9c8:	80 93 ee 03 	sts	0x03EE, r24
+	
+Exit:
+
+	return Status;
+}
+     9cc:	81 2f       	mov	r24, r17
+     9ce:	df 91       	pop	r29
+     9d0:	cf 91       	pop	r28
+     9d2:	1f 91       	pop	r17
+     9d4:	08 95       	ret
+
+000009d6 <InitUARTSync>:
+
+bool gUARTInitialized[MAX_UART] = {FALSE, FALSE};
+
+bool
+InitUARTSync(UART_NUMBER UARTNumber, unsigned long ProcFrequency, unsigned int BaudRate, UART_MODE UARTMode)
+{
+     9d6:	cf 92       	push	r12
+     9d8:	df 92       	push	r13
+     9da:	ef 92       	push	r14
+     9dc:	ff 92       	push	r15
+     9de:	0f 93       	push	r16
+	unsigned short BaudRatePreScalar;
+	
+
+	BaudRatePreScalar = (ProcFrequency / (UARTMode * BaudRate)) - 1;
+	
+	switch (UARTNumber)
+     9e0:	88 23       	and	r24, r24
+     9e2:	19 f0       	breq	.+6      	; 0x9ea <InitUARTSync+0x14>
+     9e4:	81 30       	cpi	r24, 0x01	; 1
+     9e6:	a9 f0       	breq	.+42     	; 0xa12 <InitUARTSync+0x3c>
+     9e8:	35 c0       	rjmp	.+106    	; 0xa54 <InitUARTSync+0x7e>
+
+			//UBRR0H = (unsigned char) BaudRatePreScalar >> 8;
+	
+			//UBRR0L = (unsigned char) BaudRatePreScalar;
+
+			UBRR0H = (unsigned char) 51 >> 8;
+     9ea:	10 92 c5 00 	sts	0x00C5, r1
+	
+			UBRR0L = (unsigned char) 51;
+     9ee:	83 e3       	ldi	r24, 0x33	; 51
+     9f0:	80 93 c4 00 	sts	0x00C4, r24
+	
+			//
+			// Enable Receiver and Transmitter.
+			//
+	
+			UCSR0B = ((1 << TXEN0) | (1 << RXEN0) | (1 << RXCIE0));
+     9f4:	88 e9       	ldi	r24, 0x98	; 152
+     9f6:	80 93 c1 00 	sts	0x00C1, r24
+	
+			//
+			// Asynchronous USART, Parity Disabled, Stop Bits - 1, Character Size - 8 bit.
+			//
+	
+			UCSR0C = ((1 << UCSZ00) | (1 << UCSZ01));
+     9fa:	86 e0       	ldi	r24, 0x06	; 6
+     9fc:	80 93 c2 00 	sts	0x00C2, r24
+
+			//
+			// Set Double Speed Mode
+			//
+
+			if (UARTMode == DOUBLE_SPEED_MODE)
+     a00:	08 30       	cpi	r16, 0x08	; 8
+     a02:	19 f4       	brne	.+6      	; 0xa0a <InitUARTSync+0x34>
+			{
+				UCSR0A = (1 << U2X0);
+     a04:	82 e0       	ldi	r24, 0x02	; 2
+     a06:	80 93 c0 00 	sts	0x00C0, r24
+			}
+
+			gUARTInitialized[0] = TRUE;
+     a0a:	81 e0       	ldi	r24, 0x01	; 1
+     a0c:	80 93 ef 03 	sts	0x03EF, r24
+
+			break;
+     a10:	22 c0       	rjmp	.+68     	; 0xa56 <InitUARTSync+0x80>
+	
+		}
+		case 1:
+		{
+
+			UBRR1H = (unsigned char) BaudRatePreScalar >> 8;
+     a12:	10 92 cd 00 	sts	0x00CD, r1
+	bool Status = TRUE;
+
+	unsigned short BaudRatePreScalar;
+	
+
+	BaudRatePreScalar = (ProcFrequency / (UARTMode * BaudRate)) - 1;
+     a16:	02 9f       	mul	r16, r18
+     a18:	60 01       	movw	r12, r0
+     a1a:	03 9f       	mul	r16, r19
+     a1c:	d0 0c       	add	r13, r0
+     a1e:	11 24       	eor	r1, r1
+     a20:	e1 2c       	mov	r14, r1
+     a22:	f1 2c       	mov	r15, r1
+     a24:	cb 01       	movw	r24, r22
+     a26:	ba 01       	movw	r22, r20
+     a28:	a7 01       	movw	r20, r14
+     a2a:	96 01       	movw	r18, r12
+     a2c:	35 d2       	rcall	.+1130   	; 0xe98 <__udivmodsi4>
+     a2e:	21 50       	subi	r18, 0x01	; 1
+     a30:	31 09       	sbc	r19, r1
+		case 1:
+		{
+
+			UBRR1H = (unsigned char) BaudRatePreScalar >> 8;
+	
+			UBRR1L = (unsigned char) BaudRatePreScalar;
+     a32:	20 93 cc 00 	sts	0x00CC, r18
+	
+			//
+			// Enable Receiver and Transmitter.
+			//
+	
+			UCSR1B = ((1 << TXEN1) | (1 << RXEN1) | (1 << RXCIE1));
+     a36:	88 e9       	ldi	r24, 0x98	; 152
+     a38:	80 93 c9 00 	sts	0x00C9, r24
+	
+			//
+			// Asynchronous USART, Parity Disabled, Stop Bits - 1, Character Size - 8 bit.
+			//
+	
+			UCSR1C = ((1 << UCSZ10) | (1 << UCSZ11));
+     a3c:	86 e0       	ldi	r24, 0x06	; 6
+     a3e:	80 93 ca 00 	sts	0x00CA, r24
+
+			//
+			// Set Double Speed Mode
+			//
+
+			if (UARTMode == DOUBLE_SPEED_MODE)
+     a42:	08 30       	cpi	r16, 0x08	; 8
+     a44:	19 f4       	brne	.+6      	; 0xa4c <InitUARTSync+0x76>
+			{
+				UCSR1A = (1 << U2X1);
+     a46:	82 e0       	ldi	r24, 0x02	; 2
+     a48:	80 93 c8 00 	sts	0x00C8, r24
+			}
+
+			gUARTInitialized[1] = TRUE;
+     a4c:	81 e0       	ldi	r24, 0x01	; 1
+     a4e:	80 93 f0 03 	sts	0x03F0, r24
+
+			break;
+     a52:	01 c0       	rjmp	.+2      	; 0xa56 <InitUARTSync+0x80>
+
+		}
+		default:
+		{
+			Status = FALSE;
+     a54:	80 e0       	ldi	r24, 0x00	; 0
+		}
+	}
+
+	return Status;
+
+}
+     a56:	0f 91       	pop	r16
+     a58:	ff 90       	pop	r15
+     a5a:	ef 90       	pop	r14
+     a5c:	df 90       	pop	r13
+     a5e:	cf 90       	pop	r12
+     a60:	08 95       	ret
+
+00000a62 <UARTTransmitSync>:
+
+unsigned long
+UARTTransmitSync(UART_NUMBER UARTNumber, PVOID TransmitValue, unsigned long Length)
+{
+     a62:	ef 92       	push	r14
+     a64:	ff 92       	push	r15
+     a66:	1f 93       	push	r17
+     a68:	cf 93       	push	r28
+     a6a:	df 93       	push	r29
+     a6c:	7b 01       	movw	r14, r22
+	unsigned char *Value = (unsigned char *) TransmitValue;
+	
+	unsigned long IndexI = 0;
+	
+	switch (UARTNumber)
+     a6e:	88 23       	and	r24, r24
+     a70:	19 f0       	breq	.+6      	; 0xa78 <UARTTransmitSync+0x16>
+     a72:	81 30       	cpi	r24, 0x01	; 1
+     a74:	21 f1       	breq	.+72     	; 0xabe <UARTTransmitSync+0x5c>
+     a76:	44 c0       	rjmp	.+136    	; 0xb00 <UARTTransmitSync+0x9e>
+	{
+		case 0:
+		{
+			if (!gUARTInitialized[0])
+     a78:	80 91 ef 03 	lds	r24, 0x03EF
+     a7c:	88 23       	and	r24, r24
+     a7e:	09 f4       	brne	.+2      	; 0xa82 <UARTTransmitSync+0x20>
+     a80:	43 c0       	rjmp	.+134    	; 0xb08 <UARTTransmitSync+0xa6>
+			{
+				goto Exit;
+			}
+
+			for (IndexI = 0; IndexI < Length; IndexI++)
+     a82:	21 15       	cp	r18, r1
+     a84:	31 05       	cpc	r19, r1
+     a86:	41 05       	cpc	r20, r1
+     a88:	51 05       	cpc	r21, r1
+     a8a:	09 f4       	brne	.+2      	; 0xa8e <UARTTransmitSync+0x2c>
+     a8c:	44 c0       	rjmp	.+136    	; 0xb16 <UARTTransmitSync+0xb4>
+     a8e:	80 e0       	ldi	r24, 0x00	; 0
+     a90:	90 e0       	ldi	r25, 0x00	; 0
+     a92:	dc 01       	movw	r26, r24
+			{
+				while (!(UCSR0A & (1 << UDRE0)));
+     a94:	c0 ec       	ldi	r28, 0xC0	; 192
+     a96:	d0 e0       	ldi	r29, 0x00	; 0
+
+				//
+				// Transmit the value
+				//
+
+				UDR0 = *Value;
+     a98:	66 ec       	ldi	r22, 0xC6	; 198
+     a9a:	70 e0       	ldi	r23, 0x00	; 0
+				goto Exit;
+			}
+
+			for (IndexI = 0; IndexI < Length; IndexI++)
+			{
+				while (!(UCSR0A & (1 << UDRE0)));
+     a9c:	18 81       	ld	r17, Y
+     a9e:	15 ff       	sbrs	r17, 5
+     aa0:	fd cf       	rjmp	.-6      	; 0xa9c <UARTTransmitSync+0x3a>
+
+				//
+				// Transmit the value
+				//
+
+				UDR0 = *Value;
+     aa2:	f7 01       	movw	r30, r14
+     aa4:	11 91       	ld	r17, Z+
+     aa6:	7f 01       	movw	r14, r30
+     aa8:	fb 01       	movw	r30, r22
+     aaa:	10 83       	st	Z, r17
+			if (!gUARTInitialized[0])
+			{
+				goto Exit;
+			}
+
+			for (IndexI = 0; IndexI < Length; IndexI++)
+     aac:	01 96       	adiw	r24, 0x01	; 1
+     aae:	a1 1d       	adc	r26, r1
+     ab0:	b1 1d       	adc	r27, r1
+     ab2:	82 17       	cp	r24, r18
+     ab4:	93 07       	cpc	r25, r19
+     ab6:	a4 07       	cpc	r26, r20
+     ab8:	b5 07       	cpc	r27, r21
+     aba:	81 f7       	brne	.-32     	; 0xa9c <UARTTransmitSync+0x3a>
+     abc:	2c c0       	rjmp	.+88     	; 0xb16 <UARTTransmitSync+0xb4>
+
+		}
+		case 1:
+		{
+
+			if (!gUARTInitialized[1])
+     abe:	80 91 f0 03 	lds	r24, 0x03F0
+     ac2:	88 23       	and	r24, r24
+     ac4:	29 f1       	breq	.+74     	; 0xb10 <UARTTransmitSync+0xae>
+			{
+				goto Exit;
+			}
+
+			for (IndexI = 0; IndexI < Length; IndexI++)
+     ac6:	21 15       	cp	r18, r1
+     ac8:	31 05       	cpc	r19, r1
+     aca:	41 05       	cpc	r20, r1
+     acc:	51 05       	cpc	r21, r1
+     ace:	19 f1       	breq	.+70     	; 0xb16 <UARTTransmitSync+0xb4>
+     ad0:	80 e0       	ldi	r24, 0x00	; 0
+     ad2:	90 e0       	ldi	r25, 0x00	; 0
+     ad4:	dc 01       	movw	r26, r24
+			{
+
+				while (!(UCSR1A & (1 << UDRE1)));
+     ad6:	c8 ec       	ldi	r28, 0xC8	; 200
+     ad8:	d0 e0       	ldi	r29, 0x00	; 0
+
+				//
+				// Transmit the value
+				//
+
+				UDR1 = *Value;
+     ada:	6e ec       	ldi	r22, 0xCE	; 206
+     adc:	70 e0       	ldi	r23, 0x00	; 0
+			}
+
+			for (IndexI = 0; IndexI < Length; IndexI++)
+			{
+
+				while (!(UCSR1A & (1 << UDRE1)));
+     ade:	18 81       	ld	r17, Y
+     ae0:	15 ff       	sbrs	r17, 5
+     ae2:	fd cf       	rjmp	.-6      	; 0xade <UARTTransmitSync+0x7c>
+
+				//
+				// Transmit the value
+				//
+
+				UDR1 = *Value;
+     ae4:	f7 01       	movw	r30, r14
+     ae6:	11 91       	ld	r17, Z+
+     ae8:	7f 01       	movw	r14, r30
+     aea:	fb 01       	movw	r30, r22
+     aec:	10 83       	st	Z, r17
+			if (!gUARTInitialized[1])
+			{
+				goto Exit;
+			}
+
+			for (IndexI = 0; IndexI < Length; IndexI++)
+     aee:	01 96       	adiw	r24, 0x01	; 1
+     af0:	a1 1d       	adc	r26, r1
+     af2:	b1 1d       	adc	r27, r1
+     af4:	82 17       	cp	r24, r18
+     af6:	93 07       	cpc	r25, r19
+     af8:	a4 07       	cpc	r26, r20
+     afa:	b5 07       	cpc	r27, r21
+     afc:	81 f7       	brne	.-32     	; 0xade <UARTTransmitSync+0x7c>
+     afe:	0b c0       	rjmp	.+22     	; 0xb16 <UARTTransmitSync+0xb4>
+unsigned long
+UARTTransmitSync(UART_NUMBER UARTNumber, PVOID TransmitValue, unsigned long Length)
+{
+	unsigned char *Value = (unsigned char *) TransmitValue;
+	
+	unsigned long IndexI = 0;
+     b00:	20 e0       	ldi	r18, 0x00	; 0
+     b02:	30 e0       	ldi	r19, 0x00	; 0
+     b04:	a9 01       	movw	r20, r18
+     b06:	07 c0       	rjmp	.+14     	; 0xb16 <UARTTransmitSync+0xb4>
+     b08:	20 e0       	ldi	r18, 0x00	; 0
+     b0a:	30 e0       	ldi	r19, 0x00	; 0
+     b0c:	a9 01       	movw	r20, r18
+     b0e:	03 c0       	rjmp	.+6      	; 0xb16 <UARTTransmitSync+0xb4>
+     b10:	20 e0       	ldi	r18, 0x00	; 0
+     b12:	30 e0       	ldi	r19, 0x00	; 0
+     b14:	a9 01       	movw	r20, r18
+
+Exit:
+
+	return IndexI;
+
+}
+     b16:	ca 01       	movw	r24, r20
+     b18:	b9 01       	movw	r22, r18
+     b1a:	df 91       	pop	r29
+     b1c:	cf 91       	pop	r28
+     b1e:	1f 91       	pop	r17
+     b20:	ff 90       	pop	r15
+     b22:	ef 90       	pop	r14
+     b24:	08 95       	ret
+
+00000b26 <InitTWI>:
+bool
+InitTWI(TWI_MODE Mode, PTWI_ADDRESS Address, PTWI_ADDRESS_MASK AddressMask)
+{	
+	bool Status = TRUE;
+	
+	if (Mode == TWI_SLAVE)
+     b26:	81 11       	cpse	r24, r1
+     b28:	20 c0       	rjmp	.+64     	; 0xb6a <InitTWI+0x44>
+	{
+		if (Address != NULL && AddressMask != NULL)
+     b2a:	61 15       	cp	r22, r1
+     b2c:	71 05       	cpc	r23, r1
+     b2e:	89 f0       	breq	.+34     	; 0xb52 <InitTWI+0x2c>
+     b30:	41 15       	cp	r20, r1
+     b32:	51 05       	cpc	r21, r1
+     b34:	71 f0       	breq	.+28     	; 0xb52 <InitTWI+0x2c>
+		{
+			//
+			// Set Slave Address and Mask
+			//
+				
+			TWAR = Address->AsUINT8;
+     b36:	fb 01       	movw	r30, r22
+     b38:	80 81       	ld	r24, Z
+     b3a:	80 93 ba 00 	sts	0x00BA, r24
+				
+			TWAMR = AddressMask->AsUINT8;
+     b3e:	fa 01       	movw	r30, r20
+     b40:	80 81       	ld	r24, Z
+     b42:	80 93 bd 00 	sts	0x00BD, r24
+			
+			//
+			// Set Data and Clock to IN
+			//
+			
+			DDRC &= ~((0x1 << PORTC0) | (0x1 << PORTC1));
+     b46:	87 b1       	in	r24, 0x07	; 7
+     b48:	8c 7f       	andi	r24, 0xFC	; 252
+     b4a:	87 b9       	out	0x07, r24	; 7
+			
+			gMode = TWI_SLAVE;
+     b4c:	10 92 f4 03 	sts	0x03F4, r1
+     b50:	12 c0       	rjmp	.+36     	; 0xb76 <InitTWI+0x50>
+		}
+		else
+		{
+			SendTrace(ERROR_LEVEL, "InitTWI - Invalid Parameters\r\n");
+     b52:	85 e6       	ldi	r24, 0x65	; 101
+     b54:	91 e0       	ldi	r25, 0x01	; 1
+     b56:	9f 93       	push	r25
+     b58:	8f 93       	push	r24
+     b5a:	81 e0       	ldi	r24, 0x01	; 1
+     b5c:	8f 93       	push	r24
+     b5e:	24 dd       	rcall	.-1464   	; 0x5a8 <SendTrace>
+			
+			Status = FALSE;
+			
+			goto Exit;
+     b60:	0f 90       	pop	r0
+     b62:	0f 90       	pop	r0
+     b64:	0f 90       	pop	r0
+		}
+		else
+		{
+			SendTrace(ERROR_LEVEL, "InitTWI - Invalid Parameters\r\n");
+			
+			Status = FALSE;
+     b66:	80 e0       	ldi	r24, 0x00	; 0
+			
+			goto Exit;
+     b68:	08 95       	ret
+		}
+	}
+	else
+	{
+		gMode = TWI_MASTER;
+     b6a:	81 e0       	ldi	r24, 0x01	; 1
+     b6c:	80 93 f4 03 	sts	0x03F4, r24
+		
+		//
+		// Set Data and Clock to Out
+		//
+		
+		DDRC |= ((0x1 << PORTC0) | (0x1 << PORTC1));
+     b70:	87 b1       	in	r24, 0x07	; 7
+     b72:	83 60       	ori	r24, 0x03	; 3
+     b74:	87 b9       	out	0x07, r24	; 7
+	//
+	// Set TWI Bit Rate Register to 8 so that
+	// SCL is set to 100 KHz.
+	//
+
+	TWBR = BIT_RATE_VALUE;
+     b76:	80 e2       	ldi	r24, 0x20	; 32
+     b78:	80 93 b8 00 	sts	0x00B8, r24
+	
+	//
+	// Set Pre-scalar value to 1
+	//
+
+	TWSR = 0;
+     b7c:	10 92 b9 00 	sts	0x00B9, r1
+	
+	//
+	// Set TWI Control Register
+	//
+	
+	TWCR = (0x1 << TWEN) | (0x1 << TWEA);
+     b80:	84 e4       	ldi	r24, 0x44	; 68
+     b82:	80 93 bc 00 	sts	0x00BC, r24
+	
+	gIsRepeatedStart = FALSE;
+     b86:	10 92 f1 03 	sts	0x03F1, r1
+	
+	gIsTWIInitialized = TRUE;
+     b8a:	81 e0       	ldi	r24, 0x01	; 1
+     b8c:	80 93 f2 03 	sts	0x03F2, r24
+
+Exit:
+
+	return Status;
+}
+     b90:	08 95       	ret
+
+00000b92 <SendStartCondition>:
+	
+	//
+	// Send Start Condition
+	//
+	
+	ENABLE_START();
+     b92:	ec eb       	ldi	r30, 0xBC	; 188
+     b94:	f0 e0       	ldi	r31, 0x00	; 0
+     b96:	80 81       	ld	r24, Z
+     b98:	8f 75       	andi	r24, 0x5F	; 95
+     b9a:	80 62       	ori	r24, 0x20	; 32
+     b9c:	80 83       	st	Z, r24
+	
+	WAIT_FOR_OP_COMPLETION();
+     b9e:	80 81       	ld	r24, Z
+     ba0:	80 68       	ori	r24, 0x80	; 128
+     ba2:	80 83       	st	Z, r24
+     ba4:	80 81       	ld	r24, Z
+     ba6:	88 23       	and	r24, r24
+     ba8:	ec f7       	brge	.-6      	; 0xba4 <SendStartCondition+0x12>
+	
+	DISABLE_START();
+     baa:	ec eb       	ldi	r30, 0xBC	; 188
+     bac:	f0 e0       	ldi	r31, 0x00	; 0
+     bae:	80 81       	ld	r24, Z
+     bb0:	8f 75       	andi	r24, 0x5F	; 95
+     bb2:	80 83       	st	Z, r24
+	
+	if (gIsRepeatedStart)
+     bb4:	80 91 f1 03 	lds	r24, 0x03F1
+     bb8:	88 23       	and	r24, r24
+     bba:	41 f0       	breq	.+16     	; 0xbcc <SendStartCondition+0x3a>
+	{
+		Status = ProcessTwiStatus(REPEATED_START_TRANSMITTED);
+     bbc:	90 91 b9 00 	lds	r25, 0x00B9
+     bc0:	98 7f       	andi	r25, 0xF8	; 248
+     bc2:	81 e0       	ldi	r24, 0x01	; 1
+     bc4:	90 31       	cpi	r25, 0x10	; 16
+     bc6:	49 f0       	breq	.+18     	; 0xbda <SendStartCondition+0x48>
+     bc8:	80 e0       	ldi	r24, 0x00	; 0
+     bca:	08 95       	ret
+	}
+	else
+	{
+		Status = ProcessTwiStatus(START_TRANSMITTED);
+     bcc:	90 91 b9 00 	lds	r25, 0x00B9
+     bd0:	98 7f       	andi	r25, 0xF8	; 248
+     bd2:	81 e0       	ldi	r24, 0x01	; 1
+     bd4:	98 30       	cpi	r25, 0x08	; 8
+     bd6:	09 f0       	breq	.+2      	; 0xbda <SendStartCondition+0x48>
+     bd8:	80 e0       	ldi	r24, 0x00	; 0
+	}
+	
+	return Status;
+}
+     bda:	08 95       	ret
+
+00000bdc <SendStopCondition>:
+
+void
+SendStopCondition()
+{	
+	ENABLE_STOP();
+     bdc:	ec eb       	ldi	r30, 0xBC	; 188
+     bde:	f0 e0       	ldi	r31, 0x00	; 0
+     be0:	80 81       	ld	r24, Z
+     be2:	8f 76       	andi	r24, 0x6F	; 111
+     be4:	80 61       	ori	r24, 0x10	; 16
+     be6:	80 83       	st	Z, r24
+	
+	//
+	// Send the Stop condition by clearing the TWINT flag
+	//
+	
+	TWCR |= (1 << TWINT);
+     be8:	80 81       	ld	r24, Z
+     bea:	80 68       	ori	r24, 0x80	; 128
+     bec:	80 83       	st	Z, r24
+	//
+	// TWINT is not set after stop condition.
+	// Instead TWSTO bit in TWCR is cleared.
+	//
+	
+	while (!(TWCR & (0x1 << TWSTO)));
+     bee:	80 81       	ld	r24, Z
+     bf0:	84 ff       	sbrs	r24, 4
+     bf2:	fd cf       	rjmp	.-6      	; 0xbee <SendStopCondition+0x12>
+}
+     bf4:	08 95       	ret
+
+00000bf6 <Transmit>:
+
+bool
+Transmit(PVOID Buffer, unsigned long Length)
+{
+     bf6:	8f 92       	push	r8
+     bf8:	9f 92       	push	r9
+     bfa:	af 92       	push	r10
+     bfc:	bf 92       	push	r11
+     bfe:	df 92       	push	r13
+     c00:	ef 92       	push	r14
+     c02:	ff 92       	push	r15
+     c04:	0f 93       	push	r16
+     c06:	1f 93       	push	r17
+     c08:	cf 93       	push	r28
+     c0a:	df 93       	push	r29
+	
+	unsigned char *BytePtr;
+	
+	TWI_STATUS TransmitStatus;
+	
+	if (gMode == TWI_MASTER)
+     c0c:	20 91 f4 03 	lds	r18, 0x03F4
+     c10:	21 30       	cpi	r18, 0x01	; 1
+     c12:	29 f4       	brne	.+10     	; 0xc1e <Transmit+0x28>
+	{
+		TransmitStatus = DATA_TRANSMITTED_ACK;
+     c14:	0f 2e       	mov	r0, r31
+     c16:	f8 e2       	ldi	r31, 0x28	; 40
+     c18:	df 2e       	mov	r13, r31
+     c1a:	f0 2d       	mov	r31, r0
+     c1c:	04 c0       	rjmp	.+8      	; 0xc26 <Transmit+0x30>
+	}
+	else
+	{
+		TransmitStatus = SLA_R_DATA_TRANSMITTED_ACK;
+     c1e:	0f 2e       	mov	r0, r31
+     c20:	f8 eb       	ldi	r31, 0xB8	; 184
+     c22:	df 2e       	mov	r13, r31
+     c24:	f0 2d       	mov	r31, r0
+	// Now transmit the data.
+	//
+	
+	BytePtr = (unsigned char *) Buffer;
+	
+	for (IndexI = 0; IndexI < Length - 1; IndexI++)
+     c26:	4a 01       	movw	r8, r20
+     c28:	5b 01       	movw	r10, r22
+     c2a:	21 e0       	ldi	r18, 0x01	; 1
+     c2c:	82 1a       	sub	r8, r18
+     c2e:	91 08       	sbc	r9, r1
+     c30:	a1 08       	sbc	r10, r1
+     c32:	b1 08       	sbc	r11, r1
+     c34:	81 14       	cp	r8, r1
+     c36:	91 04       	cpc	r9, r1
+     c38:	a1 04       	cpc	r10, r1
+     c3a:	b1 04       	cpc	r11, r1
+     c3c:	e1 f1       	breq	.+120    	; 0xcb6 <Transmit+0xc0>
+     c3e:	dc 01       	movw	r26, r24
+     c40:	00 e0       	ldi	r16, 0x00	; 0
+     c42:	10 e0       	ldi	r17, 0x00	; 0
+     c44:	98 01       	movw	r18, r16
+	{
+		TWDR = *BytePtr;
+     c46:	4b eb       	ldi	r20, 0xBB	; 187
+     c48:	50 e0       	ldi	r21, 0x00	; 0
+		
+		WAIT_FOR_OP_COMPLETION();
+     c4a:	ec eb       	ldi	r30, 0xBC	; 188
+     c4c:	f0 e0       	ldi	r31, 0x00	; 0
+		
+		if (!ProcessTwiStatus(TransmitStatus))
+     c4e:	0f 2e       	mov	r0, r31
+     c50:	f9 eb       	ldi	r31, 0xB9	; 185
+     c52:	ef 2e       	mov	r14, r31
+     c54:	f1 2c       	mov	r15, r1
+     c56:	f0 2d       	mov	r31, r0
+     c58:	6d 2d       	mov	r22, r13
+     c5a:	70 e0       	ldi	r23, 0x00	; 0
+	
+	BytePtr = (unsigned char *) Buffer;
+	
+	for (IndexI = 0; IndexI < Length - 1; IndexI++)
+	{
+		TWDR = *BytePtr;
+     c5c:	8d 91       	ld	r24, X+
+     c5e:	ea 01       	movw	r28, r20
+     c60:	88 83       	st	Y, r24
+		
+		WAIT_FOR_OP_COMPLETION();
+     c62:	80 81       	ld	r24, Z
+     c64:	80 68       	ori	r24, 0x80	; 128
+     c66:	80 83       	st	Z, r24
+     c68:	80 81       	ld	r24, Z
+     c6a:	88 23       	and	r24, r24
+     c6c:	ec f7       	brge	.-6      	; 0xc68 <Transmit+0x72>
+		
+		if (!ProcessTwiStatus(TransmitStatus))
+     c6e:	e7 01       	movw	r28, r14
+     c70:	88 81       	ld	r24, Y
+     c72:	88 7f       	andi	r24, 0xF8	; 248
+     c74:	90 e0       	ldi	r25, 0x00	; 0
+     c76:	86 17       	cp	r24, r22
+     c78:	97 07       	cpc	r25, r23
+     c7a:	99 f0       	breq	.+38     	; 0xca2 <Transmit+0xac>
+		{
+			SendTrace(ERROR_LEVEL, "Transmit - Data Transmission Failed - Status = 0x%x\r\n", (TWSR & TWI_STATUS_MASK));
+     c7c:	80 91 b9 00 	lds	r24, 0x00B9
+     c80:	88 7f       	andi	r24, 0xF8	; 248
+     c82:	1f 92       	push	r1
+     c84:	8f 93       	push	r24
+     c86:	84 e8       	ldi	r24, 0x84	; 132
+     c88:	91 e0       	ldi	r25, 0x01	; 1
+     c8a:	9f 93       	push	r25
+     c8c:	8f 93       	push	r24
+     c8e:	81 e0       	ldi	r24, 0x01	; 1
+     c90:	8f 93       	push	r24
+     c92:	8a dc       	rcall	.-1772   	; 0x5a8 <SendTrace>
+			
+			Status = FALSE;
+			
+			goto Exit;
+     c94:	0f 90       	pop	r0
+     c96:	0f 90       	pop	r0
+     c98:	0f 90       	pop	r0
+     c9a:	0f 90       	pop	r0
+     c9c:	0f 90       	pop	r0
+		
+		if (!ProcessTwiStatus(TransmitStatus))
+		{
+			SendTrace(ERROR_LEVEL, "Transmit - Data Transmission Failed - Status = 0x%x\r\n", (TWSR & TWI_STATUS_MASK));
+			
+			Status = FALSE;
+     c9e:	80 e0       	ldi	r24, 0x00	; 0
+			
+			goto Exit;
+     ca0:	3b c0       	rjmp	.+118    	; 0xd18 <Transmit+0x122>
+		}
+		
+		BytePtr++;
+     ca2:	cd 01       	movw	r24, r26
+	// Now transmit the data.
+	//
+	
+	BytePtr = (unsigned char *) Buffer;
+	
+	for (IndexI = 0; IndexI < Length - 1; IndexI++)
+     ca4:	0f 5f       	subi	r16, 0xFF	; 255
+     ca6:	1f 4f       	sbci	r17, 0xFF	; 255
+     ca8:	2f 4f       	sbci	r18, 0xFF	; 255
+     caa:	3f 4f       	sbci	r19, 0xFF	; 255
+     cac:	08 15       	cp	r16, r8
+     cae:	19 05       	cpc	r17, r9
+     cb0:	2a 05       	cpc	r18, r10
+     cb2:	3b 05       	cpc	r19, r11
+     cb4:	98 f2       	brcs	.-90     	; 0xc5c <Transmit+0x66>
+	
+	//
+	// In slave mode after transmitting the last byte we will get a NACK from the Master
+	//
+	
+	if (gMode == TWI_SLAVE)
+     cb6:	20 91 f4 03 	lds	r18, 0x03F4
+     cba:	21 11       	cpse	r18, r1
+     cbc:	04 c0       	rjmp	.+8      	; 0xcc6 <Transmit+0xd0>
+	{
+		TransmitStatus = SLA_R_DATA_TRANSMITTED_NACK;
+     cbe:	0f 2e       	mov	r0, r31
+     cc0:	f0 ec       	ldi	r31, 0xC0	; 192
+     cc2:	df 2e       	mov	r13, r31
+     cc4:	f0 2d       	mov	r31, r0
+	}
+	
+	TWDR = *BytePtr;
+     cc6:	fc 01       	movw	r30, r24
+     cc8:	80 81       	ld	r24, Z
+     cca:	80 93 bb 00 	sts	0x00BB, r24
+	
+	WAIT_FOR_OP_COMPLETION();
+     cce:	ec eb       	ldi	r30, 0xBC	; 188
+     cd0:	f0 e0       	ldi	r31, 0x00	; 0
+     cd2:	80 81       	ld	r24, Z
+     cd4:	80 68       	ori	r24, 0x80	; 128
+     cd6:	80 83       	st	Z, r24
+     cd8:	80 81       	ld	r24, Z
+     cda:	88 23       	and	r24, r24
+     cdc:	ec f7       	brge	.-6      	; 0xcd8 <Transmit+0xe2>
+	
+	if (!ProcessTwiStatus(TransmitStatus))
+     cde:	20 91 b9 00 	lds	r18, 0x00B9
+     ce2:	28 7f       	andi	r18, 0xF8	; 248
+     ce4:	30 e0       	ldi	r19, 0x00	; 0
+     ce6:	8d 2d       	mov	r24, r13
+     ce8:	90 e0       	ldi	r25, 0x00	; 0
+     cea:	28 17       	cp	r18, r24
+     cec:	39 07       	cpc	r19, r25
+     cee:	99 f0       	breq	.+38     	; 0xd16 <Transmit+0x120>
+	{
+		SendTrace(ERROR_LEVEL, "Transmit - Data Transmission Failed - Status = 0x%x\r\n", (TWSR & TWI_STATUS_MASK));
+     cf0:	80 91 b9 00 	lds	r24, 0x00B9
+     cf4:	88 7f       	andi	r24, 0xF8	; 248
+     cf6:	1f 92       	push	r1
+     cf8:	8f 93       	push	r24
+     cfa:	84 e8       	ldi	r24, 0x84	; 132
+     cfc:	91 e0       	ldi	r25, 0x01	; 1
+     cfe:	9f 93       	push	r25
+     d00:	8f 93       	push	r24
+     d02:	81 e0       	ldi	r24, 0x01	; 1
+     d04:	8f 93       	push	r24
+     d06:	50 dc       	rcall	.-1888   	; 0x5a8 <SendTrace>
+		
+		Status = FALSE;
+		
+		goto Exit;
+     d08:	0f 90       	pop	r0
+     d0a:	0f 90       	pop	r0
+     d0c:	0f 90       	pop	r0
+     d0e:	0f 90       	pop	r0
+     d10:	0f 90       	pop	r0
+	
+	if (!ProcessTwiStatus(TransmitStatus))
+	{
+		SendTrace(ERROR_LEVEL, "Transmit - Data Transmission Failed - Status = 0x%x\r\n", (TWSR & TWI_STATUS_MASK));
+		
+		Status = FALSE;
+     d12:	80 e0       	ldi	r24, 0x00	; 0
+		
+		goto Exit;
+     d14:	01 c0       	rjmp	.+2      	; 0xd18 <Transmit+0x122>
+}
+
+bool
+Transmit(PVOID Buffer, unsigned long Length)
+{
+	bool Status = TRUE;
+     d16:	81 e0       	ldi	r24, 0x01	; 1
+	}
+	
+Exit:
+
+	return Status;	
+}
+     d18:	df 91       	pop	r29
+     d1a:	cf 91       	pop	r28
+     d1c:	1f 91       	pop	r17
+     d1e:	0f 91       	pop	r16
+     d20:	ff 90       	pop	r15
+     d22:	ef 90       	pop	r14
+     d24:	df 90       	pop	r13
+     d26:	bf 90       	pop	r11
+     d28:	af 90       	pop	r10
+     d2a:	9f 90       	pop	r9
+     d2c:	8f 90       	pop	r8
+     d2e:	08 95       	ret
+
+00000d30 <TwiMasterTransmit>:
+bool
+TwiMasterTransmit(PVOID Buffer, 
+				  unsigned long Length, 
+				  PTWI_ADDRESS Address,
+				  bool SendStop)
+{
+     d30:	af 92       	push	r10
+     d32:	bf 92       	push	r11
+     d34:	cf 92       	push	r12
+     d36:	df 92       	push	r13
+     d38:	ef 92       	push	r14
+     d3a:	ff 92       	push	r15
+     d3c:	0f 93       	push	r16
+     d3e:	cf 93       	push	r28
+     d40:	df 93       	push	r29
+     d42:	5c 01       	movw	r10, r24
+     d44:	6a 01       	movw	r12, r20
+     d46:	7b 01       	movw	r14, r22
+     d48:	e9 01       	movw	r28, r18
+	bool Status = TRUE;
+	
+		
+	if (!SendStartCondition())
+     d4a:	23 df       	rcall	.-442    	; 0xb92 <SendStartCondition>
+     d4c:	81 11       	cpse	r24, r1
+     d4e:	13 c0       	rjmp	.+38     	; 0xd76 <TwiMasterTransmit+0x46>
+	{
+		SendTrace(ERROR_LEVEL, "TwiMasterTransmit - Start Condition Transmission Failed - Status = 0x%x\r\n", (TWSR & TWI_STATUS_MASK));
+     d50:	80 91 b9 00 	lds	r24, 0x00B9
+     d54:	88 7f       	andi	r24, 0xF8	; 248
+     d56:	1f 92       	push	r1
+     d58:	8f 93       	push	r24
+     d5a:	8a eb       	ldi	r24, 0xBA	; 186
+     d5c:	91 e0       	ldi	r25, 0x01	; 1
+     d5e:	9f 93       	push	r25
+     d60:	8f 93       	push	r24
+     d62:	81 e0       	ldi	r24, 0x01	; 1
+     d64:	8f 93       	push	r24
+     d66:	20 dc       	rcall	.-1984   	; 0x5a8 <SendTrace>
+		
+		Status = FALSE;
+			
+		goto Exit;
+     d68:	0f 90       	pop	r0
+     d6a:	0f 90       	pop	r0
+     d6c:	0f 90       	pop	r0
+     d6e:	0f 90       	pop	r0
+     d70:	0f 90       	pop	r0
+		
+	if (!SendStartCondition())
+	{
+		SendTrace(ERROR_LEVEL, "TwiMasterTransmit - Start Condition Transmission Failed - Status = 0x%x\r\n", (TWSR & TWI_STATUS_MASK));
+		
+		Status = FALSE;
+     d72:	c0 e0       	ldi	r28, 0x00	; 0
+			
+		goto Exit;
+     d74:	33 c0       	rjmp	.+102    	; 0xddc <TwiMasterTransmit+0xac>
+	}
+	
+	gIsRepeatedStart = FALSE;
+     d76:	10 92 f1 03 	sts	0x03F1, r1
+	//
+	// Set Address->ReadWrite = 0 indicating a write operation.
+	// Then transmit SLA+W
+	//
+	
+	Address->RW_EnGenCall = 0;
+     d7a:	88 81       	ld	r24, Y
+     d7c:	8e 7f       	andi	r24, 0xFE	; 254
+     d7e:	88 83       	st	Y, r24
+	
+	TWDR = Address->AsUINT8;
+     d80:	80 93 bb 00 	sts	0x00BB, r24
+		
+	WAIT_FOR_OP_COMPLETION();
+     d84:	ec eb       	ldi	r30, 0xBC	; 188
+     d86:	f0 e0       	ldi	r31, 0x00	; 0
+     d88:	80 81       	ld	r24, Z
+     d8a:	80 68       	ori	r24, 0x80	; 128
+     d8c:	80 83       	st	Z, r24
+     d8e:	80 81       	ld	r24, Z
+     d90:	88 23       	and	r24, r24
+     d92:	ec f7       	brge	.-6      	; 0xd8e <TwiMasterTransmit+0x5e>
+		
+	if (!ProcessTwiStatus(SLA_W_TRANSMITTED_ACK))
+     d94:	80 91 b9 00 	lds	r24, 0x00B9
+     d98:	88 7f       	andi	r24, 0xF8	; 248
+     d9a:	88 31       	cpi	r24, 0x18	; 24
+     d9c:	99 f0       	breq	.+38     	; 0xdc4 <TwiMasterTransmit+0x94>
+	{
+		SendTrace(ERROR_LEVEL, "TwiMasterTransmit - Slave Address and Write Flag Transmission Failed - Status = 0x%x\r\n", (TWSR & TWI_STATUS_MASK));
+     d9e:	80 91 b9 00 	lds	r24, 0x00B9
+     da2:	88 7f       	andi	r24, 0xF8	; 248
+     da4:	1f 92       	push	r1
+     da6:	8f 93       	push	r24
+     da8:	84 e0       	ldi	r24, 0x04	; 4
+     daa:	92 e0       	ldi	r25, 0x02	; 2
+     dac:	9f 93       	push	r25
+     dae:	8f 93       	push	r24
+     db0:	81 e0       	ldi	r24, 0x01	; 1
+     db2:	8f 93       	push	r24
+     db4:	f9 db       	rcall	.-2062   	; 0x5a8 <SendTrace>
+		
+		Status = FALSE;
+			
+		goto Exit;
+     db6:	0f 90       	pop	r0
+     db8:	0f 90       	pop	r0
+     dba:	0f 90       	pop	r0
+     dbc:	0f 90       	pop	r0
+     dbe:	0f 90       	pop	r0
+		
+	if (!ProcessTwiStatus(SLA_W_TRANSMITTED_ACK))
+	{
+		SendTrace(ERROR_LEVEL, "TwiMasterTransmit - Slave Address and Write Flag Transmission Failed - Status = 0x%x\r\n", (TWSR & TWI_STATUS_MASK));
+		
+		Status = FALSE;
+     dc0:	c0 e0       	ldi	r28, 0x00	; 0
+			
+		goto Exit;
+     dc2:	0c c0       	rjmp	.+24     	; 0xddc <TwiMasterTransmit+0xac>
+	}
+	
+	Status = Transmit(Buffer, Length);
+     dc4:	b7 01       	movw	r22, r14
+     dc6:	a6 01       	movw	r20, r12
+     dc8:	c5 01       	movw	r24, r10
+     dca:	15 df       	rcall	.-470    	; 0xbf6 <Transmit>
+     dcc:	c8 2f       	mov	r28, r24
+	
+	//
+	// Send stop condition
+	//
+	
+	if (SendStop)
+     dce:	00 23       	and	r16, r16
+     dd0:	11 f0       	breq	.+4      	; 0xdd6 <TwiMasterTransmit+0xa6>
+	{
+		SendStopCondition();
+     dd2:	04 df       	rcall	.-504    	; 0xbdc <SendStopCondition>
+     dd4:	03 c0       	rjmp	.+6      	; 0xddc <TwiMasterTransmit+0xac>
+	}
+	else
+	{
+		gIsRepeatedStart = TRUE;
+     dd6:	81 e0       	ldi	r24, 0x01	; 1
+     dd8:	80 93 f1 03 	sts	0x03F1, r24
+	}
+	
+Exit:
+
+	return Status;
+}
+     ddc:	8c 2f       	mov	r24, r28
+     dde:	df 91       	pop	r29
+     de0:	cf 91       	pop	r28
+     de2:	0f 91       	pop	r16
+     de4:	ff 90       	pop	r15
+     de6:	ef 90       	pop	r14
+     de8:	df 90       	pop	r13
+     dea:	cf 90       	pop	r12
+     dec:	bf 90       	pop	r11
+     dee:	af 90       	pop	r10
+     df0:	08 95       	ret
+
+00000df2 <TwiTransmit>:
+bool 
+TwiTransmit(PVOID Buffer, 
+			unsigned long Length,
+			PTWI_ADDRESS Address,
+			bool SendStop)
+{
+     df2:	0f 93       	push	r16
+	bool Status = TRUE;
+	
+	if (!gIsTWIInitialized || (Buffer == NULL))
+     df4:	e0 91 f2 03 	lds	r30, 0x03F2
+     df8:	ee 23       	and	r30, r30
+     dfa:	09 f4       	brne	.+2      	; 0xdfe <TwiTransmit+0xc>
+     dfc:	48 c0       	rjmp	.+144    	; 0xe8e <TwiTransmit+0x9c>
+     dfe:	00 97       	sbiw	r24, 0x00	; 0
+     e00:	09 f4       	brne	.+2      	; 0xe04 <TwiTransmit+0x12>
+     e02:	47 c0       	rjmp	.+142    	; 0xe92 <TwiTransmit+0xa0>
+		Status = FALSE;
+		
+		goto Exit;
+	}
+	
+	if (gMode == TWI_MASTER)
+     e04:	e0 91 f4 03 	lds	r30, 0x03F4
+     e08:	e1 30       	cpi	r30, 0x01	; 1
+     e0a:	89 f4       	brne	.+34     	; 0xe2e <TwiTransmit+0x3c>
+	{
+		if (Address == NULL)
+     e0c:	21 15       	cp	r18, r1
+     e0e:	31 05       	cpc	r19, r1
+     e10:	61 f4       	brne	.+24     	; 0xe2a <TwiTransmit+0x38>
+		{
+			SendTrace(ERROR_LEVEL, "TwiTransmit - Invalid Parameters\r\n");
+     e12:	8b e5       	ldi	r24, 0x5B	; 91
+     e14:	92 e0       	ldi	r25, 0x02	; 2
+     e16:	9f 93       	push	r25
+     e18:	8f 93       	push	r24
+     e1a:	81 e0       	ldi	r24, 0x01	; 1
+     e1c:	8f 93       	push	r24
+     e1e:	c4 db       	rcall	.-2168   	; 0x5a8 <SendTrace>
+			
+			Status = FALSE;
+		
+			goto Exit;
+     e20:	0f 90       	pop	r0
+     e22:	0f 90       	pop	r0
+     e24:	0f 90       	pop	r0
+	{
+		if (Address == NULL)
+		{
+			SendTrace(ERROR_LEVEL, "TwiTransmit - Invalid Parameters\r\n");
+			
+			Status = FALSE;
+     e26:	80 e0       	ldi	r24, 0x00	; 0
+		
+			goto Exit;
+     e28:	35 c0       	rjmp	.+106    	; 0xe94 <TwiTransmit+0xa2>
+		}
+		else
+		{
+			Status = TwiMasterTransmit(Buffer, Length, Address, SendStop);	
+     e2a:	82 df       	rcall	.-252    	; 0xd30 <TwiMasterTransmit>
+     e2c:	33 c0       	rjmp	.+102    	; 0xe94 <TwiTransmit+0xa2>
+		}
+	}
+	else
+	{
+		WAIT_FOR_OP_COMPLETION();
+     e2e:	ec eb       	ldi	r30, 0xBC	; 188
+     e30:	f0 e0       	ldi	r31, 0x00	; 0
+     e32:	20 81       	ld	r18, Z
+     e34:	20 68       	ori	r18, 0x80	; 128
+     e36:	20 83       	st	Z, r18
+     e38:	20 81       	ld	r18, Z
+     e3a:	22 23       	and	r18, r18
+     e3c:	ec f7       	brge	.-6      	; 0xe38 <TwiTransmit+0x46>
+		
+		if (ProcessTwiStatus(STOP_REPEATED_START_RECEIVED))
+     e3e:	20 91 b9 00 	lds	r18, 0x00B9
+     e42:	28 7f       	andi	r18, 0xF8	; 248
+     e44:	20 3a       	cpi	r18, 0xA0	; 160
+     e46:	41 f4       	brne	.+16     	; 0xe58 <TwiTransmit+0x66>
+		{
+			WAIT_FOR_OP_COMPLETION();	
+     e48:	ec eb       	ldi	r30, 0xBC	; 188
+     e4a:	f0 e0       	ldi	r31, 0x00	; 0
+     e4c:	20 81       	ld	r18, Z
+     e4e:	20 68       	ori	r18, 0x80	; 128
+     e50:	20 83       	st	Z, r18
+     e52:	20 81       	ld	r18, Z
+     e54:	22 23       	and	r18, r18
+     e56:	ec f7       	brge	.-6      	; 0xe52 <TwiTransmit+0x60>
+		}
+		
+		if (!ProcessTwiStatus(SLA_R_RECEIVED_ACK))
+     e58:	20 91 b9 00 	lds	r18, 0x00B9
+     e5c:	28 7f       	andi	r18, 0xF8	; 248
+     e5e:	28 3a       	cpi	r18, 0xA8	; 168
+     e60:	91 f0       	breq	.+36     	; 0xe86 <TwiTransmit+0x94>
+		{
+			SendTrace(ERROR_LEVEL, "TwiTransmit - Slave Read Not Requested by Master - 0x%x\r\n", TWSR);
+     e62:	80 91 b9 00 	lds	r24, 0x00B9
+     e66:	1f 92       	push	r1
+     e68:	8f 93       	push	r24
+     e6a:	8e e7       	ldi	r24, 0x7E	; 126
+     e6c:	92 e0       	ldi	r25, 0x02	; 2
+     e6e:	9f 93       	push	r25
+     e70:	8f 93       	push	r24
+     e72:	81 e0       	ldi	r24, 0x01	; 1
+     e74:	8f 93       	push	r24
+     e76:	98 db       	rcall	.-2256   	; 0x5a8 <SendTrace>
+			
+			Status = FALSE;
+		
+			goto Exit;
+     e78:	0f 90       	pop	r0
+     e7a:	0f 90       	pop	r0
+     e7c:	0f 90       	pop	r0
+     e7e:	0f 90       	pop	r0
+     e80:	0f 90       	pop	r0
+		
+		if (!ProcessTwiStatus(SLA_R_RECEIVED_ACK))
+		{
+			SendTrace(ERROR_LEVEL, "TwiTransmit - Slave Read Not Requested by Master - 0x%x\r\n", TWSR);
+			
+			Status = FALSE;
+     e82:	80 e0       	ldi	r24, 0x00	; 0
+		
+			goto Exit;
+     e84:	07 c0       	rjmp	.+14     	; 0xe94 <TwiTransmit+0xa2>
+		}
+		else
+		{	
+			DATA_OUT();
+     e86:	39 9a       	sbi	0x07, 1	; 7
+		
+			Status = Transmit(Buffer, Length);
+     e88:	b6 de       	rcall	.-660    	; 0xbf6 <Transmit>
+		
+			DATA_IN();
+     e8a:	39 98       	cbi	0x07, 1	; 7
+     e8c:	03 c0       	rjmp	.+6      	; 0xe94 <TwiTransmit+0xa2>
+{
+	bool Status = TRUE;
+	
+	if (!gIsTWIInitialized || (Buffer == NULL))
+	{
+		Status = FALSE;
+     e8e:	80 e0       	ldi	r24, 0x00	; 0
+     e90:	01 c0       	rjmp	.+2      	; 0xe94 <TwiTransmit+0xa2>
+     e92:	80 e0       	ldi	r24, 0x00	; 0
+	}
+	
+Exit:
+
+	return Status;
+}
+     e94:	0f 91       	pop	r16
+     e96:	08 95       	ret
+
+00000e98 <__udivmodsi4>:
+     e98:	a1 e2       	ldi	r26, 0x21	; 33
+     e9a:	1a 2e       	mov	r1, r26
+     e9c:	aa 1b       	sub	r26, r26
+     e9e:	bb 1b       	sub	r27, r27
+     ea0:	fd 01       	movw	r30, r26
+     ea2:	0d c0       	rjmp	.+26     	; 0xebe <__udivmodsi4_ep>
+
+00000ea4 <__udivmodsi4_loop>:
+     ea4:	aa 1f       	adc	r26, r26
+     ea6:	bb 1f       	adc	r27, r27
+     ea8:	ee 1f       	adc	r30, r30
+     eaa:	ff 1f       	adc	r31, r31
+     eac:	a2 17       	cp	r26, r18
+     eae:	b3 07       	cpc	r27, r19
+     eb0:	e4 07       	cpc	r30, r20
+     eb2:	f5 07       	cpc	r31, r21
+     eb4:	20 f0       	brcs	.+8      	; 0xebe <__udivmodsi4_ep>
+     eb6:	a2 1b       	sub	r26, r18
+     eb8:	b3 0b       	sbc	r27, r19
+     eba:	e4 0b       	sbc	r30, r20
+     ebc:	f5 0b       	sbc	r31, r21
+
+00000ebe <__udivmodsi4_ep>:
+     ebe:	66 1f       	adc	r22, r22
+     ec0:	77 1f       	adc	r23, r23
+     ec2:	88 1f       	adc	r24, r24
+     ec4:	99 1f       	adc	r25, r25
+     ec6:	1a 94       	dec	r1
+     ec8:	69 f7       	brne	.-38     	; 0xea4 <__udivmodsi4_loop>
+     eca:	60 95       	com	r22
+     ecc:	70 95       	com	r23
+     ece:	80 95       	com	r24
+     ed0:	90 95       	com	r25
+     ed2:	9b 01       	movw	r18, r22
+     ed4:	ac 01       	movw	r20, r24
+     ed6:	bd 01       	movw	r22, r26
+     ed8:	cf 01       	movw	r24, r30
+     eda:	08 95       	ret
+
+00000edc <__moddi3>:
+     edc:	68 94       	set
+     ede:	01 c0       	rjmp	.+2      	; 0xee2 <__divdi3_moddi3>
+
+00000ee0 <__divdi3>:
+     ee0:	e8 94       	clt
+
+00000ee2 <__divdi3_moddi3>:
+     ee2:	f9 2f       	mov	r31, r25
+     ee4:	f1 2b       	or	r31, r17
+     ee6:	0a f0       	brmi	.+2      	; 0xeea <__divdi3_moddi3+0x8>
+     ee8:	27 c0       	rjmp	.+78     	; 0xf38 <__udivdi3_umoddi3>
+     eea:	a0 e0       	ldi	r26, 0x00	; 0
+     eec:	b0 e0       	ldi	r27, 0x00	; 0
+     eee:	ea e7       	ldi	r30, 0x7A	; 122
+     ef0:	f7 e0       	ldi	r31, 0x07	; 7
+     ef2:	93 c0       	rjmp	.+294    	; 0x101a <__prologue_saves__+0xc>
+     ef4:	09 2e       	mov	r0, r25
+     ef6:	05 94       	asr	r0
+     ef8:	1a f4       	brpl	.+6      	; 0xf00 <__divdi3_moddi3+0x1e>
+     efa:	79 d0       	rcall	.+242    	; 0xfee <__negdi2>
+     efc:	11 23       	and	r17, r17
+     efe:	92 f4       	brpl	.+36     	; 0xf24 <__divdi3_moddi3+0x42>
+     f00:	f0 e8       	ldi	r31, 0x80	; 128
+     f02:	0f 26       	eor	r0, r31
+     f04:	ff ef       	ldi	r31, 0xFF	; 255
+     f06:	e0 94       	com	r14
+     f08:	f0 94       	com	r15
+     f0a:	00 95       	com	r16
+     f0c:	10 95       	com	r17
+     f0e:	b0 94       	com	r11
+     f10:	c0 94       	com	r12
+     f12:	d0 94       	com	r13
+     f14:	a1 94       	neg	r10
+     f16:	bf 0a       	sbc	r11, r31
+     f18:	cf 0a       	sbc	r12, r31
+     f1a:	df 0a       	sbc	r13, r31
+     f1c:	ef 0a       	sbc	r14, r31
+     f1e:	ff 0a       	sbc	r15, r31
+     f20:	0f 0b       	sbc	r16, r31
+     f22:	1f 0b       	sbc	r17, r31
+     f24:	13 d0       	rcall	.+38     	; 0xf4c <__udivmod64>
+     f26:	07 fc       	sbrc	r0, 7
+     f28:	62 d0       	rcall	.+196    	; 0xfee <__negdi2>
+     f2a:	cd b7       	in	r28, 0x3d	; 61
+     f2c:	de b7       	in	r29, 0x3e	; 62
+     f2e:	ec e0       	ldi	r30, 0x0C	; 12
+     f30:	90 c0       	rjmp	.+288    	; 0x1052 <__epilogue_restores__+0xc>
+
+00000f32 <__umoddi3>:
+     f32:	68 94       	set
+     f34:	01 c0       	rjmp	.+2      	; 0xf38 <__udivdi3_umoddi3>
+
+00000f36 <__udivdi3>:
+     f36:	e8 94       	clt
+
+00000f38 <__udivdi3_umoddi3>:
+     f38:	8f 92       	push	r8
+     f3a:	9f 92       	push	r9
+     f3c:	cf 93       	push	r28
+     f3e:	df 93       	push	r29
+     f40:	05 d0       	rcall	.+10     	; 0xf4c <__udivmod64>
+     f42:	df 91       	pop	r29
+     f44:	cf 91       	pop	r28
+     f46:	9f 90       	pop	r9
+     f48:	8f 90       	pop	r8
+     f4a:	08 95       	ret
+
+00000f4c <__udivmod64>:
+     f4c:	88 24       	eor	r8, r8
+     f4e:	99 24       	eor	r9, r9
+     f50:	f4 01       	movw	r30, r8
+     f52:	e4 01       	movw	r28, r8
+     f54:	b0 e4       	ldi	r27, 0x40	; 64
+     f56:	9f 93       	push	r25
+     f58:	aa 27       	eor	r26, r26
+     f5a:	9a 15       	cp	r25, r10
+     f5c:	8b 04       	cpc	r8, r11
+     f5e:	9c 04       	cpc	r9, r12
+     f60:	ed 05       	cpc	r30, r13
+     f62:	fe 05       	cpc	r31, r14
+     f64:	cf 05       	cpc	r28, r15
+     f66:	d0 07       	cpc	r29, r16
+     f68:	a1 07       	cpc	r26, r17
+     f6a:	98 f4       	brcc	.+38     	; 0xf92 <__udivmod64+0x46>
+     f6c:	ad 2f       	mov	r26, r29
+     f6e:	dc 2f       	mov	r29, r28
+     f70:	cf 2f       	mov	r28, r31
+     f72:	fe 2f       	mov	r31, r30
+     f74:	e9 2d       	mov	r30, r9
+     f76:	98 2c       	mov	r9, r8
+     f78:	89 2e       	mov	r8, r25
+     f7a:	98 2f       	mov	r25, r24
+     f7c:	87 2f       	mov	r24, r23
+     f7e:	76 2f       	mov	r23, r22
+     f80:	65 2f       	mov	r22, r21
+     f82:	54 2f       	mov	r21, r20
+     f84:	43 2f       	mov	r20, r19
+     f86:	32 2f       	mov	r19, r18
+     f88:	22 27       	eor	r18, r18
+     f8a:	b8 50       	subi	r27, 0x08	; 8
+     f8c:	31 f7       	brne	.-52     	; 0xf5a <__udivmod64+0xe>
+     f8e:	bf 91       	pop	r27
+     f90:	27 c0       	rjmp	.+78     	; 0xfe0 <__udivmod64+0x94>
+     f92:	1b 2e       	mov	r1, r27
+     f94:	bf 91       	pop	r27
+     f96:	bb 27       	eor	r27, r27
+     f98:	22 0f       	add	r18, r18
+     f9a:	33 1f       	adc	r19, r19
+     f9c:	44 1f       	adc	r20, r20
+     f9e:	55 1f       	adc	r21, r21
+     fa0:	66 1f       	adc	r22, r22
+     fa2:	77 1f       	adc	r23, r23
+     fa4:	88 1f       	adc	r24, r24
+     fa6:	99 1f       	adc	r25, r25
+     fa8:	88 1c       	adc	r8, r8
+     faa:	99 1c       	adc	r9, r9
+     fac:	ee 1f       	adc	r30, r30
+     fae:	ff 1f       	adc	r31, r31
+     fb0:	cc 1f       	adc	r28, r28
+     fb2:	dd 1f       	adc	r29, r29
+     fb4:	aa 1f       	adc	r26, r26
+     fb6:	bb 1f       	adc	r27, r27
+     fb8:	8a 14       	cp	r8, r10
+     fba:	9b 04       	cpc	r9, r11
+     fbc:	ec 05       	cpc	r30, r12
+     fbe:	fd 05       	cpc	r31, r13
+     fc0:	ce 05       	cpc	r28, r14
+     fc2:	df 05       	cpc	r29, r15
+     fc4:	a0 07       	cpc	r26, r16
+     fc6:	b1 07       	cpc	r27, r17
+     fc8:	48 f0       	brcs	.+18     	; 0xfdc <__udivmod64+0x90>
+     fca:	8a 18       	sub	r8, r10
+     fcc:	9b 08       	sbc	r9, r11
+     fce:	ec 09       	sbc	r30, r12
+     fd0:	fd 09       	sbc	r31, r13
+     fd2:	ce 09       	sbc	r28, r14
+     fd4:	df 09       	sbc	r29, r15
+     fd6:	a0 0b       	sbc	r26, r16
+     fd8:	b1 0b       	sbc	r27, r17
+     fda:	21 60       	ori	r18, 0x01	; 1
+     fdc:	1a 94       	dec	r1
+     fde:	e1 f6       	brne	.-72     	; 0xf98 <__udivmod64+0x4c>
+     fe0:	2e f4       	brtc	.+10     	; 0xfec <__udivmod64+0xa0>
+     fe2:	94 01       	movw	r18, r8
+     fe4:	af 01       	movw	r20, r30
+     fe6:	be 01       	movw	r22, r28
+     fe8:	cd 01       	movw	r24, r26
+     fea:	00 0c       	add	r0, r0
+     fec:	08 95       	ret
+
+00000fee <__negdi2>:
+     fee:	60 95       	com	r22
+     ff0:	70 95       	com	r23
+     ff2:	80 95       	com	r24
+     ff4:	90 95       	com	r25
+     ff6:	30 95       	com	r19
+     ff8:	40 95       	com	r20
+     ffa:	50 95       	com	r21
+     ffc:	21 95       	neg	r18
+     ffe:	3f 4f       	sbci	r19, 0xFF	; 255
+    1000:	4f 4f       	sbci	r20, 0xFF	; 255
+    1002:	5f 4f       	sbci	r21, 0xFF	; 255
+    1004:	6f 4f       	sbci	r22, 0xFF	; 255
+    1006:	7f 4f       	sbci	r23, 0xFF	; 255
+    1008:	8f 4f       	sbci	r24, 0xFF	; 255
+    100a:	9f 4f       	sbci	r25, 0xFF	; 255
+    100c:	08 95       	ret
+
+0000100e <__prologue_saves__>:
+    100e:	2f 92       	push	r2
+    1010:	3f 92       	push	r3
+    1012:	4f 92       	push	r4
+    1014:	5f 92       	push	r5
+    1016:	6f 92       	push	r6
+    1018:	7f 92       	push	r7
+    101a:	8f 92       	push	r8
+    101c:	9f 92       	push	r9
+    101e:	af 92       	push	r10
+    1020:	bf 92       	push	r11
+    1022:	cf 92       	push	r12
+    1024:	df 92       	push	r13
+    1026:	ef 92       	push	r14
+    1028:	ff 92       	push	r15
+    102a:	0f 93       	push	r16
+    102c:	1f 93       	push	r17
+    102e:	cf 93       	push	r28
+    1030:	df 93       	push	r29
+    1032:	cd b7       	in	r28, 0x3d	; 61
+    1034:	de b7       	in	r29, 0x3e	; 62
+    1036:	ca 1b       	sub	r28, r26
+    1038:	db 0b       	sbc	r29, r27
+    103a:	0f b6       	in	r0, 0x3f	; 63
+    103c:	f8 94       	cli
+    103e:	de bf       	out	0x3e, r29	; 62
+    1040:	0f be       	out	0x3f, r0	; 63
+    1042:	cd bf       	out	0x3d, r28	; 61
+    1044:	09 94       	ijmp
+
+00001046 <__epilogue_restores__>:
+    1046:	2a 88       	ldd	r2, Y+18	; 0x12
+    1048:	39 88       	ldd	r3, Y+17	; 0x11
+    104a:	48 88       	ldd	r4, Y+16	; 0x10
+    104c:	5f 84       	ldd	r5, Y+15	; 0x0f
+    104e:	6e 84       	ldd	r6, Y+14	; 0x0e
+    1050:	7d 84       	ldd	r7, Y+13	; 0x0d
+    1052:	8c 84       	ldd	r8, Y+12	; 0x0c
+    1054:	9b 84       	ldd	r9, Y+11	; 0x0b
+    1056:	aa 84       	ldd	r10, Y+10	; 0x0a
+    1058:	b9 84       	ldd	r11, Y+9	; 0x09
+    105a:	c8 84       	ldd	r12, Y+8	; 0x08
+    105c:	df 80       	ldd	r13, Y+7	; 0x07
+    105e:	ee 80       	ldd	r14, Y+6	; 0x06
+    1060:	fd 80       	ldd	r15, Y+5	; 0x05
+    1062:	0c 81       	ldd	r16, Y+4	; 0x04
+    1064:	1b 81       	ldd	r17, Y+3	; 0x03
+    1066:	aa 81       	ldd	r26, Y+2	; 0x02
+    1068:	b9 81       	ldd	r27, Y+1	; 0x01
+    106a:	ce 0f       	add	r28, r30
+    106c:	d1 1d       	adc	r29, r1
+    106e:	0f b6       	in	r0, 0x3f	; 63
+    1070:	f8 94       	cli
+    1072:	de bf       	out	0x3e, r29	; 62
+    1074:	0f be       	out	0x3f, r0	; 63
+    1076:	cd bf       	out	0x3d, r28	; 61
+    1078:	ed 01       	movw	r28, r26
+    107a:	08 95       	ret
+
+0000107c <__ashrdi3>:
+    107c:	97 fb       	bst	r25, 7
+    107e:	10 f8       	bld	r1, 0
+
+00001080 <__lshrdi3>:
+    1080:	16 94       	lsr	r1
+    1082:	00 08       	sbc	r0, r0
+    1084:	0f 93       	push	r16
+    1086:	08 30       	cpi	r16, 0x08	; 8
+    1088:	98 f0       	brcs	.+38     	; 0x10b0 <__lshrdi3+0x30>
+    108a:	08 50       	subi	r16, 0x08	; 8
+    108c:	23 2f       	mov	r18, r19
+    108e:	34 2f       	mov	r19, r20
+    1090:	45 2f       	mov	r20, r21
+    1092:	56 2f       	mov	r21, r22
+    1094:	67 2f       	mov	r22, r23
+    1096:	78 2f       	mov	r23, r24
+    1098:	89 2f       	mov	r24, r25
+    109a:	90 2d       	mov	r25, r0
+    109c:	f4 cf       	rjmp	.-24     	; 0x1086 <__lshrdi3+0x6>
+    109e:	05 94       	asr	r0
+    10a0:	97 95       	ror	r25
+    10a2:	87 95       	ror	r24
+    10a4:	77 95       	ror	r23
+    10a6:	67 95       	ror	r22
+    10a8:	57 95       	ror	r21
+    10aa:	47 95       	ror	r20
+    10ac:	37 95       	ror	r19
+    10ae:	27 95       	ror	r18
+    10b0:	0a 95       	dec	r16
+    10b2:	aa f7       	brpl	.-22     	; 0x109e <__lshrdi3+0x1e>
+    10b4:	0f 91       	pop	r16
+    10b6:	08 95       	ret
+
+000010b8 <__cmpdi2_s8>:
+    10b8:	00 24       	eor	r0, r0
+    10ba:	a7 fd       	sbrc	r26, 7
+    10bc:	00 94       	com	r0
+    10be:	2a 17       	cp	r18, r26
+    10c0:	30 05       	cpc	r19, r0
+    10c2:	40 05       	cpc	r20, r0
+    10c4:	50 05       	cpc	r21, r0
+    10c6:	60 05       	cpc	r22, r0
+    10c8:	70 05       	cpc	r23, r0
+    10ca:	80 05       	cpc	r24, r0
+    10cc:	90 05       	cpc	r25, r0
+    10ce:	08 95       	ret
+
+000010d0 <_exit>:
+    10d0:	f8 94       	cli
+
+000010d2 <__stop_program>:
+    10d2:	ff cf       	rjmp	.-2      	; 0x10d2 <__stop_program>
